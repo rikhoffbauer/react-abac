@@ -11,6 +11,9 @@
         "prepublishOnly": "npm run build",
         "format": "prettier --write '**/*.json' '**/*.md' '**/*.ts' '**/*.tsx' '**/*.yaml' '**/*.yml'"
     },
+    "files": [
+        "build"
+    ],
     "keywords": [],
     "author": "",
     "license": "ISC",
@@ -30,7 +33,8 @@
     },
     "husky": {
         "hooks": {
-            "pre-commit": "lint-staged"
+            "pre-commit": "lint-staged",
+            "pre-push": "npm t"
         }
     },
     "devDependencies": {
