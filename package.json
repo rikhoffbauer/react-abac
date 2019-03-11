@@ -1,0 +1,48 @@
+{
+    "name": "react-abac",
+    "version": "1.0.0",
+    "description": "",
+    "main": "build/src/index.js",
+    "types": "build/src/index.d.ts",
+    "scripts": {
+        "test": "jest --config jest.config.json",
+        "watch": "tsc --watch",
+        "build": "tsc",
+        "prepublishOnly": "npm run build",
+        "format": "prettier --write '**/*.json' '**/*.md' '**/*.ts' '**/*.tsx' '**/*.yaml' '**/*.yml'"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
+    "dependencies": {
+        "@types/enzyme": "^3.9.0",
+        "@types/node": "^11.11.0",
+        "@types/react": "^16.8.7",
+        "enzyme": "^3.9.0",
+        "react": "^16.8.4",
+        "typescript": "^3.3.3333"
+    },
+    "lint-staged": {
+        "*.{json,md,ts,tsx,yaml,yml}": [
+            "prettier --write",
+            "git add"
+        ]
+    },
+    "husky": {
+        "hooks": {
+            "pre-commit": "lint-staged"
+        }
+    },
+    "devDependencies": {
+        "@types/enzyme-adapter-react-16": "^1.0.5",
+        "@types/jest": "^24.0.11",
+        "@types/react-dom": "^16.8.2",
+        "enzyme-adapter-react-16": "^1.10.0",
+        "husky": "^1.3.1",
+        "jest": "^24.3.1",
+        "lint-staged": "^8.1.5",
+        "prettier": "^1.16.4",
+        "react-dom": "^16.8.4",
+        "ts-jest": "^24.0.0"
+    }
+}

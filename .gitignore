@@ -1,0 +1,11 @@
+
+# intellij
+*.iml
+.idea/
+
+# node
+node_modules/
+
+# generated files
+build/
+coverage/
