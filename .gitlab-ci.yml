@@ -1,0 +1,23 @@
+stages:
+    - test
+    - pages
+
+test:
+    stage: test
+    image: node:10.15.1-alpine
+    script:
+        - npm ci
+        - npm t
+
+pages:
+    stage: pages
+    image: node:10.15.1-alpine
+    script:
+        - npm ci
+        - cd example && npm ci && npm run build
+        - mv build ../public
+    only:
+        - master
+    artifacts:
+        paths:
+            - public

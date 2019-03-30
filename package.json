@@ -9,7 +9,7 @@
     "scripts": {
         "test": "react-scripts test --env=jsdom",
         "build": "rollup -c",
-        "prestart": "npm link",
+        "prestart": "sh link-to-example.sh",
         "start": "rollup -c -w",
         "prepack": "npm run build",
         "prepare": "npm run format && npm run build",
