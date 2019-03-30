@@ -5,9 +5,23 @@ stages:
 test:
     stage: test
     image: node:10.15.1-alpine
+    except:
+        - tags
     script:
         - npm ci
         - npm t
+
+publish:
+    only:
+        - tags
+    script:
+        # ensure we have publish access to the npm registry
+        - echo "registry=$NPM_REGISTRY" >> .npmrc
+        - echo "_auth=$NPM_AUTH_KEY" >> .npmrc
+        # clean install
+        - npm ci
+        # publish to npm
+        - npm publish
 
 pages:
     stage: pages

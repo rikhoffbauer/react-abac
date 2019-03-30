@@ -1,7 +1,7 @@
 import { mount } from "enzyme";
 import React from "react";
 
-import { AbacProvider, AllowedTo, Rules } from "./index";
+import { AbacProvider, AllowedTo, Rules } from "../src";
 
 describe("Functional tests", () => {
     enum Role {

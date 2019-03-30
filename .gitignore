@@ -9,3 +9,4 @@ node_modules/
 # generated files
 dist/
 coverage/
+example/build/
