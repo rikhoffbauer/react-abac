@@ -1,5 +1,5 @@
 import { useContext } from "react";
-import AbacContext from "../contexts/AbacContext";
+import AbacContext from "../context";
 
 const useAbac = () => useContext(AbacContext);
 

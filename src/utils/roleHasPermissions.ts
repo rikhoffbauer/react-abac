@@ -1,4 +1,4 @@
-import { RolePermissions } from "../interfaces";
+import { Rules } from "../interfaces";
 
 const roleHasPermission = <
     Role extends string,
@@ -6,31 +6,29 @@ const roleHasPermission = <
     User,
     Data
 >(
-    rules: RolePermissions<Role, Permission, User>,
+    rules: Rules<Role, Permission, User>,
     role: Role,
     permission: Permission,
-    data?: Data,
     user?: User,
+    data?: Data,
 ) => {
-    // Permission of the provided role
-    const roleRules = rules[role] || {};
-
-    if (!roleRules) {
+    if (!(role in rules)) {
         // no rules defined for role
         return false;
     }
 
     // rule for the provided permission for the provided role
-    const rule = (roleRules as any)[permission]; // true, false or (data, user) => boolean
+    const rule = rules[role][permission as any]; // true, false or (data, user) => boolean
 
     if (!rule) {
-        // role is not permitted to perform the provided action/permission
+        // role is not permitted to perform the provided action/permission,
+        // permission not present
         return false;
     }
 
     if (typeof rule === "function") {
-        // ABAC permission, predicate that determines if user is permitted access
-        return rule(data, user);
+        // ABAC rule, use a predicate to determine if the user is allowed access
+        return Boolean(rule(data, user));
     }
 
     // rule is truthy, role has permission

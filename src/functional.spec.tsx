@@ -1,7 +1,7 @@
 import { mount } from "enzyme";
 import React from "react";
 
-import { AbacProvider, AllowedTo, RolePermissions } from "../src";
+import { AbacProvider, AllowedTo, Rules } from "./index";
 
 describe("Functional tests", () => {
     enum Role {
@@ -20,7 +20,7 @@ describe("Functional tests", () => {
         roles: Role[];
     }
 
-    const rules: RolePermissions<Role, Permission, User> = {
+    const rules: Rules<Role, Permission, User> = {
         [Role.ADMIN]: {
             [Permission.EDIT_USER]: true,
             [Permission.VIEW_HOMEPAGE]: true,
@@ -40,8 +40,8 @@ describe("Functional tests", () => {
 
     const Provider: React.FC<ProviderProps> = ({ user, children }) => (
         <AbacProvider
-            getRoles={({ roles = [] }) => roles}
-            getUser={() => user}
+            roles={user.roles}
+            user={user}
             rules={rules}
             children={children}
         />
@@ -55,16 +55,13 @@ describe("Functional tests", () => {
             it("Should throw an error if used without a provider", () => {
                 const renderWithoutProvider = () =>
                     mount(
-                        <AllowedTo
-                            perform={Permission.EDIT_USER}
-                            data={user}
-                        >
+                        <AllowedTo perform={Permission.EDIT_USER} data={user}>
                             <div>yes</div>
                         </AllowedTo>,
                     );
 
                 expect(renderWithoutProvider).toThrow(
-                    `You need to wrap your application with an AbacProvider.`,
+                    `Wrap your app with an AbacProvider.`,
                 );
             });
 
@@ -99,10 +96,7 @@ describe("Functional tests", () => {
             it("Should render children if required abac rules/permissions are met", () => {
                 const wrapper = mount(
                     <Provider user={user}>
-                        <AllowedTo
-                            perform={Permission.EDIT_USER}
-                            data={user}
-                        >
+                        <AllowedTo perform={Permission.EDIT_USER} data={user}>
                             <div>yes</div>
                         </AllowedTo>
                     </Provider>,
@@ -130,9 +124,7 @@ describe("Functional tests", () => {
             it("Should render children if no rules/permissions are required", () => {
                 const wrapper = mount(
                     <Provider user={user}>
-                        <AllowedTo
-                            data={user}
-                        >
+                        <AllowedTo data={user}>
                             <div>yes</div>
                         </AllowedTo>
                     </Provider>,
@@ -144,10 +136,7 @@ describe("Functional tests", () => {
             it("Should render nothing if no yes/no/children prop is required", () => {
                 const wrapper = mount(
                     <Provider user={user}>
-                        <AllowedTo
-                            data={user}
-                            perform={Permission.DELETE_USER}
-                        >
+                        <AllowedTo data={user} perform={Permission.DELETE_USER}>
                             <div>yes</div>
                         </AllowedTo>
                     </Provider>,

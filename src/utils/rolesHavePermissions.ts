@@ -1,4 +1,4 @@
-import { RolePermissions } from "../interfaces";
+import { Rules } from "../interfaces";
 import roleHasPermission from "./roleHasPermissions";
 
 const rolesHavePermissions = <
@@ -7,17 +7,17 @@ const rolesHavePermissions = <
     User,
     Data
 >(
-    rules: RolePermissions<Role, Permission, User>,
+    rules: Rules<Role, Permission, User>,
     roles: Role[],
-    permission: Permission | Permission[] = [],
-    data?: Data,
+    permissions: Permission[],
     user?: User,
+    data?: Data,
 ) =>
     // for *every* required permission
-    (Array.isArray(permission) ? permission : [permission]).every(permission =>
-        // check that *some* role that permission
+    permissions.every(permission =>
+        // check that *some* role has that permission
         roles.some(role =>
-            roleHasPermission(rules, role, permission, data, user),
+            roleHasPermission(rules, role, permission, user, data),
         ),
     );
 

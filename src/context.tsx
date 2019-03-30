@@ -1,17 +1,15 @@
 import { createContext } from "react";
 
-export interface Context<User, Permission extends string> {
+export interface Context<Permission extends string> {
     userHasPermissions<Data>(
         permissions: Permission | Permission[],
         data?: Data,
     ): boolean;
 }
 
-const AbacContext = createContext<Context<any, any>>({
+const AbacContext = createContext<Context<any>>({
     userHasPermissions: () => {
-        throw new Error(
-            `You need to wrap your application with an AbacProvider.`,
-        );
+        throw new Error(`Wrap your app with an AbacProvider.`);
     },
 });
 
