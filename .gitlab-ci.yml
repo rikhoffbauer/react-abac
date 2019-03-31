@@ -3,11 +3,6 @@ stages:
     - publish
     - pages
 
-before_script:
-    # ensure we have access to the npm registry
-    - echo "registry=$NPM_REGISTRY" >> .npmrc
-    - echo "_auth=$NPM_AUTH_KEY" >> .npmrc
-
 test:
     stage: test
     image: node:10.15.1-alpine
@@ -25,6 +20,9 @@ publish:
     script:
         # clean install
         - npm ci
+        # ensure we have access to the npm registry
+        - echo "registry=$NPM_REGISTRY" >> .npmrc
+        - echo "_auth=$NPM_AUTH_KEY" >> .npmrc
         # publish to npm
         - npm publish
 
