@@ -11,7 +11,7 @@ function link_dependency() {
 }
 
 npm link
+cd ${example_dir} && npm link react-abac
 
 # Use same react instance as library
-link_dependency react-abac
 link_dependency react
