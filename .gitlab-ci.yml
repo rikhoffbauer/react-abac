@@ -32,7 +32,7 @@ pages:
     script:
         - npm ci
         - npm run build
-        - cd example && npm i && sh link-to-example.sh && npm run build && mv build ../public
+        - cd example && npm i && npm run build && mv build ../public
     only:
         - master
     artifacts:
