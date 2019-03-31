@@ -6,7 +6,7 @@
     "module": "dist/index.es.js",
     "jsnext:main": "dist/index.es.js",
     "types": "dist/index.d.ts",
-    "homepage": ".",
+    "homepage": "https://rik-hoffbauer.gitlab.io/npm/react-abac",
     "scripts": {
         "test": "jest --config jest.config.json",
         "build": "rollup -c",
