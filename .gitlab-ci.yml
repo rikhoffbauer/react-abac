@@ -31,6 +31,7 @@ pages:
     image: node:10.15.1-alpine
     script:
         - npm ci
+        - sh link-to-example.sh
         - cd example && npm ci && npm run build
         - mv build ../public
     only:

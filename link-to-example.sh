@@ -10,5 +10,8 @@ function link_dependency() {
     cd ${node_modules}/${name} && npm link > /dev/null 2>&1 && cd ${example_dir} && npm link ${name}  > /dev/null 2>&1
 }
 
+npm link
+
 # Use same react instance as library
+link_dependency react-abac
 link_dependency react
