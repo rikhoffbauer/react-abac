@@ -23,6 +23,7 @@ publish:
         - npm ci
         # ensure we have access to the npm registry
         - echo "_auth=$NPM_AUTH_KEY" >> .npmrc
+        - cat .npmrc
         # publish to npm
         - npm publish
 
