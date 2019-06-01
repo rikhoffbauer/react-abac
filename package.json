@@ -20,7 +20,8 @@
     ],
     "keywords": [
         "abac",
-        "rbac"
+        "rbac",
+        "react"
     ],
     "bugs": {
         "url": "https://github.com/facebook/react/issues"
