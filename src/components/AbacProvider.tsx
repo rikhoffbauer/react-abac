@@ -23,7 +23,10 @@ export const AbacProvider = <
     permissions = [],
     user,
 }: Props<Role, Permission, User>) => {
-    const userHasPermissions = (requiredPermissions: Permission[], data: any) =>
+    const userHasPermissions = (
+        requiredPermissions: Permission[] | Permission,
+        data: any,
+    ) =>
         rolesHavePermissions(
             rules,
             roles,

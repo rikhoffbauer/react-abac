@@ -1,4 +1,5 @@
 import { AbacPredicate, Rules } from "../interfaces";
+import ensureArray from "./ensureArray";
 import roleHasPermission from "./roleHasPermissions";
 
 const rolesHavePermissions = <
@@ -10,12 +11,12 @@ const rolesHavePermissions = <
     rules: Rules<Role, Permission, User>,
     roles: Role[],
     permissions: Permission[],
-    requiredPermissions: Permission[],
+    requiredPermissions: Permission[] | Permission,
     user?: User,
     data?: Data,
 ) =>
     // for *every* required permission
-    requiredPermissions.every(
+    ensureArray(requiredPermissions).every(
         permission =>
             // check that *some* role has that permission
             roles.some(role =>
