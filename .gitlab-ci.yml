@@ -23,9 +23,9 @@ publish:
         - npm ci
         # ensure we have access to the npm registry
         - echo "_auth=$NPM_AUTH_KEY" >> .npmrc
-        - echo "//registry.npmjs.org/:_authToken=${NPM_AUTH_KEY}" > .npmrc
-        - echo "//registry.npmjs.org/:_authToken=${NPM_AUTH_KEY}" > ~/.npmrc
+        - echo "_auth=$NPM_AUTH_KEY" >> ~/.npmrc
         - cat .npmrc
+        - cat ~/.npmrc
         # publish to npm
         - npm publish
 
