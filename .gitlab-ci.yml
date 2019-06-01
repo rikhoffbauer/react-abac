@@ -15,8 +15,9 @@ test:
 publish:
     stage: publish
     image: node:10.15.1-alpine
-    only:
-        - tags
+    when: manual
+    #    only:
+    #        - tags
     script:
         # clean install
         - npm ci
