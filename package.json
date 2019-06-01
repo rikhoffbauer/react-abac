@@ -22,7 +22,14 @@
         "abac",
         "rbac"
     ],
-    "author": "",
+    "bugs": {
+        "url": "https://github.com/facebook/react/issues"
+    },
+    "author": "Rik Hoffbauer",
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/jewetnitg/react-abac.git"
+    },
     "license": "ISC",
     "peerDependencies": {
         "react": "^16.8.1"
