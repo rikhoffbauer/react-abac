@@ -81,7 +81,46 @@ const EditPost = (props: { post: { owner: string } }) => (
 );
 ```
 
-See the `./example` directory for a full example.
+See the `./example` directory for a full example. This example is deployed at [here](https://rik-hoffbauer.gitlab.io/npm/react-abac/).
+
+## API reference
+
+### Components
+
+#### AbacProvider
+
+The `AbacProvider` is used to provide the `AllowedTo` component and the `useAbac` hook with access to the logged in user and the permission rules.
+
+##### Props
+
+| name        | type       | required | description                                                                |
+| ----------- | ---------- | -------- | -------------------------------------------------------------------------- |
+| rules       | `object`   | [ x ]    | An object describing the permission rules, see the [Rules section](#Rules) |
+| user        | `object`   | [ ]      | The logged in user                                                         |
+| roles       | `string[]` | [ ]      | The roles of the logged in user                                            |
+| permissions | `string[]` | [ ]      | The permissions of the logged in user                                      |
+
+##### Example usage
+
+```typescript jsx
+interface Props {
+    user: User;
+    post: Post;
+}
+
+const App = (props: Props) => (
+    // Add an AbacProvider somewhere near the root of your component tree
+    // where you have access to the logged in user
+    <AbacProvider
+        user={props.user}
+        roles={props.user.roles}
+        rules={rules}
+        permissions={props.user.permissions}
+    >
+        <EditPost post={props.post} />
+    </AbacProvider>
+);
+```
 
 ## Concepts
 
