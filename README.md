@@ -8,6 +8,12 @@ Attribute Based Access Control and Role Based Access Control for React.
 npm install react-abac
 ```
 
+## Tutorial
+
+A short tutorial video is available.
+
+[![react-abac tutorial](https://img.youtube.com/vi/Qjcht9p83bY/0.jpg)](https://www.youtube.com/watch?v=Qjcht9p83bY)
+
 ## Usage
 
 ```typescript jsx
