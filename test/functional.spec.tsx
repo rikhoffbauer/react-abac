@@ -72,7 +72,7 @@ describe("Functional tests", () => {
 
     describe("<AllowedTo />", () => {
         describe("<AllowedTo perform={'PERMISSION'} />", () => {
-            it("Should log an error if used without a provider and always render the no prop", () => {
+            it("Should log an error if used without a provider and render nothing", () => {
                 const renderWithoutProvider = () =>
                     mount(
                         <AllowedTo
@@ -88,7 +88,7 @@ describe("Functional tests", () => {
 
                 const wrapper = renderWithoutProvider();
 
-                expect(wrapper.text()).toBe("No");
+                expect(wrapper.text()).toBe(null);
                 expect(console.error).toHaveBeenCalled();
             });
 

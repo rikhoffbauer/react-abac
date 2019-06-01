@@ -7,13 +7,15 @@ export interface AbacContextProps<Permission extends string> {
     ): boolean;
 }
 
-const AbacContext = createContext<AbacContextProps<any>>({
+export const AbacContextDefaults = {
     userHasPermissions: () => {
         console.error(
             `Can't call userHasPermissions, wrap your app with an <AbacProvider />.`,
         );
         return false;
     },
-});
+};
+
+const AbacContext = createContext<AbacContextProps<any>>(AbacContextDefaults);
 
 export default AbacContext;

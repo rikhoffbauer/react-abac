@@ -1,4 +1,5 @@
 import React from "react";
+import { AbacContextDefaults } from "../context";
 
 import useAbac from "../hooks/useAbac";
 import ensureArray from "../utils/ensureArray";
@@ -18,9 +19,16 @@ const AllowedTo = <Permission extends string>({
     no = () => null,
     data,
 }: AllowedToProps<Permission>) => {
-    const { userHasPermissions } = useAbac();
+    const ctx = useAbac();
 
-    return userHasPermissions(ensureArray(perform), data) ? yes() : no();
+    if (ctx === AbacContextDefaults) {
+        console.error(
+            `Can't render <AllowedTo />, wrap your app with an <AbacProvider />.`,
+        );
+        return null;
+    }
+
+    return ctx.userHasPermissions(ensureArray(perform), data) ? yes() : no();
 };
 
 export default AllowedTo;
