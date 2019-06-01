@@ -1,7 +1,13 @@
 import { mount } from "enzyme";
 import React from "react";
 
-import { AbacProvider, AbacProviderProps, AllowedTo, Rules } from "../src";
+import {
+    AbacProvider,
+    AbacProviderProps,
+    AllowedTo,
+    Rules,
+    useAbac,
+} from "../src";
 
 describe("Functional tests", () => {
     enum Role {
@@ -69,6 +75,76 @@ describe("Functional tests", () => {
         roles: [],
         permissions: [Permission.DELETE_USER],
     };
+
+    describe("useAbac()", () => {
+        describe("userHasPermissions(permissions, data)", () => {
+            it("should return true if permission is granted", () => {
+                const TestComponent = () => {
+                    const { userHasPermissions } = useAbac();
+
+                    expect(userHasPermissions(Permission.VIEW_HOMEPAGE)).toBe(
+                        true,
+                    );
+
+                    return null;
+                };
+
+                mount(
+                    <Provider user={user}>
+                        <TestComponent />
+                    </Provider>,
+                );
+            });
+
+            it("should return false if permission is denied", () => {
+                const TestComponent = () => {
+                    const { userHasPermissions } = useAbac();
+
+                    expect(
+                        userHasPermissions(Permission.DELETE_USER, admin),
+                    ).toBe(false);
+
+                    return null;
+                };
+
+                mount(
+                    <Provider user={user}>
+                        <TestComponent />
+                    </Provider>,
+                );
+            });
+
+            it("should return true if called with no permissions", () => {
+                const TestComponent = () => {
+                    const { userHasPermissions } = useAbac();
+
+                    expect(userHasPermissions([], user)).toBe(true);
+
+                    return null;
+                };
+
+                mount(
+                    <Provider user={user}>
+                        <TestComponent />
+                    </Provider>,
+                );
+            });
+
+            it("should log an error and return false if app is not wrapped with an AbacProvider", () => {
+                const TestComponent = () => {
+                    const { userHasPermissions } = useAbac();
+
+                    expect(
+                        userHasPermissions(Permission.VIEW_HOMEPAGE, admin),
+                    ).toBe(false);
+
+                    return null;
+                };
+
+                mount(<TestComponent />);
+            });
+        });
+    });
 
     describe("<AllowedTo />", () => {
         describe("<AllowedTo perform={'PERMISSION'} />", () => {
