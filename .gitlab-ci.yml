@@ -7,6 +7,9 @@ test:
     stage: test
     image: node:10.15.1-alpine
     coverage: /All files[^|]*\|[^|]*\s+([\d\.]+)/
+    artifacts:
+        paths:
+            - coverage
     except:
         - tags
     script:
