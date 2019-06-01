@@ -134,9 +134,12 @@ describe("Functional tests", () => {
                 const TestComponent = () => {
                     const { userHasPermissions } = useAbac();
 
+                    spyOn(console, `error`);
+
                     expect(
                         userHasPermissions(Permission.VIEW_HOMEPAGE, admin),
                     ).toBe(false);
+                    expect(console.error).toHaveBeenCalled();
 
                     return null;
                 };
