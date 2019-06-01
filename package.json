@@ -21,7 +21,8 @@
     "keywords": [
         "abac",
         "rbac",
-        "react"
+        "react",
+        "typescript"
     ],
     "bugs": {
         "url": "https://github.com/facebook/react/issues"
