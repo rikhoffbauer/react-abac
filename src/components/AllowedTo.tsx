@@ -3,7 +3,7 @@ import React from "react";
 import useAbac from "../hooks/useAbac";
 import ensureArray from "../utils/ensureArray";
 
-interface Props<Permission extends string> {
+export interface AllowedToProps<Permission extends string> {
     perform?: Permission | Permission[];
     yes?: () => JSX.Element | null;
     no?: () => JSX.Element | null;
@@ -17,7 +17,7 @@ const AllowedTo = <Permission extends string>({
     yes = () => <React.Fragment>{children}</React.Fragment>,
     no = () => null,
     data,
-}: Props<Permission>) => {
+}: AllowedToProps<Permission>) => {
     const { userHasPermissions } = useAbac();
 
     return userHasPermissions(ensureArray(perform), data) ? yes() : no();

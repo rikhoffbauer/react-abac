@@ -4,7 +4,11 @@ import AbacContext from "../context";
 import { Rules } from "../interfaces";
 import rolesHavePermissions from "../utils/rolesHavePermissions";
 
-interface Props<Role extends string, Permission extends string, User> {
+export interface AbacProviderProps<
+    Role extends string,
+    Permission extends string,
+    User
+> {
     rules: Rules<Role, Permission, User>;
     children?: React.ReactNode;
     user?: User;
@@ -22,7 +26,7 @@ export const AbacProvider = <
     roles = [],
     permissions = [],
     user,
-}: Props<Role, Permission, User>) => {
+}: AbacProviderProps<Role, Permission, User>) => {
     const userHasPermissions = (
         requiredPermissions: Permission[] | Permission,
         data: any,
