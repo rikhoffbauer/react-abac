@@ -1,16 +1,16 @@
 stages:
-    - test
+    #    - test
     - publish
     - pages
 
-test:
-    stage: test
-    image: node:10.15.1-alpine
-    except:
-        - tags
-    script:
-        - npm ci
-        - npm t
+#test:
+#    stage: test
+#    image: node:10.15.1-alpine
+#    except:
+#        - tags
+#    script:
+#        - npm ci
+#        - npm t
 
 publish:
     stage: publish
@@ -23,6 +23,8 @@ publish:
         - npm ci
         # ensure we have access to the npm registry
         - echo "_auth=$NPM_AUTH_KEY" >> .npmrc
+        - echo "//registry.npmjs.org/:_authToken=${NPM_AUTH_KEY}" > .npmrc
+        - echo "//registry.npmjs.org/:_authToken=${NPM_AUTH_KEY}" > ~/.npmrc
         - cat .npmrc
         # publish to npm
         - npm publish
