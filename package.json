@@ -13,9 +13,7 @@
         "start": "rollup -c -w",
         "prepack": "npm run build",
         "prepare": "npm run format && npm run build",
-        "format": "prettier --write '**/*.json' '**/*.md' '**/*.ts' '**/*.tsx' '**/*.yaml' '**/*.yml'",
-        "storybook": "start-storybook -p 9009",
-        "build-storybook": "build-storybook"
+        "format": "prettier --write '**/*.json' '**/*.md' '**/*.ts' '**/*.tsx' '**/*.yaml' '**/*.yml'"
     },
     "files": [
         "dist"

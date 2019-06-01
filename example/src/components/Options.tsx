@@ -26,12 +26,24 @@ const Options = ({ setUser, setPostOwner, user, post }: Props) => (
                     </td>
                 </tr>
                 <tr>
+                    <td />
+                    <td>
+                        <pre>{JSON.stringify(user, null, 4)}</pre>
+                    </td>
+                </tr>
+                <tr>
                     <td>Post owner</td>
                     <td>
                         <UserSelect
                             value={findUserById(post.owner)}
                             onChange={setPostOwner}
                         />
+                    </td>
+                </tr>
+                <tr>
+                    <td />
+                    <td>
+                        <pre>{JSON.stringify(post, null, 4)}</pre>
                     </td>
                 </tr>
             </tbody>

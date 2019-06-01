@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { AbacProvider } from "react-abac";
+import DeletePost from "./components/DeletePost";
 import EditPost from "./components/EditPost";
 import Intro from "./components/Intro";
 import Options from "./components/Options";
@@ -14,7 +15,12 @@ const App = () => {
         setPost(post => ({ ...post, owner: user.id }));
 
     return (
-        <AbacProvider rules={rules} user={user} roles={user.roles}>
+        <AbacProvider
+            rules={rules}
+            user={user}
+            roles={user.roles}
+            permissions={user.permissions}
+        >
             <div className="App">
                 <Intro />
                 <Options
@@ -24,6 +30,7 @@ const App = () => {
                     setUser={setUser}
                 />
                 <EditPost post={post} />
+                <DeletePost post={post} />
             </div>
         </AbacProvider>
     );

@@ -9,6 +9,7 @@ interface Props<Role extends string, Permission extends string, User> {
     children?: React.ReactNode;
     user?: User;
     roles?: Role[];
+    permissions?: Permission[];
 }
 
 export const AbacProvider = <
@@ -19,10 +20,18 @@ export const AbacProvider = <
     children,
     rules,
     roles = [],
+    permissions = [],
     user,
 }: Props<Role, Permission, User>) => {
-    const userHasPermissions = (permissions: Permission[], data: any) =>
-        rolesHavePermissions(rules, roles, permissions, user, data);
+    const userHasPermissions = (requiredPermissions: Permission[], data: any) =>
+        rolesHavePermissions(
+            rules,
+            roles,
+            permissions,
+            requiredPermissions,
+            user,
+            data,
+        );
 
     return (
         <AbacContext.Provider value={{ userHasPermissions }}>

@@ -16,7 +16,8 @@ import { AbacProvider, AllowedTo } from "react-abac";
 
 interface User {
     uuid: string;
-    roles: string[];
+    roles: Role[];
+    permissions: permissions[];
 }
 
 interface Post {
@@ -24,16 +25,21 @@ interface Post {
 }
 
 // an object with all permissions
-const permissions = {
-    EDIT_POST: "EDIT_POST",
-};
+enum permissions {
+    EDIT_POST = "EDIT_POST",
+}
+
+enum Role {
+    ADMIN = "ADMIN",
+    USER = "USER",
+}
 
 // rules describing what roles have what permissions
 const rules = {
-    ADMIN: {
+    [Role.ADMIN]: {
         [permissions.EDIT_POST]: true,
     },
-    USER: {
+    [Role.USER]: {
         // an abac rule
         // user can only edit the post if it is the owner of it
         [permissions.EDIT_POST]: (post, user) => post.owner === user.uuid,
@@ -48,7 +54,12 @@ interface Props {
 const App = (props: Props) => (
     // Add an AbacProvider somewhere near the root of your component tree
     // where you have access to the logged in user
-    <AbacProvider user={props.user} roles={props.user.roles} rules={rules}>
+    <AbacProvider
+        user={props.user}
+        roles={props.user.roles}
+        rules={rules}
+        permissions={props.user.permissions}
+    >
         <EditPost post={props.post} />
     </AbacProvider>
 );
@@ -70,11 +81,13 @@ const EditPost = (props: { post: { owner: string } }) => (
 );
 ```
 
+See the `./example` directory for a full example.
+
 ## Concepts
 
 ### Roles
 
-A role describes what purpose (role) a user has within the system on a very high level.
+A role describes what purpose (role) a user has within the system on a very high level. A user can have multiple roles.
 
 It is recommended when using typescript to define the roles as an enum like so:
 
@@ -85,9 +98,20 @@ enum Role {
 }
 ```
 
+When using javascript a regular object can be used.
+
+```javascript
+const Role = {
+    ADMIN: "ADMIN",
+    USER: "USER",
+};
+```
+
 ### Permissions
 
 A permission describes an action you might want to restrict, such as editing a post.
+
+Permissions can be attached to a role (e.g. ADMIN role has DELETE_POST permission) or directly to a user.
 
 Feel free to use whatever naming conventions you find appropriate, e.g. `EDIT_POST` or `post:edit`.
 
@@ -97,6 +121,14 @@ It is recommended when using typescript to define the permissions as an enum lik
 enum Permission {
     EDIT_POST = "EDIT_POST",
 }
+```
+
+When using javascript a regular object can be used.
+
+```javascript
+const Permission = {
+    EDIT_POST: "EDIT_POST",
+};
 ```
 
 ### Rules
