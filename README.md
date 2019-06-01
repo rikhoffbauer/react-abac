@@ -81,7 +81,7 @@ const EditPost = (props: { post: { owner: string } }) => (
 );
 ```
 
-See the `./example` directory for a full example. This example is deployed at [here](https://rik-hoffbauer.gitlab.io/npm/react-abac/).
+See the `./example` directory for a full example. This example is deployed [here](https://rik-hoffbauer.gitlab.io/npm/react-abac/).
 
 ## API reference
 
@@ -93,12 +93,12 @@ The `AbacProvider` is used to provide the `AllowedTo` component and the `useAbac
 
 ##### Props
 
-| name        | type       | required | description                                                                |
-| ----------- | ---------- | -------- | -------------------------------------------------------------------------- |
-| rules       | `object`   | [ x ]    | An object describing the permission rules, see the [Rules section](#Rules) |
-| user        | `object`   | [ ]      | The logged in user                                                         |
-| roles       | `string[]` | [ ]      | The roles of the logged in user                                            |
-| permissions | `string[]` | [ ]      | The permissions of the logged in user                                      |
+| name        | type       | required | description                                                                 |
+| ----------- | ---------- | -------- | --------------------------------------------------------------------------- |
+| rules       | `object`   | yes      | An object describing the permission rules, see the [Rules section](#rules). |
+| user        | `object`   | no       | The logged in user.                                                         |
+| roles       | `string[]` | no       | The roles of the logged in user.                                            |
+| permissions | `string[]` | no       | The permissions of the logged in user.                                      |
 
 ##### Example usage
 
@@ -120,6 +120,63 @@ const App = (props: Props) => (
         <EditPost post={props.post} />
     </AbacProvider>
 );
+```
+
+#### AllowedTo
+
+The `AllowedTo` component is used to restrict certain component trees based on whether the logged in user is allowed access.
+
+##### Props
+
+| name    | type                   | required | description                                                                                                                                                                                 |
+| ------- | ---------------------- | -------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| perform | `string` or `string[]` | yes      | A single permission or a list of permissions, if a list is provided all permissions are required.                                                                                           |
+| yes     | `JSX.Element`          | no       | The jsx element to render if permission is granted.                                                                                                                                         |
+| no      | `JSX.Element`          | no       | The jsx element to render if permission is **not** granted.                                                                                                                                 |
+| data    | `any`                  | no       | Data to pass to abac rules as first argument. E.g. When editing a post you might want to pass the post model as data so the abac rule can check if the post is owned by the logged in user. |
+
+##### Example usage
+
+```typescript jsx
+const EditPost = (props: { post: { owner: string } }) => (
+    // restrict parts of the application using the AllowedTo component
+    <AllowedTo
+        // can be an array too, in which case the user must have all permissions
+        perform={permissions.EDIT_POST}
+        // optional, data to pass to abac rules as first argument
+        data={props.post}
+        // both no and yes props are optional
+        no={() => <span>Not allowed to edit post</span>}
+        //yes={() => <span>Allowed to edit post</span>}
+    >
+        {/* the yes prop will default to rendering the children */}
+        <span>Allowed to edit post</span>
+    </AllowedTo>
+);
+```
+
+### Hooks
+
+#### useAbac
+
+##### Properties
+
+| name               | type                                                                      | description                                               |
+| ------------------ | ------------------------------------------------------------------------- | --------------------------------------------------------- |
+| userHasPermissions | <code>(permissions: string &#124; string[], data?: any) => boolean</code> | Checks if the logged in user has one or more permissions. |
+
+##### Example usage
+
+```typescript jsx
+const EditPost = (props: { post: { owner: string } }) => {
+    const { userHasPermissions } = useAbac();
+
+    if (!userHasPermissions(permissions.EDIT_POST, props.post)) {
+        return <span>Not allowed to edit post</span>;
+    }
+
+    return <span>Allowed to edit post</span>;
+};
 ```
 
 ## Concepts
