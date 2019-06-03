@@ -161,6 +161,14 @@ const EditPost = (props: { post: { owner: string } }) => (
 );
 ```
 
+#### NotAllowedTo
+
+The `NotAllowedTo` component is used to restrict certain component trees based on whether the logged in user is **not** allowed access.
+
+The same as the `AllowedTo` component but with the no and yes props switched.
+
+See [AllowedTo](#allowedto).
+
 ### Hooks
 
 #### useAbac
