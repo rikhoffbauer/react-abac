@@ -8,6 +8,7 @@ import {
     Rules,
     useAbac,
 } from "../src";
+import NotAllowedTo from "../src/components/NotAllowedTo";
 
 describe("Functional tests", () => {
     enum Role {
@@ -146,6 +147,53 @@ describe("Functional tests", () => {
 
                 mount(<TestComponent />);
             });
+        });
+    });
+
+    describe("<NotAllowedTo/>", () => {
+        it("Should render the no prop if required rbac rules/permissions are met", () => {
+            const wrapper = mount(
+                <Provider user={user}>
+                    <NotAllowedTo
+                        perform={Permission.VIEW_HOMEPAGE}
+                        no={() => <div>no</div>}
+                        yes={() => <div>yes</div>}
+                    />
+                </Provider>,
+            );
+
+            expect(wrapper.text()).toBe("no");
+        });
+
+        it("Should render the yes prop if required rbac rules/permissions are not met", () => {
+            const wrapper = mount(
+                <Provider user={user}>
+                    <NotAllowedTo
+                        perform={Permission.DELETE_USER}
+                        data={admin}
+                        no={() => <div>no</div>}
+                        yes={() => <div>yes</div>}
+                    />
+                </Provider>,
+            );
+
+            expect(wrapper.text()).toBe("yes");
+        });
+
+        it("Should render children if required rbac rules/permissions are not met", () => {
+            const wrapper = mount(
+                <Provider user={user}>
+                    <NotAllowedTo
+                        perform={Permission.DELETE_USER}
+                        data={admin}
+                        no={() => <div>no</div>}
+                    >
+                        <div>yes</div>
+                    </NotAllowedTo>
+                </Provider>,
+            );
+
+            expect(wrapper.text()).toBe("yes");
         });
     });
 
