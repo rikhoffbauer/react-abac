@@ -6,8 +6,8 @@ import ensureArray from "../utils/ensureArray";
 
 export interface AllowedToProps<Permission extends string> {
     perform?: Permission | Permission[];
-    yes?: () => JSX.Element | null;
-    no?: () => JSX.Element | null;
+    yes?: React.ComponentType;
+    no?: React.ComponentType;
     children?: React.ReactNode;
     data?: any;
 }
@@ -15,8 +15,8 @@ export interface AllowedToProps<Permission extends string> {
 const AllowedTo = <Permission extends string>({
     perform = [],
     children,
-    yes = () => <React.Fragment>{children}</React.Fragment>,
-    no = () => null,
+    yes: Yes = () => <React.Fragment>{children}</React.Fragment>,
+    no: No = () => null,
     data,
 }: AllowedToProps<Permission>) => {
     const ctx = useAbac();
@@ -28,7 +28,11 @@ const AllowedTo = <Permission extends string>({
         return null;
     }
 
-    return ctx.userHasPermissions(ensureArray(perform), data) ? yes() : no();
+    return ctx.userHasPermissions(ensureArray(perform), data) ? (
+        <Yes />
+    ) : (
+        <No />
+    );
 };
 
 export default AllowedTo;
