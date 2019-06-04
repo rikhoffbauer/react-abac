@@ -7,9 +7,9 @@ import {
     AllowedTo,
     Rules,
     useAbac,
+    NotAllowedTo,
+    secured,
 } from "../src";
-import NotAllowedTo from "../src/components/NotAllowedTo";
-import secured from "../src/hocs/secured";
 
 describe("Functional tests", () => {
     enum Role {

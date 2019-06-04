@@ -91,6 +91,28 @@ See the `./example` directory for a full example. This example is deployed [here
 
 ## API reference
 
+### Functions
+
+#### create
+
+The `create` function allows you to create a new instance of the library, this allows you to run multiple instances completely separated from each other within the same application.
+
+This is especially useful when developing a library that uses `react-abac` internally but you want consuming applications to use their own `react-abac` configuration.
+
+##### Example usage
+
+```typescript jsx
+export const {
+    AllowedTo,
+    secured,
+    NotAllowedTo,
+    AbacContextDefaults,
+    AbacProvider,
+    AbacContext,
+    useAbac,
+} = create<Role, Permission, User>();
+```
+
 ### Components
 
 #### AbacProvider
