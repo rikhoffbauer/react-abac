@@ -9,6 +9,7 @@ import {
     useAbac,
 } from "../src";
 import NotAllowedTo from "../src/components/NotAllowedTo";
+import secured from "../src/hocs/secured";
 
 describe("Functional tests", () => {
     enum Role {
@@ -76,6 +77,77 @@ describe("Functional tests", () => {
         roles: [],
         permissions: [Permission.DELETE_USER],
     };
+
+    describe("secured()", () => {
+        it("Should render the component if required rbac rules/permissions are met", () => {
+            interface Props {
+                user: User;
+            }
+
+            const No = ({  }: Props) => <div>no</div>;
+
+            @secured({
+                permissions: Permission.EDIT_USER,
+                mapPropsToData: (props: Props) => props.user,
+                noAccess: No,
+            })
+            class Secured extends React.Component<Props> {
+                render() {
+                    return <div>yes</div>;
+                }
+            }
+
+            const wrapper = mount(
+                <Provider user={user}>
+                    <Secured user={user} />
+                </Provider>,
+            );
+
+            expect(wrapper.text()).toBe("yes");
+        });
+
+        it("Should render the component if required rbac rules/permissions are met", () => {
+            interface Props {
+                user: User;
+            }
+            const Yes = ({  }: Props) => <div>yes</div>;
+            const No = ({  }: Props) => <div>no</div>;
+            const Secured = secured({
+                permissions: Permission.EDIT_USER,
+                mapPropsToData: (props: Props) => props.user,
+                noAccess: No,
+            })(Yes);
+
+            const wrapper = mount(
+                <Provider user={user}>
+                    <Secured user={user} />
+                </Provider>,
+            );
+
+            expect(wrapper.text()).toBe("yes");
+        });
+
+        it("Should render the noAccess prop if required rbac rules/permissions are not met", () => {
+            interface Props {
+                user: User;
+            }
+            const Yes = ({  }: Props) => <div>yes</div>;
+            const No = ({  }: Props) => <div>no</div>;
+            const Secured = secured({
+                permissions: Permission.EDIT_USER,
+                mapPropsToData: (props: Props) => props.user,
+                noAccess: No,
+            })(Yes);
+
+            const wrapper = mount(
+                <Provider user={user}>
+                    <Secured user={admin} />
+                </Provider>,
+            );
+
+            expect(wrapper.text()).toBe("no");
+        });
+    });
 
     describe("useAbac()", () => {
         describe("userHasPermissions(permissions, data)", () => {

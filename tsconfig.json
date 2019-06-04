@@ -3,6 +3,7 @@
         "allowJs": false,
         "allowSyntheticDefaultImports": true,
         "declaration": true,
+        "experimentalDecorators": true,
         "esModuleInterop": true,
         "forceConsistentCasingInFileNames": true,
         "isolatedModules": false,

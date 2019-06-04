@@ -137,8 +137,8 @@ The `AllowedTo` component is used to restrict certain component trees based on w
 | name    | type                   | required | description                                                                                                                                                                                 |
 | ------- | ---------------------- | -------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | perform | `string` or `string[]` | yes      | A single permission or a list of permissions, if a list is provided all permissions are required.                                                                                           |
-| yes     | `JSX.Element`          | no       | The jsx element to render if permission is granted.                                                                                                                                         |
-| no      | `JSX.Element`          | no       | The jsx element to render if permission is **not** granted.                                                                                                                                 |
+| yes     | `React.ComponentType`  | no       | The jsx element to render if permission is granted.                                                                                                                                         |
+| no      | `React.ComponentType`  | no       | The jsx element to render if permission is **not** granted.                                                                                                                                 |
 | data    | `any`                  | no       | Data to pass to abac rules as first argument. E.g. When editing a post you might want to pass the post model as data so the abac rule can check if the post is owned by the logged in user. |
 
 ##### Example usage
@@ -191,6 +191,49 @@ const EditPost = (props: { post: { owner: string } }) => {
 
     return <span>Allowed to edit post</span>;
 };
+```
+
+### Decorators/Higher Order Components
+
+#### secured
+
+A decorator/hoc that can be used to allow or deny access to a component.
+
+##### Options
+
+| name           | type                         | description                                                                                                           |
+| -------------- | ---------------------------- | --------------------------------------------------------------------------------------------------------------------- |
+| permissions    | `string` or `string[]`       | yes                                                                                                                   | A single permission or a list of permissions, if a list is provided all permissions are required. |
+| mapPropsToData | `(props: Props) => Data`     | Maps the props provided to the component to data passed to abac rules (like the data prop on the AllowedTo component) |
+| noAccess       | `React.ComponentType<Props>` | Component that should be rendered if no permission is granted                                                         |
+
+##### Example usage
+
+```typescript jsx
+const EditPost = (props: { post: Post }) => {
+    return <span>Allowed to edit post</span>;
+};
+
+secured({
+    permissions: permissions.EDIT_POST,
+    mapPropsToData: props => props.post,
+    noAccess: () => <div>You are not allowed to edit this post</div>,
+})(EditPost);
+```
+
+or
+
+```typescript jsx
+@secured({
+    permissions: permissions.EDIT_POST,
+    mapPropsToData: props => props.post,
+    noAccess: () => <div>You are not allowed to edit this post</div>,
+})
+class EditPost extends React.Component<{ post: Post }> {
+    render() {
+        return <span>Allowed to edit post</span>;
+    }
+}
 ```
 
 ## Concepts
