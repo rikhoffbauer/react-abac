@@ -1,6 +1,6 @@
 {
     "name": "react-abac-example",
-    "version": "0.1.0",
+    "version": "0.1.1",
     "private": true,
     "homepage": ".",
     "dependencies": {
@@ -8,12 +8,12 @@
         "@types/node": "11.12.2",
         "@types/react": "16.8.10",
         "@types/react-dom": "16.8.3",
-        "@types/react-syntax-highlighter": "^10.1.0",
-        "react": "^16.8.6",
+        "@types/react-syntax-highlighter": "10.2.1",
+        "react": "16.13.1",
         "react-abac": "file:..",
-        "react-dom": "^16.8.6",
+        "react-dom": "16.13.1",
         "react-scripts": "2.1.8",
-        "react-syntax-highlighter": "^10.2.1",
+        "react-syntax-highlighter": "10.3.5",
         "typescript": "3.4.1"
     },
     "scripts": {
