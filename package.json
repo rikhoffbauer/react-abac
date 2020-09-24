@@ -1,6 +1,6 @@
 {
     "name": "react-abac",
-    "version": "0.0.16",
+    "version": "0.0.17",
     "description": "",
     "main": "dist/index.js",
     "module": "dist/index.es.js",
@@ -49,8 +49,8 @@
         "jest": "26.4.2",
         "lint-staged": "10.4.0",
         "prettier": "1.16.4",
-        "react": "16.8.6",
-        "react-dom": "16.8.6",
+        "react": "16.13.1",
+        "react-dom": "16.13.1",
         "rollup": "1.7.4",
         "rollup-plugin-commonjs": "10.1.0",
         "rollup-plugin-node-resolve": "4.0.1",
