@@ -1,0 +1,28 @@
+{
+    "extends": ["config:base", ":semanticCommitType(chore)"],
+    "bumpVersion": "patch",
+    "stabilityDays": 3,
+    "baseBranches": ["master"],
+    "labels": ["bot(renovate)", "impact(low)"],
+    "automerge": true,
+    "semanticCommits": true,
+    "ignoreNpmrcFile": true,
+    "pruneStaleBranches": true,
+    "updateLockFiles": true,
+    "rollbackPrs": true,
+    "masterIssue": true,
+    "enabled": true,
+    "forkMode": true,
+    "lockFileMaintenance": {
+        "enabled": true
+    },
+    "vulnerabilityAlerts": {
+        "assignees": ["@rikhoffbauer"],
+        "labels": [
+            "bot(renovate)",
+            "type(vulnerability)",
+            "priority(high)",
+            "impact(high)"
+        ]
+    }
+}
