@@ -1,6 +1,6 @@
 {
     "name": "react-abac",
-    "version": "0.0.15",
+    "version": "0.0.16",
     "description": "",
     "main": "dist/index.js",
     "module": "dist/index.es.js",
@@ -52,7 +52,7 @@
         "react": "16.8.6",
         "react-dom": "16.8.6",
         "rollup": "1.7.4",
-        "rollup-plugin-commonjs": "9.2.2",
+        "rollup-plugin-commonjs": "10.1.0",
         "rollup-plugin-node-resolve": "4.0.1",
         "rollup-plugin-peer-deps-external": "2.2.3",
         "rollup-plugin-sourcemaps": "0.6.2",
