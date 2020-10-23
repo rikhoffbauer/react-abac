@@ -1,6 +1,6 @@
 {
     "name": "react-abac",
-    "version": "0.0.45",
+    "version": "0.0.46",
     "description": "",
     "main": "dist/index.js",
     "module": "dist/index.es.js",
@@ -54,7 +54,7 @@
         "rollup": "2.32.0",
         "rollup-plugin-commonjs": "10.1.0",
         "rollup-plugin-node-resolve": "5.2.0",
-        "rollup-plugin-peer-deps-external": "2.2.3",
+        "rollup-plugin-peer-deps-external": "2.2.4",
         "rollup-plugin-sourcemaps": "0.6.3",
         "rollup-plugin-terser": "7.0.2",
         "rollup-plugin-typescript2": "0.28.0",
