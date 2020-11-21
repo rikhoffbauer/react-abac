@@ -1,6 +1,6 @@
 {
     "name": "react-abac",
-    "version": "0.0.64",
+    "version": "0.0.65",
     "description": "",
     "main": "dist/index.js",
     "module": "dist/index.es.js",
@@ -61,7 +61,7 @@
         "rollup-plugin-uglify": "6.0.4",
         "rollup-plugin-url": "3.0.1",
         "ts-jest": "26.4.4",
-        "typescript": "4.0.5"
+        "typescript": "4.1.2"
     },
     "dependencies": {}
 }
