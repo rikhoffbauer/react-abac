@@ -1,6 +1,6 @@
 {
     "name": "react-abac",
-    "version": "0.0.81",
+    "version": "0.0.82",
     "description": "",
     "main": "dist/index.js",
     "module": "dist/index.es.js",
@@ -39,7 +39,7 @@
     "devDependencies": {
         "@types/enzyme": "3.10.8",
         "@types/enzyme-adapter-react-16": "1.0.6",
-        "@types/jest": "26.0.19",
+        "@types/jest": "26.0.20",
         "@types/node": "11.12.2",
         "@types/react": "17.0.0",
         "@types/react-dom": "17.0.0",
