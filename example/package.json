@@ -1,11 +1,11 @@
 {
     "name": "react-abac-example",
-    "version": "0.1.52",
+    "version": "0.1.53",
     "private": true,
     "homepage": ".",
     "dependencies": {
         "@types/jest": "26.0.22",
-        "@types/node": "11.15.50",
+        "@types/node": "11.15.52",
         "@types/react": "17.0.3",
         "@types/react-dom": "17.0.3",
         "@types/react-syntax-highlighter": "13.5.0",
