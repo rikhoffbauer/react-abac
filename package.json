@@ -1,6 +1,6 @@
 {
     "name": "react-abac",
-    "version": "0.0.147",
+    "version": "0.0.148",
     "description": "",
     "main": "dist/index.js",
     "module": "dist/index.es.js",
@@ -47,7 +47,7 @@
         "enzyme-adapter-react-16": "1.15.6",
         "husky": "7.0.1",
         "jest": "27.0.6",
-        "lint-staged": "11.0.0",
+        "lint-staged": "11.0.1",
         "prettier": "2.3.2",
         "react": "17.0.1",
         "react-dom": "17.0.1",
