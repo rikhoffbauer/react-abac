@@ -1,4 +1,5 @@
 import React, { createContext, useContext } from "react";
+
 import { Rules } from "./interfaces";
 import ensureArray from "./utils/ensureArray";
 import rolesHavePermissions from "./utils/rolesHavePermissions";
@@ -6,7 +7,7 @@ import rolesHavePermissions from "./utils/rolesHavePermissions";
 export interface AbacProviderProps<
     Role extends string,
     Permission extends string,
-    User
+    User,
 > {
     rules: Rules<Role, Permission, User>;
     children?: React.ReactNode;
@@ -46,9 +47,8 @@ const create = <Role extends string, Permission extends string, User>() => {
         },
     };
 
-    const AbacContext = createContext<AbacContextProps<Permission>>(
-        AbacContextDefaults,
-    );
+    const AbacContext =
+        createContext<AbacContextProps<Permission>>(AbacContextDefaults);
 
     const AbacProvider = ({
         children,
@@ -109,34 +109,33 @@ const create = <Role extends string, Permission extends string, User>() => {
         <AllowedTo no={yes} yes={no} {...props} />
     );
 
-    const secured = <Props, Data>({
-        permissions,
-        noAccess: No,
-        mapPropsToData,
-    }: SecuredOptions<Permission, Props, Data>) => <
-        T extends React.ComponentType<Props>
-    >(
-        Component: T,
-    ): T =>
-        Object.assign(
-            class SecuredComponent extends React.Component<Props> {
-                render() {
-                    const data = mapPropsToData && mapPropsToData(this.props);
-                    // TODO figure out why we need to cast this to any
-                    const C: any = Component;
+    const secured =
+        <Props, Data>({
+            permissions,
+            noAccess: No,
+            mapPropsToData,
+        }: SecuredOptions<Permission, Props, Data>) =>
+        <T extends React.ComponentType<Props>>(Component: T): T =>
+            Object.assign(
+                class SecuredComponent extends React.Component<Props> {
+                    render() {
+                        const data =
+                            mapPropsToData && mapPropsToData(this.props);
+                        // TODO figure out why we need to cast this to any
+                        const C: any = Component;
 
-                    return (
-                        <AllowedTo
-                            perform={permissions}
-                            no={No && (() => <No {...this.props} />)}
-                            yes={() => <C {...this.props} />}
-                            data={data}
-                        />
-                    );
-                }
-            } as any,
-            Component,
-        );
+                        return (
+                            <AllowedTo
+                                perform={permissions}
+                                no={No && (() => <No {...this.props} />)}
+                                yes={() => <C {...this.props} />}
+                                data={data}
+                            />
+                        );
+                    }
+                } as any,
+                Component,
+            );
 
     const useAbac = () => useContext(AbacContext);
 

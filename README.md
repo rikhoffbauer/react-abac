@@ -129,12 +129,12 @@ The `AbacProvider` is used to provide the `AllowedTo` component and the `useAbac
 
 ##### Props
 
-| name        | type       | required | description                                                                 |
-| ----------- | ---------- | -------- | --------------------------------------------------------------------------- |
-| rules       | `object`   | yes      | An object describing the permission rules, see the [Rules section](#rules). |
-| user        | `object`   | no       | The logged in user.                                                         |
-| roles       | `string[]` | no       | The roles of the logged in user.                                            |
-| permissions | `string[]` | no       | The permissions of the logged in user.                                      |
+| name | type | required | description |
+| --- | --- | --- | --- |
+| rules | `object` | yes | An object describing the permission rules, see the [Rules section](#rules). |
+| user | `object` | no | The logged in user. |
+| roles | `string[]` | no | The roles of the logged in user. |
+| permissions | `string[]` | no | The permissions of the logged in user. |
 
 ##### Example usage
 
@@ -164,12 +164,12 @@ The `AllowedTo` component is used to restrict certain component trees based on w
 
 ##### Props
 
-| name    | type                   | required | description                                                                                                                                                                                 |
-| ------- | ---------------------- | -------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| perform | `string` or `string[]` | yes      | A single permission or a list of permissions, if a list is provided all permissions are required.                                                                                           |
-| yes     | `React.ComponentType`  | no       | The jsx element to render if permission is granted.                                                                                                                                         |
-| no      | `React.ComponentType`  | no       | The jsx element to render if permission is **not** granted.                                                                                                                                 |
-| data    | `any`                  | no       | Data to pass to abac rules as first argument. E.g. When editing a post you might want to pass the post model as data so the abac rule can check if the post is owned by the logged in user. |
+| name | type | required | description |
+| --- | --- | --- | --- |
+| perform | `string` or `string[]` | yes | A single permission or a list of permissions, if a list is provided all permissions are required. |
+| yes | `React.ComponentType` | no | The jsx element to render if permission is granted. |
+| no | `React.ComponentType` | no | The jsx element to render if permission is **not** granted. |
+| data | `any` | no | Data to pass to abac rules as first argument. E.g. When editing a post you might want to pass the post model as data so the abac rule can check if the post is owned by the logged in user. |
 
 ##### Example usage
 
@@ -205,8 +205,8 @@ See [AllowedTo](#allowedto).
 
 ##### Properties
 
-| name               | type                                                                      | description                                               |
-| ------------------ | ------------------------------------------------------------------------- | --------------------------------------------------------- |
+| name | type | description |
+| --- | --- | --- |
 | userHasPermissions | <code>(permissions: string &#124; string[], data?: any) => boolean</code> | Checks if the logged in user has one or more permissions. |
 
 ##### Example usage
@@ -231,11 +231,11 @@ A decorator/hoc that can be used to allow or deny access to a component.
 
 ##### Options
 
-| name           | type                         | description                                                                                                           |
-| -------------- | ---------------------------- | --------------------------------------------------------------------------------------------------------------------- |
-| permissions    | `string` or `string[]`       | yes                                                                                                                   | A single permission or a list of permissions, if a list is provided all permissions are required. |
-| mapPropsToData | `(props: Props) => Data`     | Maps the props provided to the component to data passed to abac rules (like the data prop on the AllowedTo component) |
-| noAccess       | `React.ComponentType<Props>` | Component that should be rendered if no permission is granted                                                         |
+| name | type | description |
+| --- | --- | --- | --- |
+| permissions | `string` or `string[]` | yes | A single permission or a list of permissions, if a list is provided all permissions are required. |
+| mapPropsToData | `(props: Props) => Data` | Maps the props provided to the component to data passed to abac rules (like the data prop on the AllowedTo component) |
+| noAccess | `React.ComponentType<Props>` | Component that should be rendered if no permission is granted |
 
 ##### Example usage
 
@@ -246,7 +246,7 @@ const EditPost = (props: { post: Post }) => {
 
 secured({
     permissions: permissions.EDIT_POST,
-    mapPropsToData: props => props.post,
+    mapPropsToData: (props) => props.post,
     noAccess: () => <div>You are not allowed to edit this post</div>,
 })(EditPost);
 ```
@@ -256,7 +256,7 @@ or
 ```typescript jsx
 @secured({
     permissions: permissions.EDIT_POST,
-    mapPropsToData: props => props.post,
+    mapPropsToData: (props) => props.post,
     noAccess: () => <div>You are not allowed to edit this post</div>,
 })
 class EditPost extends React.Component<{ post: Post }> {

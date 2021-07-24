@@ -6,7 +6,7 @@ const rolesHavePermissions = <
     Role extends string,
     Permission extends string,
     User,
-    Data
+    Data,
 >(
     rules: Rules<Role, Permission, User>,
     roles: Role[],

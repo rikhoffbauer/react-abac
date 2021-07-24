@@ -1,6 +1,7 @@
 import React from "react";
+
 import { Post } from "../models/Post";
-import { findUserById, User } from "../models/User";
+import { User, findUserById } from "../models/User";
 import UserSelect from "./UserSelect";
 
 interface Props {

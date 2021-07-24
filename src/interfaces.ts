@@ -4,12 +4,12 @@ export type AbacPredicate<User = any, Data = any> = (
 ) => boolean | undefined;
 
 export type Rules<Role extends string, Permission extends string, User> = {
-    [R in Role]?: PermissionMap<Permission, User>
+    [R in Role]?: PermissionMap<Permission, User>;
 } &
     PermissionMap<Permission, User>;
 
 export type PermissionMap<Permission extends string, User> = {
-    [P in Permission]?: Rule<User, any>
+    [P in Permission]?: Rule<User, any>;
 };
 
-export type Rule<User, Data> = boolean | (AbacPredicate<User, Data>);
+export type Rule<User, Data> = boolean | AbacPredicate<User, Data>;

@@ -5,7 +5,7 @@ const roleHasPermission = <
     Role extends string,
     Permission extends string,
     User,
-    Data
+    Data,
 >(
     rules: Rules<Role, Permission, User>,
     role: Role,
@@ -20,7 +20,7 @@ const roleHasPermission = <
 
     // rule for the provided permission for the provided role
     // true, false or (data, user) => boolean
-    const rule = rules[role][permission as any];
+    const rule = rules[role]![permission as any];
 
     return evaluateRule(rule, user, data);
 };

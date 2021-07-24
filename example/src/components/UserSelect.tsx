@@ -1,5 +1,6 @@
 import React from "react";
-import { findUserById, User, users } from "../models/User";
+
+import { User, findUserById, users } from "../models/User";
 
 interface Props {
     value: User;
@@ -7,9 +8,8 @@ interface Props {
 }
 
 const UserSelect = ({ value, onChange }: Props) => {
-    const handleUserSelectChange: React.ChangeEventHandler<
-        HTMLSelectElement
-    > = e => onChange(findUserById(e.target.value));
+    const handleUserSelectChange: React.ChangeEventHandler<HTMLSelectElement> =
+        e => onChange(findUserById(e.target.value));
 
     return (
         <select value={value.id} onChange={handleUserSelectChange}>
