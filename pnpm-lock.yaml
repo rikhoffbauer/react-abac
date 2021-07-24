@@ -1,8 +1,8 @@
 lockfileVersion: 5.3
 
 specifiers:
-  '@commitlint/cli': ^13.1.0
-  '@commitlint/config-conventional': ^13.1.0
+  '@commitlint/cli': 13.1.0
+  '@commitlint/config-conventional': 13.1.0
   '@prettier/plugin-xml': ^1.0.2
   '@semantic-release/changelog': ^5.0.1
   '@semantic-release/commit-analyzer': ^8.0.1
