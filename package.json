@@ -1,6 +1,6 @@
 {
     "name": "react-abac",
-    "version": "0.1.0",
+    "version": "0.0.149",
     "description": "Attribute Based Access Control and Role Based Access Control for React",
     "keywords": ["abac", "rbac", "react", "typescript"],
     "bugs": {
