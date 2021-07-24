@@ -1,3 +1,5 @@
+[![Rate on Openbase](https://badges.openbase.com/js/rating/react-abac.svg)](https://openbase.com/js/react-abac?utm_source=embedded&utm_medium=badge&utm_campaign=rate-badge)
+
 # react-abac
 
 Attribute Based Access Control and Role Based Access Control for React.
