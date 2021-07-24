@@ -1,3 +1,4 @@
-build/
+example/build/
+dist/
 coverage/
-package-lock.json
+pnpm-lock.yaml
