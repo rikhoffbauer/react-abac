@@ -31,7 +31,7 @@ specifiers:
   import-sort-style-custom: 2.1.2
   import-sort-style-module: 6.0.0
   jest: 27.0.6
-  jest-cli: ^27.0.6
+  jest-cli: 27.0.6
   lint-staged: 11.0.1
   prettier: 2.3.2
   prettier-plugin-import-sort: 0.0.7
