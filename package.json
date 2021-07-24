@@ -1,6 +1,6 @@
 {
     "name": "react-abac",
-    "version": "0.0.153",
+    "version": "0.0.154",
     "description": "Attribute Based Access Control and Role Based Access Control for React",
     "keywords": ["abac", "rbac", "react", "typescript"],
     "bugs": {
@@ -154,8 +154,8 @@
         "prettier": "2.3.2",
         "prettier-plugin-import-sort": "0.0.7",
         "prettier-plugin-sh": "0.7.1",
-        "react": "17.0.1",
-        "react-dom": "17.0.1",
+        "react": "17.0.2",
+        "react-dom": "17.0.2",
         "rimraf": "3.0.2",
         "rollup": "2.38.0",
         "rollup-plugin-commonjs": "10.1.0",
