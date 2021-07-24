@@ -5,10 +5,10 @@ import {
     AbacProvider,
     AbacProviderProps,
     AllowedTo,
-    Rules,
-    useAbac,
     NotAllowedTo,
+    Rules,
     secured,
+    useAbac,
 } from "../src";
 
 describe("Functional tests", () => {
@@ -84,7 +84,7 @@ describe("Functional tests", () => {
                 user: User;
             }
 
-            const No = ({  }: Props) => <div>no</div>;
+            const No = ({}: Props) => <div>no</div>;
 
             @secured({
                 permissions: Permission.EDIT_USER,
@@ -110,8 +110,8 @@ describe("Functional tests", () => {
             interface Props {
                 user: User;
             }
-            const Yes = ({  }: Props) => <div>yes</div>;
-            const No = ({  }: Props) => <div>no</div>;
+            const Yes = ({}: Props) => <div>yes</div>;
+            const No = ({}: Props) => <div>no</div>;
             const Secured = secured({
                 permissions: Permission.EDIT_USER,
                 mapPropsToData: (props: Props) => props.user,
@@ -131,8 +131,8 @@ describe("Functional tests", () => {
             interface Props {
                 user: User;
             }
-            const Yes = ({  }: Props) => <div>yes</div>;
-            const No = ({  }: Props) => <div>no</div>;
+            const Yes = ({}: Props) => <div>yes</div>;
+            const No = ({}: Props) => <div>no</div>;
             const Secured = secured({
                 permissions: Permission.EDIT_USER,
                 mapPropsToData: (props: Props) => props.user,
@@ -207,7 +207,7 @@ describe("Functional tests", () => {
                 const TestComponent = () => {
                     const { userHasPermissions } = useAbac();
 
-                    spyOn(console, `error`);
+                    jest.spyOn(console, `error`);
 
                     expect(
                         userHasPermissions(Permission.VIEW_HOMEPAGE, admin),
@@ -283,11 +283,11 @@ describe("Functional tests", () => {
                         </AllowedTo>,
                     );
 
-                spyOn(console, "error");
+                jest.spyOn(console, "error");
 
                 const wrapper = renderWithoutProvider();
 
-                expect(wrapper.text()).toBe(null);
+                expect(wrapper.text()).toBe("");
                 expect(console.error).toHaveBeenCalled();
             });
 

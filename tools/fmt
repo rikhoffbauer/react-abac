@@ -1,0 +1,3 @@
+sort-package-json
+eslint --no-error-on-unmatched-pattern --fix --config .eslintrc.js "src/**.ts" "src/**.tsx"
+prettier --loglevel warn --write "**/*.{js,jsx,ts,tsx,md,json,yml,yaml,bash,sh,zsh,xml,iml}" "tools/*"

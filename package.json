@@ -1,56 +1,162 @@
 {
     "name": "react-abac",
     "version": "0.0.149",
-    "description": "",
-    "main": "dist/index.js",
-    "module": "dist/index.es.js",
-    "jsnext:main": "dist/index.es.js",
-    "types": "dist/index.d.ts",
-    "scripts": {
-        "test": "jest --config jest.config.json",
-        "build": "rollup -c",
-        "prestart": "sh link-to-example.sh",
-        "start": "rollup -c -w",
-        "prepack": "npm run build",
-        "prepare": "npm run format && npm run build",
-        "format": "prettier --write '**/*.json' '**/*.md' '**/*.ts' '**/*.tsx' '**/*.yaml' '**/*.yml'"
-    },
-    "files": [
-        "dist"
-    ],
-    "keywords": [
-        "abac",
-        "rbac",
-        "react",
-        "typescript"
-    ],
+    "description": "Attribute Based Access Control and Role Based Access Control for React",
+    "keywords": ["abac", "rbac", "react", "typescript"],
     "bugs": {
-        "url": "https://github.com/facebook/react/issues"
+        "url": "https://github.com/rikhoffbauer/react-abac/issues"
     },
-    "author": "Rik Hoffbauer",
     "repository": {
         "type": "git",
         "url": "git+https://github.com/jewetnitg/react-abac.git"
     },
     "license": "ISC",
-    "peerDependencies": {
-        "react": "^16.8.1 || ^17.0.0"
+    "author": "Rik Hoffbauer",
+    "main": "dist/index.js",
+    "module": "dist/index.es.js",
+    "jsnext:main": "dist/index.es.js",
+    "types": "dist/index.d.ts",
+    "typings": "./dist/index.d.ts",
+    "files": ["dist", "README.md"],
+    "scripts": {
+        "fmt": "tools/fmt",
+        "test": "jest --coverage",
+        "prebuild": "rimraf dist",
+        "build": "rollup -c",
+        "build:watch": "tsc --watch",
+        "semantic-release": "semantic-release",
+        "prestart": "sh link-to-example.sh",
+        "start": "rollup -c -w",
+        "start:prod": "node dist/main",
+        "start:dev": "tsc-watch --onSuccess \"node dist/main.js\"",
+        "start:debug": "tsc-watch --onSuccess \"node --inspect-brk dist/main.js\"",
+        "prepack": "pnpm run build",
+        "prepare": "pnpm run fmt && pnpm run build"
+    },
+    "husky": {
+        "skipCI": false,
+        "hooks": {
+            "pre-commit": "lint-staged",
+            "commit-msg": "commitlint -E HUSKY_GIT_PARAMS"
+        }
+    },
+    "commitlint": {
+        "extends": ["@commitlint/config-conventional"]
+    },
+    "lint-staged": {
+        "*.{js,jsx,ts,tsx,md,json,yml,yaml,bash,sh,zsh,xml,iml,html,css,scss}": [
+            "prettier --loglevel warn --write"
+        ]
+    },
+    "config": {
+        "commitizen": {
+            "path": "cz-conventional-changelog"
+        }
+    },
+    "prettier": {
+        "arrowParens": "avoid",
+        "endOfLine": "lf",
+        "plugins": [
+            "prettier-plugin-sh",
+            "@prettier/plugin-xml",
+            "prettier-plugin-import-sort"
+        ],
+        "printWidth": 80,
+        "tabWidth": 4,
+        "trailingComma": "all",
+        "overrides": [
+            {
+                "files": "*.md",
+                "options": {
+                    "parser": "markdown",
+                    "printWidth": 70,
+                    "proseWrap": "never",
+                    "trailingComma": "none",
+                    "useTabs": false
+                }
+            },
+            {
+                "files": ["*.json"],
+                "options": {
+                    "parser": "json",
+                    "quoteProps": "consistent",
+                    "singleQuote": false,
+                    "tabWidth": 4,
+                    "trailingComma": "none"
+                }
+            },
+            {
+                "files": ["*.bash", "*.sh", "*.zsh", "tools/*"],
+                "options": {
+                    "parser": "sh"
+                }
+            },
+            {
+                "files": ["*.xml", "*.iml"],
+                "options": {
+                    "parser": "xml",
+                    "printWidth": 80,
+                    "tabWidth": 4,
+                    "xmlWhitespaceSensitivity": "strict"
+                }
+            }
+        ]
+    },
+    "jest": {
+        "collectCoverageFrom": ["**/*.(t|j)sx?"],
+        "coverageDirectory": "./coverage",
+        "moduleFileExtensions": ["js", "json", "ts", "tsx"],
+        "moduleNameMapper": {
+            "~/(.*)": "<rootDir>/src/$1"
+        },
+        "preset": "ts-jest",
+        "rootDir": ".",
+        "setupFiles": ["<rootDir>/test/setupTests.ts"],
+        "testEnvironment": "jsdom",
+        "testRegex": "(.*\\.(spec))\\.(ts|tsx|js)$",
+        "transform": {
+            "^.+\\.(t|j)s$": "ts-jest"
+        }
     },
     "devDependencies": {
+        "@commitlint/cli": "^13.1.0",
+        "@commitlint/config-conventional": "^13.1.0",
+        "@prettier/plugin-xml": "^1.0.2",
+        "@semantic-release/changelog": "^5.0.1",
+        "@semantic-release/commit-analyzer": "^8.0.1",
+        "@semantic-release/git": "^9.0.0",
+        "@semantic-release/github": "^7.2.3",
+        "@semantic-release/release-notes-generator": "^9.0.3",
         "@types/enzyme": "3.10.9",
         "@types/enzyme-adapter-react-16": "1.0.6",
         "@types/jest": "26.0.24",
         "@types/node": "14.17.5",
         "@types/react": "17.0.14",
         "@types/react-dom": "17.0.9",
+        "@typescript-eslint/eslint-plugin": "^4.28.4",
+        "@typescript-eslint/parser": "^4.28.4",
+        "@wojtekmaj/enzyme-adapter-react-17": "^0.6.3",
+        "commitizen": "^4.2.4",
+        "cz-conventional-changelog": "^3.3.0",
         "enzyme": "3.11.0",
         "enzyme-adapter-react-16": "1.15.6",
+        "eslint": "^7.31.0",
+        "eslint-config-prettier": "^8.3.0",
+        "eslint-plugin-prettier": "^3.4.0",
         "husky": "7.0.1",
+        "import-sort": "^6.0.0",
+        "import-sort-parser-typescript": "^6.0.0",
+        "import-sort-style-custom": "^2.1.2",
+        "import-sort-style-module": "^6.0.0",
         "jest": "27.0.6",
+        "jest-cli": "^27.0.6",
         "lint-staged": "11.0.1",
         "prettier": "2.3.2",
+        "prettier-plugin-import-sort": "^0.0.7",
+        "prettier-plugin-sh": "^0.7.1",
         "react": "17.0.1",
         "react-dom": "17.0.1",
+        "rimraf": "^3.0.2",
         "rollup": "2.38.0",
         "rollup-plugin-commonjs": "10.1.0",
         "rollup-plugin-node-resolve": "5.2.0",
@@ -60,8 +166,54 @@
         "rollup-plugin-typescript2": "0.30.0",
         "rollup-plugin-uglify": "6.0.4",
         "rollup-plugin-url": "3.0.1",
+        "semantic-release": "github:rikhoffbauer/semantic-release",
+        "sort-package-json": "^1.50.0",
         "ts-jest": "27.0.4",
+        "ts-node": "^10.1.0",
+        "tsc-watch": "^4.4.0",
+        "tslib": "^2.3.0",
         "typescript": "4.3.5"
     },
-    "dependencies": {}
+    "peerDependencies": {
+        "react": "^16.8.1 || ^17.0.0"
+    },
+    "importSort": {
+        ".js, .jsx, .es6, .es, .mjs": {
+            "parser": "babylon",
+            "style": "import-sort-style-custom"
+        },
+        ".ts, .tsx": {
+            "parser": "typescript",
+            "style": "import-sort-style-custom"
+        }
+    },
+    "release": {
+        "branches": [
+            { "name": "main", "prerelease": false },
+            { "name": "next", "prerelease": "beta", "channel": "next" }
+        ],
+        "plugins": [
+            "@semantic-release/commit-analyzer",
+            "@semantic-release/release-notes-generator",
+            ["@semantic-release/npm"],
+            [
+                "@semantic-release/changelog",
+                {
+                    "changelogFile": "CHANGELOG.md"
+                }
+            ],
+            ["@semantic-release/github"],
+            [
+                "@semantic-release/git",
+                {
+                    "assets": ["package.json", "dist"],
+                    "message": "chore(release): ${nextRelease.version} [skip ci]\n\n${nextRelease.notes}"
+                }
+            ]
+        ]
+    },
+    "wallaby": {
+        "autoDetect": true,
+        "runMode": "onsave"
+    }
 }

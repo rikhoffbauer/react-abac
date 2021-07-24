@@ -7,7 +7,7 @@ node_modules=${project_dir}/node_modules
 function link_dependency() {
     name=$1
     echo "Linking $name to example"
-    cd ${node_modules}/${name} && npm link > /dev/null 2>&1 && cd ${example_dir} && npm link ${name}  > /dev/null 2>&1
+    cd ${node_modules}/${name} && npm link > /dev/null 2>&1 && cd ${example_dir} && npm link ${name} > /dev/null 2>&1
 }
 
 npm link

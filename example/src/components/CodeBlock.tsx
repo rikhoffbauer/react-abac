@@ -2,8 +2,8 @@ import * as React from "react";
 import { useState } from "react";
 import { base16AteliersulphurpoolLight } from "react-syntax-highlighter/dist/styles/prism";
 
-const SyntaxHighlighter = require("react-syntax-highlighter/dist/prism")
-    .default;
+const SyntaxHighlighter =
+    require("react-syntax-highlighter/dist/prism").default;
 
 const CodeBlock: React.FC = ({ children }) => {
     const [showCode, setShowCode] = useState(false);

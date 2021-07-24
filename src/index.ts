@@ -1,4 +1,5 @@
 import React from "react";
+
 import create, {
     AbacContextProps,
     AbacProviderProps,
@@ -24,7 +25,7 @@ export const {
     AbacProvider,
     AbacContext,
     useAbac,
-} = (create() as unknown) as ({
+} = create() as unknown as {
     AbacContextDefaults: AbacContextProps<any>;
     AbacContext: AbacContextProps<any>;
     AllowedTo: <Permission extends string>(
@@ -40,4 +41,4 @@ export const {
     secured: <Permission extends string, Props, Data>(
         options: SecuredOptions<Permission, Props, Data>,
     ) => <T extends React.ComponentType<Props>>(Component: T) => T;
-});
+};
