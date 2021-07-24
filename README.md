@@ -10,6 +10,12 @@ Attribute Based Access Control and Role Based Access Control for React.
 npm install react-abac
 ```
 
+## Example
+
+An example implementation can be found on codesandbox.io.
+
+[![Edit react-abac example](https://codesandbox.io/static/img/play-codesandbox.svg)](https://codesandbox.io/s/react-abac-example-njzig?fontsize=14&hidenavigation=1&theme=dark)
+
 ## Tutorial
 
 A short tutorial video is available.
