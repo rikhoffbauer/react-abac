@@ -2,12 +2,7 @@
     "name": "react-abac",
     "version": "0.1.2",
     "description": "Attribute Based Access Control and Role Based Access Control for React",
-    "keywords": [
-        "abac",
-        "rbac",
-        "react",
-        "typescript"
-    ],
+    "keywords": ["abac", "rbac", "react", "typescript"],
     "bugs": {
         "url": "https://github.com/rikhoffbauer/react-abac/issues"
     },
@@ -22,10 +17,7 @@
     "jsnext:main": "dist/index.es.js",
     "types": "dist/index.d.ts",
     "typings": "./dist/index.d.ts",
-    "files": [
-        "dist",
-        "README.md"
-    ],
+    "files": ["dist", "README.md"],
     "scripts": {
         "fmt": "tools/fmt",
         "test": "jest --coverage",
@@ -38,8 +30,7 @@
         "start:prod": "node dist/main",
         "start:dev": "tsc-watch --onSuccess \"node dist/main.js\"",
         "start:debug": "tsc-watch --onSuccess \"node --inspect-brk dist/main.js\"",
-        "prepack": "pnpm run build",
-        "prepare": "pnpm run build"
+        "prepublish": "pnpm run build"
     },
     "husky": {
         "skipCI": false,
@@ -49,9 +40,7 @@
         }
     },
     "commitlint": {
-        "extends": [
-            "@commitlint/config-conventional"
-        ]
+        "extends": ["@commitlint/config-conventional"]
     },
     "lint-staged": {
         "*.{js,jsx,ts,tsx,md,json,yml,yaml,bash,sh,zsh,xml,iml,html,css,scss}": [
@@ -86,9 +75,7 @@
                 }
             },
             {
-                "files": [
-                    "*.json"
-                ],
+                "files": ["*.json"],
                 "options": {
                     "parser": "json",
                     "quoteProps": "consistent",
@@ -98,21 +85,13 @@
                 }
             },
             {
-                "files": [
-                    "*.bash",
-                    "*.sh",
-                    "*.zsh",
-                    "tools/*"
-                ],
+                "files": ["*.bash", "*.sh", "*.zsh", "tools/*"],
                 "options": {
                     "parser": "sh"
                 }
             },
             {
-                "files": [
-                    "*.xml",
-                    "*.iml"
-                ],
+                "files": ["*.xml", "*.iml"],
                 "options": {
                     "parser": "xml",
                     "printWidth": 80,
@@ -123,24 +102,15 @@
         ]
     },
     "jest": {
-        "collectCoverageFrom": [
-            "**/*.(t|j)sx?"
-        ],
+        "collectCoverageFrom": ["**/*.(t|j)sx?"],
         "coverageDirectory": "./coverage",
-        "moduleFileExtensions": [
-            "js",
-            "json",
-            "ts",
-            "tsx"
-        ],
+        "moduleFileExtensions": ["js", "json", "ts", "tsx"],
         "moduleNameMapper": {
             "~/(.*)": "<rootDir>/src/$1"
         },
         "preset": "ts-jest",
         "rootDir": ".",
-        "setupFiles": [
-            "<rootDir>/test/setupTests.ts"
-        ],
+        "setupFiles": ["<rootDir>/test/setupTests.ts"],
         "testEnvironment": "jsdom",
         "testRegex": "(.*\\.(spec))\\.(ts|tsx|js)$",
         "transform": {
@@ -238,16 +208,11 @@
                     "changelogFile": "CHANGELOG.md"
                 }
             ],
-            [
-                "@semantic-release/github"
-            ],
+            ["@semantic-release/github"],
             [
                 "@semantic-release/git",
                 {
-                    "assets": [
-                        "package.json",
-                        "CHANGELOG.md"
-                    ],
+                    "assets": ["package.json", "CHANGELOG.md"],
                     "message": "chore(release): ${nextRelease.version} [skip ci]\n\n${nextRelease.notes}"
                 }
             ]
