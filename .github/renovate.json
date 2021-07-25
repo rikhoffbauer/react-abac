@@ -2,7 +2,7 @@
     "extends": ["config:base", ":semanticCommitType(chore)"],
     "bumpVersion": "patch",
     "stabilityDays": 3,
-    "baseBranches": ["master"],
+    "baseBranches": ["main"],
     "labels": ["bot(renovate)", "impact(low)"],
     "automerge": true,
     "semanticCommits": true,
