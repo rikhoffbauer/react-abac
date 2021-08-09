@@ -32,7 +32,7 @@ specifiers:
   import-sort-style-module: 6.0.0
   jest: 27.0.6
   jest-cli: ^27.0.6
-  lint-staged: 11.0.1
+  lint-staged: 11.1.2
   prettier: 2.3.2
   prettier-plugin-import-sort: 0.0.7
   prettier-plugin-sh: 0.7.1
@@ -88,7 +88,7 @@ devDependencies:
   import-sort-style-module: 6.0.0
   jest: 27.0.6_ts-node@10.1.0
   jest-cli: 27.0.6_ts-node@10.1.0
-  lint-staged: 11.0.1
+  lint-staged: 11.1.2
   prettier: 2.3.2
   prettier-plugin-import-sort: 0.0.7_prettier@2.3.2
   prettier-plugin-sh: 0.7.1_prettier@2.3.2
@@ -4638,8 +4638,8 @@ packages:
     resolution: {integrity: sha1-HADHQ7QzzQpOgHWPe2SldEDZ/wA=}
     dev: true
 
-  /lint-staged/11.0.1:
-    resolution: {integrity: sha512-RkTA1ulE6jAGFskxpGAwxfVRXjHp7D9gFg/+KMARUWMPiVFP0t28Em2u0gL8sA0w3/ck3TC57F2v2RNeQ5XPnw==}
+  /lint-staged/11.1.2:
+    resolution: {integrity: sha512-6lYpNoA9wGqkL6Hew/4n1H6lRqF3qCsujVT0Oq5Z4hiSAM7S6NksPJ3gnr7A7R52xCtiZMcEUNNQ6d6X5Bvh9w==}
     hasBin: true
     dependencies:
       chalk: 4.1.2
@@ -4647,7 +4647,6 @@ packages:
       commander: 7.2.0
       cosmiconfig: 7.0.0
       debug: 4.3.2
-      dedent: 0.7.0
       enquirer: 2.3.6
       execa: 5.1.1
       listr2: 3.11.0_enquirer@2.3.6
