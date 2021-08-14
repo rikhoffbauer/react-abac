@@ -53,7 +53,7 @@ specifiers:
   ts-jest: 27.0.4
   ts-node: 10.2.0
   tsc-watch: 4.4.0
-  tslib: 2.3.0
+  tslib: 2.3.1
   typescript: 4.3.5
 
 devDependencies:
@@ -109,7 +109,7 @@ devDependencies:
   ts-jest: 27.0.4_52cc4273aa16028085013af47e479e10
   ts-node: 10.2.0_3cddbd81c3a53971a7cbc3c93cba6165
   tsc-watch: 4.4.0_typescript@4.3.5
-  tslib: 2.3.0
+  tslib: 2.3.1
   typescript: 4.3.5
 
 packages:
@@ -6751,6 +6751,10 @@ packages:
 
   /tslib/2.3.0:
     resolution: {integrity: sha512-N82ooyxVNm6h1riLCoyS9e3fuJ3AMG2zIZs2Gd1ATcSFjSA23Q0fzjjZeh0jbJvWVDZ0cJT8yaNNaaXHzueNjg==}
+    dev: true
+
+  /tslib/2.3.1:
+    resolution: {integrity: sha512-77EbyPPpMz+FRFRuAFlWMtmgUWGe9UOG2Z25NqCwiIjRhOf5iKGuzSe5P2w1laq+FkRy4p+PCuVkJSGkzTEKVw==}
     dev: true
 
   /tsutils/3.21.0_typescript@4.3.5:
