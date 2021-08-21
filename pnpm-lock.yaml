@@ -13,7 +13,7 @@ specifiers:
   '@types/enzyme-adapter-react-16': 1.0.6
   '@types/jest': 27.0.1
   '@types/node': 14.17.9
-  '@types/react': 17.0.18
+  '@types/react': 17.0.19
   '@types/react-dom': 17.0.9
   '@typescript-eslint/eslint-plugin': 4.29.2
   '@typescript-eslint/parser': 4.29.2
@@ -69,7 +69,7 @@ devDependencies:
   '@types/enzyme-adapter-react-16': 1.0.6
   '@types/jest': 27.0.1
   '@types/node': 14.17.9
-  '@types/react': 17.0.18
+  '@types/react': 17.0.19
   '@types/react-dom': 17.0.9
   '@typescript-eslint/eslint-plugin': 4.29.2_b01b7137116ac50f0745961d9cf72d34
   '@typescript-eslint/parser': 4.29.2_eslint@7.32.0+typescript@4.3.5
@@ -1297,8 +1297,8 @@ packages:
       csstype: 3.0.8
     dev: true
 
-  /@types/react/17.0.18:
-    resolution: {integrity: sha512-YTLgu7oS5zvSqq49X5Iue5oAbVGhgPc5Au29SJC4VeE17V6gASoOxVkUDy9pXFMRFxCWCD9fLeweNFizo3UzOg==}
+  /@types/react/17.0.19:
+    resolution: {integrity: sha512-sX1HisdB1/ZESixMTGnMxH9TDe8Sk709734fEQZzCV/4lSu9kJCPbo2PbTRoZM+53Pp0P10hYVyReUueGwUi4A==}
     dependencies:
       '@types/prop-types': 15.7.4
       '@types/scheduler': 0.16.2
