@@ -52,7 +52,7 @@ specifiers:
   sort-package-json: 1.50.0
   ts-jest: 27.0.5
   ts-node: 10.2.1
-  tsc-watch: 4.4.0
+  tsc-watch: 4.5.0
   tslib: 2.3.1
   typescript: 4.3.5
 
@@ -108,7 +108,7 @@ devDependencies:
   sort-package-json: 1.50.0
   ts-jest: 27.0.5_92306e36c1a4cf876b1cd4839a977b9c
   ts-node: 10.2.1_3cddbd81c3a53971a7cbc3c93cba6165
-  tsc-watch: 4.4.0_typescript@4.3.5
+  tsc-watch: 4.5.0_typescript@4.3.5
   tslib: 2.3.1
   typescript: 4.3.5
 
@@ -6658,8 +6658,8 @@ packages:
       yn: 3.1.1
     dev: true
 
-  /tsc-watch/4.4.0_typescript@4.3.5:
-    resolution: {integrity: sha512-+0Yey6ptOOXAnt44OKTk2/EnQnmA0auL7VWXm9d9abMS4tabt0Xdr9B4AK6OJbWAre9ZdLA81+Nk8sz9unptyA==}
+  /tsc-watch/4.5.0_typescript@4.3.5:
+    resolution: {integrity: sha512-aXhN4jY+1YEcn/NwCQ/+fHqU43EqOpW+pS+933EPsVEsrKhvyrodPDIjQsk1a1niFrabAK3RIBrRbAslVefEbQ==}
     engines: {node: '>=8.17.0'}
     hasBin: true
     peerDependencies:
