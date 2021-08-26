@@ -1,6 +1,6 @@
 {
     "name": "react-abac",
-    "version": "0.1.24",
+    "version": "0.1.25",
     "description": "Attribute Based Access Control and Role Based Access Control for React",
     "keywords": ["abac", "rbac", "react", "typescript"],
     "bugs": {
@@ -142,7 +142,7 @@
         "eslint": "7.32.0",
         "eslint-config-prettier": "8.3.0",
         "eslint-plugin-prettier": "3.4.1",
-        "husky": "7.0.1",
+        "husky": "7.0.2",
         "import-sort": "6.0.0",
         "import-sort-parser-typescript": "6.0.0",
         "import-sort-style-custom": "2.1.2",
