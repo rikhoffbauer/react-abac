@@ -30,8 +30,8 @@ specifiers:
   import-sort-parser-typescript: 6.0.0
   import-sort-style-custom: 2.1.2
   import-sort-style-module: 6.0.0
-  jest: 27.0.6
-  jest-cli: ^27.0.6
+  jest: 27.1.0
+  jest-cli: 27.1.0
   lint-staged: 11.1.2
   prettier: 2.3.2
   prettier-plugin-import-sort: 0.0.7
@@ -86,7 +86,7 @@ devDependencies:
   import-sort-parser-typescript: 6.0.0
   import-sort-style-custom: 2.1.2
   import-sort-style-module: 6.0.0
-  jest: 27.0.6_ts-node@10.2.1
+  jest: 27.1.0_ts-node@10.2.1
   jest-cli: 27.1.0_ts-node@10.2.1
   lint-staged: 11.1.2
   prettier: 2.3.2
@@ -106,7 +106,7 @@ devDependencies:
   rollup-plugin-url: 3.0.1_rollup@2.56.3
   semantic-release: github.com/rikhoffbauer/semantic-release/9a7bff0cfa08c9e6940b1ad7eb75959b34f051cc
   sort-package-json: 1.50.0
-  ts-jest: 27.0.5_44d7b1418ce5cb6e328ddeca24848cba
+  ts-jest: 27.0.5_d6279bcaf6e2c6aa91a58343d133ee67
   ts-node: 10.2.1_2ef58c7cac9b2dda0a182264331a6a5f
   tsc-watch: 4.5.0_typescript@4.4.2
   tslib: 2.3.1
@@ -4448,8 +4448,8 @@ packages:
       supports-color: 8.1.1
     dev: true
 
-  /jest/27.0.6_ts-node@10.2.1:
-    resolution: {integrity: sha512-EjV8aETrsD0wHl7CKMibKwQNQc3gIRBXlTikBmmHUeVMKaPFxdcUIBfoDqTSXDoGJIivAYGqCWVlzCSaVjPQsA==}
+  /jest/27.1.0_ts-node@10.2.1:
+    resolution: {integrity: sha512-pSQDVwRSwb109Ss13lcMtdfS9r8/w2Zz8+mTUA9VORD66GflCdl8nUFCqM96geOD2EBwWCNURrNAfQsLIDNBdg==}
     engines: {node: ^10.13.0 || ^12.13.0 || ^14.15.0 || >=15.0.0}
     hasBin: true
     peerDependencies:
@@ -6591,7 +6591,7 @@ packages:
     engines: {node: '>=0.10.0'}
     dev: true
 
-  /ts-jest/27.0.5_44d7b1418ce5cb6e328ddeca24848cba:
+  /ts-jest/27.0.5_d6279bcaf6e2c6aa91a58343d133ee67:
     resolution: {integrity: sha512-lIJApzfTaSSbtlksfFNHkWOzLJuuSm4faFAfo5kvzOiRAuoN4/eKxVJ2zEAho8aecE04qX6K1pAzfH5QHL1/8w==}
     engines: {node: ^10.13.0 || ^12.13.0 || ^14.15.0 || >=15.0.0}
     hasBin: true
@@ -6612,7 +6612,7 @@ packages:
       '@types/jest': 27.0.1
       bs-logger: 0.2.6
       fast-json-stable-stringify: 2.1.0
-      jest: 27.0.6_ts-node@10.2.1
+      jest: 27.1.0_ts-node@10.2.1
       jest-util: 27.1.0
       json5: 2.2.0
       lodash: 4.17.21
