@@ -49,7 +49,7 @@ specifiers:
   rollup-plugin-uglify: 6.0.4
   rollup-plugin-url: 3.0.1
   semantic-release: github:rikhoffbauer/semantic-release
-  sort-package-json: 1.51.0
+  sort-package-json: 1.52.0
   ts-jest: 27.0.5
   ts-node: 10.2.1
   tsc-watch: 4.5.0
@@ -105,7 +105,7 @@ devDependencies:
   rollup-plugin-uglify: 6.0.4_rollup@2.57.0
   rollup-plugin-url: 3.0.1_rollup@2.57.0
   semantic-release: github.com/rikhoffbauer/semantic-release/9a7bff0cfa08c9e6940b1ad7eb75959b34f051cc
-  sort-package-json: 1.51.0
+  sort-package-json: 1.52.0
   ts-jest: 27.0.5_4983e9b3d1f913260771a36e4b65b206
   ts-node: 10.2.1_1b2a76c7ee49ead6175810e099032438
   tsc-watch: 4.5.0_typescript@4.4.3
@@ -6272,8 +6272,8 @@ packages:
     resolution: {integrity: sha512-855pvK+VkU7PaKYPc+Jjnmt4EzejQHyhhF33q31qG8x7maDzkeFhAAThdCYay11CISO+qAMwjOBP+fPZe0IPyg==}
     dev: true
 
-  /sort-package-json/1.51.0:
-    resolution: {integrity: sha512-+92YlWIDj2nlE4lbO2UPDwU3xEt9sKsk7mV7bOO6GjdEzBPC+i55U5lbyqotVQsUDM2qIwfD6b2sORdwb13iwg==}
+  /sort-package-json/1.52.0:
+    resolution: {integrity: sha512-TsKDXgH3kPsaSrjAszQgg+n2/FDYdPrBrXD4YxMxExpogsi8LCek0YzK/jZ70i5Gi53WcpV+mVzvb5CHB5LpZw==}
     hasBin: true
     dependencies:
       detect-indent: 6.1.0
