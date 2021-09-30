@@ -12,7 +12,7 @@ specifiers:
   '@types/enzyme': 3.10.9
   '@types/enzyme-adapter-react-16': 1.0.6
   '@types/jest': 27.0.2
-  '@types/node': 14.17.19
+  '@types/node': 14.17.20
   '@types/react': 17.0.24
   '@types/react-dom': 17.0.9
   '@typescript-eslint/eslint-plugin': 4.32.0
@@ -68,7 +68,7 @@ devDependencies:
   '@types/enzyme': 3.10.9
   '@types/enzyme-adapter-react-16': 1.0.6
   '@types/jest': 27.0.2
-  '@types/node': 14.17.19
+  '@types/node': 14.17.20
   '@types/react': 17.0.24
   '@types/react-dom': 17.0.9
   '@typescript-eslint/eslint-plugin': 4.32.0_1eacf2495a01e8a68ffa99482308e8ec
@@ -99,7 +99,7 @@ devDependencies:
   rollup-plugin-commonjs: 10.1.0_rollup@2.57.0
   rollup-plugin-node-resolve: 5.2.0_rollup@2.57.0
   rollup-plugin-peer-deps-external: 2.2.4_rollup@2.57.0
-  rollup-plugin-sourcemaps: 0.6.3_aa04220a2d50f84b1aec9ebb64e0a087
+  rollup-plugin-sourcemaps: 0.6.3_0c662fc8319b4f634643313f432c1046
   rollup-plugin-terser: 7.0.2_rollup@2.57.0
   rollup-plugin-typescript2: 0.30.0_rollup@2.57.0+typescript@4.4.3
   rollup-plugin-uglify: 6.0.4_rollup@2.57.0
@@ -107,7 +107,7 @@ devDependencies:
   semantic-release: github.com/rikhoffbauer/semantic-release/9a7bff0cfa08c9e6940b1ad7eb75959b34f051cc
   sort-package-json: 1.52.0
   ts-jest: 27.0.5_4983e9b3d1f913260771a36e4b65b206
-  ts-node: 10.2.1_939a8946a34f58c4fd62eef48ed7c2d9
+  ts-node: 10.2.1_ddf0beaba3e4c42b0be7fbba82e51a9d
   tsc-watch: 4.5.0_typescript@4.4.3
   tslib: 2.3.1
   typescript: 4.4.3
@@ -1338,8 +1338,8 @@ packages:
     resolution: {integrity: sha512-haYyibw4pbteEhkSg0xdDLAI3679L75EJ799ymVrPxOA922bPx3ML59SoDsQ//rHlvqpu+e36kcbR3XRQtFblA==}
     dev: true
 
-  /@types/node/14.17.19:
-    resolution: {integrity: sha512-jjYI6NkyfXykucU6ELEoT64QyKOdvaA6enOqKtP4xUsGY0X0ZUZz29fUmrTRo+7v7c6TgDu82q3GHHaCEkqZwA==}
+  /@types/node/14.17.20:
+    resolution: {integrity: sha512-gI5Sl30tmhXsqkNvopFydP7ASc4c2cLfGNQrVKN3X90ADFWFsPEsotm/8JHSUJQKTHbwowAHtcJPeyVhtKv0TQ==}
     dev: true
 
   /@types/normalize-package-data/2.4.1:
@@ -4198,7 +4198,7 @@ packages:
       jest-validate: 27.2.2
       micromatch: 4.0.4
       pretty-format: 27.2.2
-      ts-node: 10.2.1_939a8946a34f58c4fd62eef48ed7c2d9
+      ts-node: 10.2.1_ddf0beaba3e4c42b0be7fbba82e51a9d
     transitivePeerDependencies:
       - bufferutil
       - canvas
@@ -6026,7 +6026,7 @@ packages:
       rollup: 2.57.0
     dev: true
 
-  /rollup-plugin-sourcemaps/0.6.3_aa04220a2d50f84b1aec9ebb64e0a087:
+  /rollup-plugin-sourcemaps/0.6.3_0c662fc8319b4f634643313f432c1046:
     resolution: {integrity: sha512-paFu+nT1xvuO1tPFYXGe+XnQvg4Hjqv/eIhG8i5EspfYYPBKL57X7iVbfv55aNVASg3dzWvES9dmWsL2KhfByw==}
     engines: {node: '>=10.0.0'}
     peerDependencies:
@@ -6037,7 +6037,7 @@ packages:
         optional: true
     dependencies:
       '@rollup/pluginutils': 3.1.0_rollup@2.57.0
-      '@types/node': 14.17.19
+      '@types/node': 14.17.20
       rollup: 2.57.0
       source-map-resolve: 0.6.0
     dev: true
@@ -6751,7 +6751,7 @@ packages:
       yargs-parser: 20.2.9
     dev: true
 
-  /ts-node/10.2.1_939a8946a34f58c4fd62eef48ed7c2d9:
+  /ts-node/10.2.1_ddf0beaba3e4c42b0be7fbba82e51a9d:
     resolution: {integrity: sha512-hCnyOyuGmD5wHleOQX6NIjJtYVIO8bPP8F2acWkB4W06wdlkgyvJtubO/I9NkI88hCFECbsEgoLc0VNkYmcSfw==}
     engines: {node: '>=12.0.0'}
     hasBin: true
@@ -6771,7 +6771,7 @@ packages:
       '@tsconfig/node12': 1.0.9
       '@tsconfig/node14': 1.0.1
       '@tsconfig/node16': 1.0.2
-      '@types/node': 14.17.19
+      '@types/node': 14.17.20
       acorn: 8.5.0
       acorn-walk: 8.2.0
       arg: 4.1.3
