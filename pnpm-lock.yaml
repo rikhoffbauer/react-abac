@@ -32,7 +32,7 @@ specifiers:
   import-sort-style-module: 6.0.0
   jest: 27.2.4
   jest-cli: 27.2.4
-  lint-staged: 11.1.2
+  lint-staged: 11.2.0
   prettier: 2.4.1
   prettier-plugin-import-sort: 0.0.7
   prettier-plugin-sh: 0.7.1
@@ -88,7 +88,7 @@ devDependencies:
   import-sort-style-module: 6.0.0
   jest: 27.2.4_ts-node@10.2.1
   jest-cli: 27.2.4_ts-node@10.2.1
-  lint-staged: 11.1.2
+  lint-staged: 11.2.0
   prettier: 2.4.1
   prettier-plugin-import-sort: 0.0.7_prettier@2.4.1
   prettier-plugin-sh: 0.7.1_prettier@2.4.1
@@ -2230,9 +2230,9 @@ packages:
     resolution: {integrity: sha512-GpVkmM8vF2vQUkj2LvZmD35JxeJOLCwJ9cUkugyk2nuhbv3+mJvpLYYt+0+USMxE+oj+ey/lJEnhZw75x/OMcQ==}
     dev: true
 
-  /commander/7.2.0:
-    resolution: {integrity: sha512-QrWXB+ZQSVPmIWIhtEO9H+gwHaMGYiF5ChvoJ+K9ZGHG/sVsa6yiesAD1GC/x46sET00Xlwo1u49RVVVzvcSkw==}
-    engines: {node: '>= 10'}
+  /commander/8.2.0:
+    resolution: {integrity: sha512-LLKxDvHeL91/8MIyTAD5BFMNtoIwztGPMiM/7Bl8rIPmHCZXRxmSWr91h57dpOpnQ6jIUqEWdXE/uBYMfiVZDA==}
+    engines: {node: '>= 12'}
     dev: true
 
   /commitizen/4.2.4_typescript@4.4.3:
@@ -2502,6 +2502,19 @@ packages:
         optional: true
     dependencies:
       ms: 2.1.2
+    dev: true
+
+  /debug/4.3.2_supports-color@8.1.1:
+    resolution: {integrity: sha512-mOp8wKcvj7XxC78zLgw/ZA+6TSgkoE2C/ienthhRD298T7UNwAg9diBpLRxC0mOezLl4B0xV7M0cCO6P/O0Xhw==}
+    engines: {node: '>=6.0'}
+    peerDependencies:
+      supports-color: '*'
+    peerDependenciesMeta:
+      supports-color:
+        optional: true
+    dependencies:
+      ms: 2.1.2
+      supports-color: 8.1.1
     dev: true
 
   /decamelize-keys/1.1.0:
@@ -4053,11 +4066,6 @@ packages:
     resolution: {integrity: sha1-5HnICFjfDBsR3dppQPlgEfzaSpo=}
     dev: true
 
-  /is-unicode-supported/0.1.0:
-    resolution: {integrity: sha512-knxG2q4UC3u8stRGyAVJCOdxFmv5DZiRcdlIaAQXAbSfJya+OhopNotLQrstBhququ4ZpuKbDc/8S6mgXgPFPw==}
-    engines: {node: '>=10'}
-    dev: true
-
   /is-utf8/0.2.1:
     resolution: {integrity: sha1-Sw2hRCEE0bM2NA6AeX6GXPOffXI=}
     dev: true
@@ -4778,26 +4786,24 @@ packages:
     resolution: {integrity: sha1-HADHQ7QzzQpOgHWPe2SldEDZ/wA=}
     dev: true
 
-  /lint-staged/11.1.2:
-    resolution: {integrity: sha512-6lYpNoA9wGqkL6Hew/4n1H6lRqF3qCsujVT0Oq5Z4hiSAM7S6NksPJ3gnr7A7R52xCtiZMcEUNNQ6d6X5Bvh9w==}
+  /lint-staged/11.2.0:
+    resolution: {integrity: sha512-0KIcRuO4HQS2Su7qWtjrfTXgSklvyIb9Fk9qVWRZkGHa5S81Vj6WBbs+ogQBvHUwLJYq1eQ4R+H82GSak4OM7w==}
     hasBin: true
     dependencies:
-      chalk: 4.1.2
       cli-truncate: 2.1.0
-      commander: 7.2.0
+      colorette: 1.4.0
+      commander: 8.2.0
       cosmiconfig: 7.0.1
-      debug: 4.3.2
+      debug: 4.3.2_supports-color@8.1.1
       enquirer: 2.3.6
       execa: 5.1.1
       listr2: 3.12.2_enquirer@2.3.6
-      log-symbols: 4.1.0
       micromatch: 4.0.4
       normalize-path: 3.0.0
       please-upgrade-node: 3.2.0
       string-argv: 0.3.1
       stringify-object: 3.3.0
-    transitivePeerDependencies:
-      - supports-color
+      supports-color: 8.1.1
     dev: true
 
   /listr2/3.12.2_enquirer@2.3.6:
@@ -4918,14 +4924,6 @@ packages:
 
   /lodash/4.17.21:
     resolution: {integrity: sha512-v2kDEe57lecTulaDIuNTPy3Ry4gLGJ6Z1O3vE1krgXZNrsQ+LFTGHVxVjcXPs17LhbZVGedAJv8XZ1tvj5FvSg==}
-    dev: true
-
-  /log-symbols/4.1.0:
-    resolution: {integrity: sha512-8XPvpAA8uyhfteu8pIvQxpJZ7SYYdpUivZpGy6sFsBuKRY/7rQGavedeB8aK+Zkyq6upMFVL/9AW6vOYzfRyLg==}
-    engines: {node: '>=10'}
-    dependencies:
-      chalk: 4.1.2
-      is-unicode-supported: 0.1.0
     dev: true
 
   /log-update/4.0.0:
