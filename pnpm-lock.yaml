@@ -9,7 +9,7 @@ specifiers:
   '@semantic-release/git': 10.0.0
   '@semantic-release/github': 8.0.1
   '@semantic-release/release-notes-generator': 10.0.2
-  '@types/enzyme': 3.10.9
+  '@types/enzyme': 3.10.10
   '@types/enzyme-adapter-react-16': 1.0.6
   '@types/jest': 27.0.2
   '@types/node': 14.17.27
@@ -65,7 +65,7 @@ devDependencies:
   '@semantic-release/git': 10.0.0_00a97abed8296618d95686649d8b9c1f
   '@semantic-release/github': 8.0.1_00a97abed8296618d95686649d8b9c1f
   '@semantic-release/release-notes-generator': 10.0.2_00a97abed8296618d95686649d8b9c1f
-  '@types/enzyme': 3.10.9
+  '@types/enzyme': 3.10.10
   '@types/enzyme-adapter-react-16': 1.0.6
   '@types/jest': 27.0.2
   '@types/node': 14.17.27
@@ -1275,11 +1275,11 @@ packages:
   /@types/enzyme-adapter-react-16/1.0.6:
     resolution: {integrity: sha512-VonDkZ15jzqDWL8mPFIQnnLtjwebuL9YnDkqeCDYnB4IVgwUm0mwKkqhrxLL6mb05xm7qqa3IE95m8CZE9imCg==}
     dependencies:
-      '@types/enzyme': 3.10.9
+      '@types/enzyme': 3.10.10
     dev: true
 
-  /@types/enzyme/3.10.9:
-    resolution: {integrity: sha512-dx5UvcWe2Vtye6S9Hw2rFB7Ul9uMXOAje2FAbXvVYieQDNle9qPAo7DfvFMSztZ9NFiD3dVZ4JsRYGTrSLynJg==}
+  /@types/enzyme/3.10.10:
+    resolution: {integrity: sha512-/D4wFhiEjUDfPu+j5FVK0g/jf7rqeEIpNfAI+kyxzLpw5CKO0drnW3W5NC38alIjsWgnyQ8pbuPF5+UD+vhVyg==}
     dependencies:
       '@types/cheerio': 0.22.30
       '@types/react': 17.0.30
