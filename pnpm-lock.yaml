@@ -32,7 +32,7 @@ specifiers:
   import-sort-style-module: 6.0.0
   jest: 27.3.1
   jest-cli: 27.3.1
-  lint-staged: 11.2.3
+  lint-staged: 11.2.6
   prettier: 2.4.1
   prettier-plugin-import-sort: 0.0.7
   prettier-plugin-sh: 0.7.1
@@ -88,7 +88,7 @@ devDependencies:
   import-sort-style-module: 6.0.0
   jest: 27.3.1_ts-node@10.4.0
   jest-cli: 27.3.1_ts-node@10.4.0
-  lint-staged: 11.2.3
+  lint-staged: 11.2.6
   prettier: 2.4.1
   prettier-plugin-import-sort: 0.0.7_prettier@2.4.1
   prettier-plugin-sh: 0.7.1_prettier@2.4.1
@@ -4782,8 +4782,8 @@ packages:
     resolution: {integrity: sha1-HADHQ7QzzQpOgHWPe2SldEDZ/wA=}
     dev: true
 
-  /lint-staged/11.2.3:
-    resolution: {integrity: sha512-Tfmhk8O2XFMD25EswHPv+OYhUjsijy5D7liTdxeXvhG2rsadmOLFtyj8lmlfoFFXY8oXWAIOKpoI+lJe1DB1mw==}
+  /lint-staged/11.2.6:
+    resolution: {integrity: sha512-Vti55pUnpvPE0J9936lKl0ngVeTdSZpEdTNhASbkaWX7J5R9OEifo1INBGQuGW4zmy6OG+TcWPJ3m5yuy5Q8Tg==}
     hasBin: true
     dependencies:
       cli-truncate: 2.1.0
