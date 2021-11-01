@@ -4,9 +4,9 @@ specifiers:
   '@commitlint/cli': 13.2.1
   '@commitlint/config-conventional': 13.2.0
   '@prettier/plugin-xml': 1.1.0
-  '@semantic-release/changelog': 6.0.0
+  '@semantic-release/changelog': 6.0.1
   '@semantic-release/commit-analyzer': 9.0.1
-  '@semantic-release/git': 10.0.0
+  '@semantic-release/git': 10.0.1
   '@semantic-release/github': 8.0.1
   '@semantic-release/release-notes-generator': 10.0.2
   '@types/enzyme': 3.10.10
@@ -60,9 +60,9 @@ devDependencies:
   '@commitlint/cli': 13.2.1
   '@commitlint/config-conventional': 13.2.0
   '@prettier/plugin-xml': 1.1.0
-  '@semantic-release/changelog': 6.0.0_00a97abed8296618d95686649d8b9c1f
+  '@semantic-release/changelog': 6.0.1_00a97abed8296618d95686649d8b9c1f
   '@semantic-release/commit-analyzer': 9.0.1_00a97abed8296618d95686649d8b9c1f
-  '@semantic-release/git': 10.0.0_00a97abed8296618d95686649d8b9c1f
+  '@semantic-release/git': 10.0.1_00a97abed8296618d95686649d8b9c1f
   '@semantic-release/github': 8.0.1_00a97abed8296618d95686649d8b9c1f
   '@semantic-release/release-notes-generator': 10.0.2_00a97abed8296618d95686649d8b9c1f
   '@types/enzyme': 3.10.10
@@ -1009,13 +1009,13 @@ packages:
       picomatch: 2.3.0
     dev: true
 
-  /@semantic-release/changelog/6.0.0_00a97abed8296618d95686649d8b9c1f:
-    resolution: {integrity: sha512-X01Me+QVMykvILockNGlXXl3dgr1QqpbRQsknQoOJQCXQGXoqY3DNQ3rBQuI8/SUK7RZwYLctg0NbPNArlo6eQ==}
+  /@semantic-release/changelog/6.0.1_00a97abed8296618d95686649d8b9c1f:
+    resolution: {integrity: sha512-FT+tAGdWHr0RCM3EpWegWnvXJ05LQtBkQUaQRIExONoXjVjLuOILNm4DEKNaV+GAQyJjbLRVs57ti//GypH6PA==}
     engines: {node: '>=14.17'}
     peerDependencies:
       semantic-release: '>=18.0.0'
     dependencies:
-      '@semantic-release/error': 2.2.0
+      '@semantic-release/error': 3.0.0
       aggregate-error: 3.1.0
       fs-extra: 9.1.0
       lodash: 4.17.21
@@ -1062,13 +1062,18 @@ packages:
     resolution: {integrity: sha512-9Tj/qn+y2j+sjCI3Jd+qseGtHjOAeg7dU2/lVcqIQ9TV3QDaDXDYXcoOHU+7o2Hwh8L8ymL4gfuO7KxDs3q2zg==}
     dev: true
 
-  /@semantic-release/git/10.0.0_00a97abed8296618d95686649d8b9c1f:
-    resolution: {integrity: sha512-/BljvngXJzwbFFJouxHHvSzAhi5iaucF7l0kQPszD4m7Y79+FHyvQl5Q/HK7T/e8MIwU9hz321KjOZn9yfSpPg==}
+  /@semantic-release/error/3.0.0:
+    resolution: {integrity: sha512-5hiM4Un+tpl4cKw3lV4UgzJj+SmfNIDCLLw0TepzQxz9ZGV5ixnqkzIVF+3tp0ZHgcMKE+VNGHJjEeyFG2dcSw==}
+    engines: {node: '>=14.17'}
+    dev: true
+
+  /@semantic-release/git/10.0.1_00a97abed8296618d95686649d8b9c1f:
+    resolution: {integrity: sha512-eWrx5KguUcU2wUPaO6sfvZI0wPafUKAMNC18aXY4EnNcrZL86dEmpNVnC9uMpGZkmZJ9EfCVJBQx4pV4EMGT1w==}
     engines: {node: '>=14.17'}
     peerDependencies:
       semantic-release: '>=18.0.0'
     dependencies:
-      '@semantic-release/error': 2.2.0
+      '@semantic-release/error': 3.0.0
       aggregate-error: 3.1.0
       debug: 4.3.2
       dir-glob: 3.0.1
