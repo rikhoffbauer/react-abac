@@ -7,7 +7,7 @@ specifiers:
   '@semantic-release/changelog': 6.0.1
   '@semantic-release/commit-analyzer': 9.0.1
   '@semantic-release/git': 10.0.1
-  '@semantic-release/github': 8.0.1
+  '@semantic-release/github': 8.0.2
   '@semantic-release/release-notes-generator': 10.0.2
   '@types/enzyme': 3.10.10
   '@types/enzyme-adapter-react-16': 1.0.6
@@ -63,7 +63,7 @@ devDependencies:
   '@semantic-release/changelog': 6.0.1_00a97abed8296618d95686649d8b9c1f
   '@semantic-release/commit-analyzer': 9.0.1_00a97abed8296618d95686649d8b9c1f
   '@semantic-release/git': 10.0.1_00a97abed8296618d95686649d8b9c1f
-  '@semantic-release/github': 8.0.1_00a97abed8296618d95686649d8b9c1f
+  '@semantic-release/github': 8.0.2_00a97abed8296618d95686649d8b9c1f
   '@semantic-release/release-notes-generator': 10.0.2_00a97abed8296618d95686649d8b9c1f
   '@types/enzyme': 3.10.10
   '@types/enzyme-adapter-react-16': 1.0.6
@@ -1114,8 +1114,8 @@ packages:
       - supports-color
     dev: true
 
-  /@semantic-release/github/8.0.1_00a97abed8296618d95686649d8b9c1f:
-    resolution: {integrity: sha512-T01lfh4yBZodAeo8t0U+W5hmPYR9BdnfwLDerXnGaYeLXm8+KMx4mQEBAf/UbRVlzmIKTqMx+/s9fY/mSQNV0A==}
+  /@semantic-release/github/8.0.2_00a97abed8296618d95686649d8b9c1f:
+    resolution: {integrity: sha512-wIbfhOeuxlYzMTjtSAa2xgr54n7ZuPAS2gadyTWBpUt2PNAPgla7A6XxCXJnaKPgfVF0iFfSk3B+KlVKk6ByVg==}
     engines: {node: '>=14.17'}
     peerDependencies:
       semantic-release: '>=18.0.0-beta.1'
@@ -1132,7 +1132,7 @@ packages:
       https-proxy-agent: 5.0.0
       issue-parser: 6.0.0
       lodash: 4.17.21
-      mime: 2.5.2
+      mime: 3.0.0
       p-filter: 2.1.0
       p-retry: 4.6.1
       semantic-release: github.com/rikhoffbauer/semantic-release/9a7bff0cfa08c9e6940b1ad7eb75959b34f051cc
@@ -5063,6 +5063,12 @@ packages:
   /mime/2.5.2:
     resolution: {integrity: sha512-tqkh47FzKeCPD2PUiPB6pkbMzsCasjxAfC62/Wap5qrUWcb+sFasXUC5I3gYM5iBM8v/Qpn4UK0x+j0iHyFPDg==}
     engines: {node: '>=4.0.0'}
+    hasBin: true
+    dev: true
+
+  /mime/3.0.0:
+    resolution: {integrity: sha512-jSCU7/VB1loIWBZe14aEYHU/+1UMEHoaO7qxCOVJOw9GgH72VAWppxNcjU+x9a2k3GSIBXNKxXQFqRvvZ7vr3A==}
+    engines: {node: '>=10.0.0'}
     hasBin: true
     dev: true
 
