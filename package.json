@@ -1,6 +1,6 @@
 {
     "name": "react-abac",
-    "version": "0.1.92",
+    "version": "0.1.93",
     "description": "Attribute Based Access Control and Role Based Access Control for React",
     "keywords": ["abac", "rbac", "react", "typescript"],
     "bugs": {
@@ -124,7 +124,7 @@
         "@semantic-release/changelog": "6.0.1",
         "@semantic-release/commit-analyzer": "9.0.1",
         "@semantic-release/git": "10.0.1",
-        "@semantic-release/github": "8.0.1",
+        "@semantic-release/github": "8.0.2",
         "@semantic-release/release-notes-generator": "10.0.2",
         "@types/enzyme": "3.10.10",
         "@types/enzyme-adapter-react-16": "1.0.6",
