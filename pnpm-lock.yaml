@@ -1997,8 +1997,8 @@ packages:
     engines: {node: '>=6'}
     dev: true
 
-  /camelcase/6.2.0:
-    resolution: {integrity: sha512-c7wVvbw3f37nuobQNtgsgG9POC9qMbNuMQmTCqZv23b6MIz0fcYpBiOlv9gEN/hdLdnZTDQhg6e9Dq5M1vKvfg==}
+  /camelcase/6.2.1:
+    resolution: {integrity: sha512-tVI4q5jjFV5CavAU8DXfza/TJcZutVKo/5Foskmsqcm0MsL91moHvwiGNnqaa2o6PF/7yT5ikDRcVcl8Rj6LCA==}
     engines: {node: '>=10'}
     dev: true
 
@@ -4576,7 +4576,7 @@ packages:
     engines: {node: ^10.13.0 || ^12.13.0 || ^14.15.0 || >=15.0.0}
     dependencies:
       '@jest/types': 27.2.5
-      camelcase: 6.2.0
+      camelcase: 6.2.1
       chalk: 4.1.2
       jest-get-type: 27.3.1
       leven: 3.1.0
