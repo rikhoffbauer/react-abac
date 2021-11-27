@@ -5,10 +5,10 @@ specifiers:
   '@commitlint/config-conventional': 15.0.0
   '@prettier/plugin-xml': 1.1.0
   '@semantic-release/changelog': 6.0.1
-  '@semantic-release/commit-analyzer': 9.0.1
+  '@semantic-release/commit-analyzer': 9.0.2
   '@semantic-release/git': 10.0.1
   '@semantic-release/github': 8.0.2
-  '@semantic-release/release-notes-generator': 10.0.2
+  '@semantic-release/release-notes-generator': 10.0.3
   '@types/enzyme': 3.10.10
   '@types/enzyme-adapter-react-16': 1.0.6
   '@types/jest': 27.0.3
@@ -61,10 +61,10 @@ devDependencies:
   '@commitlint/config-conventional': 15.0.0
   '@prettier/plugin-xml': 1.1.0
   '@semantic-release/changelog': 6.0.1_00a97abed8296618d95686649d8b9c1f
-  '@semantic-release/commit-analyzer': 9.0.1_00a97abed8296618d95686649d8b9c1f
+  '@semantic-release/commit-analyzer': 9.0.2_00a97abed8296618d95686649d8b9c1f
   '@semantic-release/git': 10.0.1_00a97abed8296618d95686649d8b9c1f
   '@semantic-release/github': 8.0.2_00a97abed8296618d95686649d8b9c1f
-  '@semantic-release/release-notes-generator': 10.0.2_00a97abed8296618d95686649d8b9c1f
+  '@semantic-release/release-notes-generator': 10.0.3_00a97abed8296618d95686649d8b9c1f
   '@types/enzyme': 3.10.10
   '@types/enzyme-adapter-react-16': 1.0.6
   '@types/jest': 27.0.3
@@ -1040,8 +1040,8 @@ packages:
       - supports-color
     dev: true
 
-  /@semantic-release/commit-analyzer/9.0.1_00a97abed8296618d95686649d8b9c1f:
-    resolution: {integrity: sha512-ncNsnrLmiykhgNZUXNvhhAjNN0me7VGIb0X5hu3ogyi5DDPapjGAHdEffO5vi+HX1BFWLRD/Ximx5PjGAKjAqQ==}
+  /@semantic-release/commit-analyzer/9.0.2_00a97abed8296618d95686649d8b9c1f:
+    resolution: {integrity: sha512-E+dr6L+xIHZkX4zNMe6Rnwg4YQrWNXK+rNsvwOPpdFppvZO1olE2fIgWhv89TkQErygevbjsZFSIxp+u6w2e5g==}
     engines: {node: '>=14.17'}
     peerDependencies:
       semantic-release: '>=18.0.0-beta.1'
@@ -1162,8 +1162,8 @@ packages:
       tempy: 1.0.1
     dev: true
 
-  /@semantic-release/release-notes-generator/10.0.2_00a97abed8296618d95686649d8b9c1f:
-    resolution: {integrity: sha512-I4eavIcDan8fNQHskZ2cbWkFMimvgxNkqR2UfuYNwYBgswEl3SJsN8XMf9gZWObt6nXDc2QfDwhjy8DjTZqS3w==}
+  /@semantic-release/release-notes-generator/10.0.3_00a97abed8296618d95686649d8b9c1f:
+    resolution: {integrity: sha512-k4x4VhIKneOWoBGHkx0qZogNjCldLPRiAjnIpMnlUh6PtaWXp/T+C9U7/TaNDDtgDa5HMbHl4WlREdxHio6/3w==}
     engines: {node: '>=14.17'}
     peerDependencies:
       semantic-release: '>=18.0.0-beta.1'
