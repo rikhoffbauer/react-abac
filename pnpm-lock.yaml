@@ -1576,8 +1576,8 @@ packages:
       chevrotain: 7.1.1
     dev: true
 
-  /@yarn-tool/resolve-package/1.0.39_@types+node@16.11.11:
-    resolution: {integrity: sha512-Muv+aW1tcyPhkwG4db3fP/KjknzJMidykLbrwEdU0fI0C6DFzBehhLLu9Z/rIO26OoJWqprxyR27w+SgNXNOoQ==}
+  /@yarn-tool/resolve-package/1.0.40_@types+node@16.11.11:
+    resolution: {integrity: sha512-5kKRhGb8OCdpzuoGkb9BQw6biyY0zYesV3VyvEzRtb/cqZ7AR6o0ajR6q83jTaCJfYUaJaUPyXVOSZAUjWJQDQ==}
     dependencies:
       '@ts-type/package-dts': 1.0.56_@types+node@16.11.11
       pkg-dir: 5.0.0
@@ -6173,7 +6173,7 @@ packages:
       typescript: '>=2.4.0'
     dependencies:
       '@rollup/pluginutils': 4.1.1
-      '@yarn-tool/resolve-package': 1.0.39_@types+node@16.11.11
+      '@yarn-tool/resolve-package': 1.0.40_@types+node@16.11.11
       find-cache-dir: 3.3.2
       fs-extra: 8.1.0
       resolve: 1.20.0
