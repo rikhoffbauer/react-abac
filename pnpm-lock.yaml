@@ -17,7 +17,7 @@ specifiers:
   '@types/react-dom': 17.0.11
   '@typescript-eslint/eslint-plugin': 5.6.0
   '@typescript-eslint/parser': 5.6.0
-  '@wojtekmaj/enzyme-adapter-react-17': 0.6.5
+  '@wojtekmaj/enzyme-adapter-react-17': 0.6.6
   commitizen: 4.2.4
   cz-conventional-changelog: 3.3.0
   enzyme: 3.11.0
@@ -73,7 +73,7 @@ devDependencies:
   '@types/react-dom': 17.0.11
   '@typescript-eslint/eslint-plugin': 5.6.0_16d83f5c41c3abb1061a82b07c18e4f3
   '@typescript-eslint/parser': 5.6.0_eslint@8.4.1+typescript@4.5.2
-  '@wojtekmaj/enzyme-adapter-react-17': 0.6.5_ed988ebff08079c40ff9e87e2acc78b3
+  '@wojtekmaj/enzyme-adapter-react-17': 0.6.6_ed988ebff08079c40ff9e87e2acc78b3
   commitizen: 4.2.4
   cz-conventional-changelog: 3.3.0
   enzyme: 3.11.0
@@ -1537,19 +1537,17 @@ packages:
       eslint-visitor-keys: 3.1.0
     dev: true
 
-  /@wojtekmaj/enzyme-adapter-react-17/0.6.5_ed988ebff08079c40ff9e87e2acc78b3:
-    resolution: {integrity: sha512-ChIObUiXXYUiqzXPqOai+p6KF5dlbItpDDYsftUOQiAiygbMDlLeJIjynC6ZrJIa2U2MpRp4YJmtR2GQyIHjgA==}
+  /@wojtekmaj/enzyme-adapter-react-17/0.6.6_ed988ebff08079c40ff9e87e2acc78b3:
+    resolution: {integrity: sha512-gSfhg8CiL0Vwc2UgUblGVZIy7M0KyXaZsd8+QwzV8TSVRLkGyzdLtYEcs9wRWyQTsdmOd+oRGqbVgUX7AVJxug==}
     peerDependencies:
       enzyme: ^3.0.0
       react: ^17.0.0-0
       react-dom: ^17.0.0-0
     dependencies:
-      '@wojtekmaj/enzyme-adapter-utils': 0.1.1_react@17.0.1
+      '@wojtekmaj/enzyme-adapter-utils': 0.1.2_react@17.0.1
       enzyme: 3.11.0
       enzyme-shallow-equal: 1.0.4
       has: 1.0.3
-      object.assign: 4.1.2
-      object.values: 1.1.5
       prop-types: 15.7.2
       react: 17.0.1
       react-dom: 17.0.1_react@17.0.1
@@ -1557,14 +1555,13 @@ packages:
       react-test-renderer: 17.0.2_react@17.0.1
     dev: true
 
-  /@wojtekmaj/enzyme-adapter-utils/0.1.1_react@17.0.1:
-    resolution: {integrity: sha512-bNPWtN/d8huKOkC6j1E3EkSamnRrHHT7YuR6f9JppAQqtoAm3v4/vERe4J14jQKmHLCyEBHXrlgb7H6l817hVg==}
+  /@wojtekmaj/enzyme-adapter-utils/0.1.2_react@17.0.1:
+    resolution: {integrity: sha512-MM/DqDqvxNVlWLqSVQiUbRN9MuDLJfefmPbJ8ZKdmdf5ID8G+i42XhFpoQh5bAZUCdwzRae3+WSZl2lXcFOrhw==}
     peerDependencies:
       react: ^17.0.0-0
     dependencies:
       function.prototype.name: 1.1.5
       has: 1.0.3
-      object.assign: 4.1.2
       object.fromentries: 2.0.5
       prop-types: 15.7.2
       react: 17.0.1
