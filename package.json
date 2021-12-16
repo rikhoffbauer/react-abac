@@ -1,6 +1,6 @@
 {
     "name": "react-abac",
-    "version": "0.1.35",
+    "version": "0.1.36",
     "description": "Attribute Based Access Control and Role Based Access Control for React",
     "keywords": [
         "abac",
@@ -200,7 +200,7 @@
         "ts-node": "10.4.0",
         "tsc-watch": "4.5.0",
         "tslib": "2.3.1",
-        "typescript": "4.5.3"
+        "typescript": "4.5.4"
     },
     "peerDependencies": {
         "react": "^16.8.1 || ^17.0.0"
