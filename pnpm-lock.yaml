@@ -1,7 +1,7 @@
 lockfileVersion: 5.3
 
 specifiers:
-  '@commitlint/cli': 16.0.1
+  '@commitlint/cli': 16.0.2
   '@commitlint/config-conventional': 16.0.0
   '@prettier/plugin-xml': 1.2.0
   '@semantic-release/changelog': 6.0.1
@@ -57,7 +57,7 @@ specifiers:
   typescript: 4.5.4
 
 devDependencies:
-  '@commitlint/cli': 16.0.1_@types+node@16.11.19
+  '@commitlint/cli': 16.0.2_@types+node@16.11.19
   '@commitlint/config-conventional': 16.0.0
   '@prettier/plugin-xml': 1.2.0
   '@semantic-release/changelog': 6.0.1_00a97abed8296618d95686649d8b9c1f
@@ -437,8 +437,8 @@ packages:
     resolution: {integrity: sha512-0hYQ8SB4Db5zvZB4axdMHGwEaQjkZzFjQiN9LVYvIFB2nSUHW9tYpxWriPrWDASIxiaXax83REcLxuSdnGPZtw==}
     dev: true
 
-  /@commitlint/cli/16.0.1_@types+node@16.11.19:
-    resolution: {integrity: sha512-61gGRy65WiVDRsqP0dAR2fAgE3qrTBW3fgz9MySv32y5Ib3ZXXDDq6bGyQqi2dSaPuDYzNCRwwlC7mmQM73T/g==}
+  /@commitlint/cli/16.0.2_@types+node@16.11.19:
+    resolution: {integrity: sha512-Jt7iaBjoLGC5Nq4dHPTvTYnqPGkElFPBtTXTvBpTgatZApczyjI2plE0oG4GYWPp1suHIS/VdVDOMpPZjGVusg==}
     engines: {node: '>=v12'}
     hasBin: true
     dependencies:
