@@ -32,7 +32,7 @@ specifiers:
   import-sort-style-module: 6.0.0
   jest: 27.4.7
   jest-cli: 27.4.7
-  lint-staged: 12.1.7
+  lint-staged: 12.3.1
   prettier: 2.5.1
   prettier-plugin-import-sort: 0.0.7
   prettier-plugin-sh: 0.8.1
@@ -88,7 +88,7 @@ devDependencies:
   import-sort-style-module: 6.0.0
   jest: 27.4.7_ts-node@10.4.0
   jest-cli: 27.4.7_ts-node@10.4.0
-  lint-staged: 12.1.7
+  lint-staged: 12.3.1
   prettier: 2.5.1
   prettier-plugin-import-sort: 0.0.7_prettier@2.5.1
   prettier-plugin-sh: 0.8.1_prettier@2.5.1
@@ -4842,8 +4842,8 @@ packages:
     resolution: {integrity: sha512-7ylylesZQ/PV29jhEDl3Ufjo6ZX7gCqJr5F7PKrqc93v7fzSymt1BpwEU8nAUXs8qzzvqhbjhK5QZg6Mt/HkBg==}
     dev: true
 
-  /lint-staged/12.1.7:
-    resolution: {integrity: sha512-bltv/ejiLWtowExpjU+s5z8j1Byjg9AlmaAjMmqNbIicY69u6sYIwXGg0dCn0TlkrrY2CphtHIXAkbZ+1VoWQQ==}
+  /lint-staged/12.3.1:
+    resolution: {integrity: sha512-Ocht/eT+4/siWOZDJpNUKcKX2UeWW/pDbohJ4gRsrafAjBi79JK8kiNVk2ciIVNKdw0Q4ABptl2nr6uQAlRImw==}
     engines: {node: ^12.20.0 || ^14.13.1 || >=16.0.0}
     hasBin: true
     dependencies:
@@ -4853,7 +4853,7 @@ packages:
       debug: 4.3.3_supports-color@9.2.1
       execa: 5.1.1
       lilconfig: 2.0.4
-      listr2: 3.14.0
+      listr2: 4.0.1
       micromatch: 4.0.4
       normalize-path: 3.0.0
       object-inspect: 1.12.0
@@ -4864,9 +4864,9 @@ packages:
       - enquirer
     dev: true
 
-  /listr2/3.14.0:
-    resolution: {integrity: sha512-TyWI8G99GX9GjE54cJ+RrNMcIFBfwMPxc3XTFiAYGN4s10hWROGtOg7+O6u6LE3mNkyld7RSLE6nrKBvTfcs3g==}
-    engines: {node: '>=10.0.0'}
+  /listr2/4.0.1:
+    resolution: {integrity: sha512-D65Nl+zyYHL2jQBGmxtH/pU8koPZo5C8iCNE8EoB04RwPgQG1wuaKwVbeZv9LJpiH4Nxs0FCp+nNcG8OqpniiA==}
+    engines: {node: '>=12'}
     peerDependencies:
       enquirer: '>= 2.3.0 < 3'
     peerDependenciesMeta:
