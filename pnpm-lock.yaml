@@ -45,7 +45,7 @@ specifiers:
   rollup-plugin-peer-deps-external: 2.2.4
   rollup-plugin-sourcemaps: 0.6.3
   rollup-plugin-terser: 7.0.2
-  rollup-plugin-typescript2: 0.31.1
+  rollup-plugin-typescript2: 0.31.2
   rollup-plugin-uglify: 6.0.4
   rollup-plugin-url: 3.0.1
   semantic-release: github:rikhoffbauer/semantic-release
@@ -101,7 +101,7 @@ devDependencies:
   rollup-plugin-peer-deps-external: 2.2.4_rollup@2.66.1
   rollup-plugin-sourcemaps: 0.6.3_3b9ae8caf0c475691b6d4fec45092b9c
   rollup-plugin-terser: 7.0.2_rollup@2.66.1
-  rollup-plugin-typescript2: 0.31.1_e0b838096d187c2997bedb367a91628c
+  rollup-plugin-typescript2: 0.31.2_e0b838096d187c2997bedb367a91628c
   rollup-plugin-uglify: 6.0.4_rollup@2.66.1
   rollup-plugin-url: 3.0.1_rollup@2.66.1
   semantic-release: github.com/rikhoffbauer/semantic-release/9a7bff0cfa08c9e6940b1ad7eb75959b34f051cc
@@ -6050,13 +6050,6 @@ packages:
     engines: {node: '>=10'}
     dev: true
 
-  /resolve/1.20.0:
-    resolution: {integrity: sha512-wENBPt4ySzg4ybFQW2TT1zMQucPK95HSh/nq2CFTZVOGut2+pQvSsgtda4d26YrYcr067wjbmzOG8byDPBX63A==}
-    dependencies:
-      is-core-module: 2.8.1
-      path-parse: 1.0.7
-    dev: true
-
   /resolve/1.22.0:
     resolution: {integrity: sha512-Hhtrw0nLeSrFQ7phPp4OOcVjLPIeMnRlr5mcnVuMe7M/7eBn98A3hmFRLoFo3DLZkivSYwhRUJTyPyWAk56WLw==}
     hasBin: true
@@ -6174,8 +6167,8 @@ packages:
       - acorn
     dev: true
 
-  /rollup-plugin-typescript2/0.31.1_e0b838096d187c2997bedb367a91628c:
-    resolution: {integrity: sha512-sklqXuQwQX+stKi4kDfEkneVESPi3YM/2S899vfRdF9Yi40vcC50Oq4A4cSZJNXsAQE/UsBZl5fAOsBLziKmjw==}
+  /rollup-plugin-typescript2/0.31.2_e0b838096d187c2997bedb367a91628c:
+    resolution: {integrity: sha512-hRwEYR1C8xDGVVMFJQdEVnNAeWRvpaY97g5mp3IeLnzhNXzSVq78Ye/BJ9PAaUfN4DXa/uDnqerifMOaMFY54Q==}
     peerDependencies:
       rollup: '>=1.26.3'
       typescript: '>=2.4.0'
@@ -6183,10 +6176,10 @@ packages:
       '@rollup/pluginutils': 4.1.2
       '@yarn-tool/resolve-package': 1.0.42_@types+node@16.11.22
       find-cache-dir: 3.3.2
-      fs-extra: 8.1.0
-      resolve: 1.20.0
+      fs-extra: 10.0.0
+      resolve: 1.22.0
       rollup: 2.66.1
-      tslib: 2.2.0
+      tslib: 2.3.1
       typescript: 4.5.5
     transitivePeerDependencies:
       - '@types/bluebird'
@@ -6970,10 +6963,6 @@ packages:
 
   /tslib/1.14.1:
     resolution: {integrity: sha512-Xni35NKzjgMrwevysHTCArtLDpPvye8zV/0E4EyYn43P7/7qvQwPh9BGkHewbMulVntbigmcT7rdX3BNo9wRJg==}
-    dev: true
-
-  /tslib/2.2.0:
-    resolution: {integrity: sha512-gS9GVHRU+RGn5KQM2rllAlR3dU6m7AcpJKdtH8gFvQiC4Otgk98XnmMU+nZenHt/+VhnBPWwgrJsyrdcw6i23w==}
     dev: true
 
   /tslib/2.3.1:
