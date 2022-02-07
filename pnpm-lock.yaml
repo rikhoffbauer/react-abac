@@ -3636,7 +3636,7 @@ packages:
       source-map: 0.6.1
       wordwrap: 1.0.0
     optionalDependencies:
-      uglify-js: 3.15.0
+      uglify-js: 3.15.1
     dev: true
 
   /hard-rejection/2.1.0:
@@ -6218,7 +6218,7 @@ packages:
       jest-worker: 24.9.0
       rollup: 2.67.0
       serialize-javascript: 2.1.2
-      uglify-js: 3.15.0
+      uglify-js: 3.15.1
     dev: true
 
   /rollup-plugin-url/3.0.1_rollup@2.67.0:
@@ -7087,8 +7087,8 @@ packages:
     engines: {node: '>=8'}
     dev: true
 
-  /uglify-js/3.15.0:
-    resolution: {integrity: sha512-x+xdeDWq7FiORDvyIJ0q/waWd4PhjBNOm5dQUOq2AKC0IEjxOS66Ha9tctiVDGcRQuh69K7fgU5oRuTK4cysSg==}
+  /uglify-js/3.15.1:
+    resolution: {integrity: sha512-FAGKF12fWdkpvNJZENacOH0e/83eG6JyVQyanIJaBXCN1J11TUQv1T1/z8S+Z0CG0ZPk1nPcreF/c7lrTd0TEQ==}
     engines: {node: '>=0.8.0'}
     hasBin: true
     dev: true
