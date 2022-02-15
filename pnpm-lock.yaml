@@ -1,8 +1,8 @@
 lockfileVersion: 5.3
 
 specifiers:
-  '@commitlint/cli': 16.1.0
-  '@commitlint/config-conventional': 16.0.0
+  '@commitlint/cli': 16.2.1
+  '@commitlint/config-conventional': 16.2.1
   '@prettier/plugin-xml': 1.2.0
   '@semantic-release/changelog': 6.0.1
   '@semantic-release/commit-analyzer': 9.0.2
@@ -57,8 +57,8 @@ specifiers:
   typescript: 4.5.5
 
 devDependencies:
-  '@commitlint/cli': 16.1.0
-  '@commitlint/config-conventional': 16.0.0
+  '@commitlint/cli': 16.2.1
+  '@commitlint/config-conventional': 16.2.1
   '@prettier/plugin-xml': 1.2.0
   '@semantic-release/changelog': 6.0.1_00a97abed8296618d95686649d8b9c1f
   '@semantic-release/commit-analyzer': 9.0.2_00a97abed8296618d95686649d8b9c1f
@@ -444,8 +444,8 @@ packages:
     resolution: {integrity: sha512-0hYQ8SB4Db5zvZB4axdMHGwEaQjkZzFjQiN9LVYvIFB2nSUHW9tYpxWriPrWDASIxiaXax83REcLxuSdnGPZtw==}
     dev: true
 
-  /@commitlint/cli/16.1.0:
-    resolution: {integrity: sha512-x5L1knvA3isRWBRVQx+Q6D45pA9139a2aZQYpxkljMG0dj4UHZkCnsYWpnGalxPxASI7nrI0KedKfS2YeQ55cQ==}
+  /@commitlint/cli/16.2.1:
+    resolution: {integrity: sha512-zfKf+B9osuiDbxGMJ7bWFv7XFCW8wlQYPtCffNp7Ukdb7mdrep5R9e03vPUZysnwp8NX6hg05kPEvnD/wRIGWw==}
     engines: {node: '>=v12'}
     hasBin: true
     dependencies:
@@ -463,8 +463,8 @@ packages:
       - '@swc/wasm'
     dev: true
 
-  /@commitlint/config-conventional/16.0.0:
-    resolution: {integrity: sha512-mN7J8KlKFn0kROd+q9PB01sfDx/8K/R25yITspL1No8PB4oj9M1p77xWjP80hPydqZG9OvQq+anXK3ZWeR7s3g==}
+  /@commitlint/config-conventional/16.2.1:
+    resolution: {integrity: sha512-cP9gArx7gnaj4IqmtCIcHdRjTYdRUi6lmGE+lOzGGjGe45qGOS8nyQQNvkNy2Ey2VqoSWuXXkD8zCUh6EHf1Ww==}
     engines: {node: '>=v12'}
     dependencies:
       conventional-changelog-conventionalcommits: 4.6.3
