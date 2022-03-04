@@ -17,10 +17,10 @@ export interface AbacProviderProps<
 }
 
 export interface AbacContextProps<Permission extends string> {
-    userHasPermissions<Data>(
+    userHasPermissions: <Data>(
         permissions: Permission | Permission[],
         data?: Data,
-    ): boolean;
+    ) => boolean;
 }
 
 export interface AllowedToProps<Permission extends string> {
