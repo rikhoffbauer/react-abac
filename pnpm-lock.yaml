@@ -51,7 +51,7 @@ specifiers:
   semantic-release: github:rikhoffbauer/semantic-release
   sort-package-json: 1.54.0
   ts-jest: 27.1.3
-  ts-node: 10.6.0
+  ts-node: 10.7.0
   tsc-watch: 4.6.0
   tslib: 2.3.1
   typescript: 4.6.2
@@ -86,8 +86,8 @@ devDependencies:
   import-sort-parser-typescript: 6.0.0
   import-sort-style-custom: 2.1.2
   import-sort-style-module: 6.0.0
-  jest: 27.5.1_ts-node@10.6.0
-  jest-cli: 27.5.1_ts-node@10.6.0
+  jest: 27.5.1_ts-node@10.7.0
+  jest-cli: 27.5.1_ts-node@10.7.0
   lint-staged: 12.3.5
   prettier: 2.5.1
   prettier-plugin-import-sort: 0.0.7_prettier@2.5.1
@@ -107,7 +107,7 @@ devDependencies:
   semantic-release: github.com/rikhoffbauer/semantic-release/9a7bff0cfa08c9e6940b1ad7eb75959b34f051cc
   sort-package-json: 1.54.0
   ts-jest: 27.1.3_60149d457e34ffba7d4e845dde6a1263
-  ts-node: 10.6.0_045cabcbf8818eda83522fe731c87088
+  ts-node: 10.7.0_045cabcbf8818eda83522fe731c87088
   tsc-watch: 4.6.0_typescript@4.6.2
   tslib: 2.3.1
   typescript: 4.6.2
@@ -675,7 +675,7 @@ packages:
       slash: 3.0.0
     dev: true
 
-  /@jest/core/27.5.1_ts-node@10.6.0:
+  /@jest/core/27.5.1_ts-node@10.7.0:
     resolution: {integrity: sha512-AK6/UTrvQD0Cd24NSqmIA6rKsu0tKIxfiCducZvqxYdmMisOYAsdItspT+fQDQYARPf8XgjAFZi0ogW2agH5nQ==}
     engines: {node: ^10.13.0 || ^12.13.0 || ^14.15.0 || >=15.0.0}
     peerDependencies:
@@ -696,7 +696,7 @@ packages:
       exit: 0.1.2
       graceful-fs: 4.2.9
       jest-changed-files: 27.5.1
-      jest-config: 27.5.1_ts-node@10.6.0
+      jest-config: 27.5.1_ts-node@10.7.0
       jest-haste-map: 27.5.1
       jest-message-util: 27.5.1
       jest-regex-util: 27.5.1
@@ -2409,7 +2409,7 @@ packages:
     dependencies:
       '@types/node': 16.11.26
       cosmiconfig: 7.0.1
-      ts-node: 10.6.0_045cabcbf8818eda83522fe731c87088
+      ts-node: 10.7.0_045cabcbf8818eda83522fe731c87088
       typescript: 4.6.2
     transitivePeerDependencies:
       - '@swc/core'
@@ -4238,7 +4238,7 @@ packages:
       - supports-color
     dev: true
 
-  /jest-cli/27.5.1_ts-node@10.6.0:
+  /jest-cli/27.5.1_ts-node@10.7.0:
     resolution: {integrity: sha512-Hc6HOOwYq4/74/c62dEE3r5elx8wjYqxY0r0G/nFrLDPMFRu6RA/u8qINOIkvhxG7mMQ5EJsOGfRpI8L6eFUVw==}
     engines: {node: ^10.13.0 || ^12.13.0 || ^14.15.0 || >=15.0.0}
     hasBin: true
@@ -4248,14 +4248,14 @@ packages:
       node-notifier:
         optional: true
     dependencies:
-      '@jest/core': 27.5.1_ts-node@10.6.0
+      '@jest/core': 27.5.1_ts-node@10.7.0
       '@jest/test-result': 27.5.1
       '@jest/types': 27.5.1
       chalk: 4.1.2
       exit: 0.1.2
       graceful-fs: 4.2.9
       import-local: 3.1.0
-      jest-config: 27.5.1_ts-node@10.6.0
+      jest-config: 27.5.1_ts-node@10.7.0
       jest-util: 27.5.1
       jest-validate: 27.5.1
       prompts: 2.4.2
@@ -4268,7 +4268,7 @@ packages:
       - utf-8-validate
     dev: true
 
-  /jest-config/27.5.1_ts-node@10.6.0:
+  /jest-config/27.5.1_ts-node@10.7.0:
     resolution: {integrity: sha512-5sAsjm6tGdsVbW9ahcChPAFCk4IlkQUknH5AvKjuLTSlcO/wCZKyFdn7Rg0EkC+OGgWODEy2hDpWB1PgzH0JNA==}
     engines: {node: ^10.13.0 || ^12.13.0 || ^14.15.0 || >=15.0.0}
     peerDependencies:
@@ -4301,7 +4301,7 @@ packages:
       pretty-format: 27.5.1
       slash: 3.0.0
       strip-json-comments: 3.1.1
-      ts-node: 10.6.0_045cabcbf8818eda83522fe731c87088
+      ts-node: 10.7.0_045cabcbf8818eda83522fe731c87088
     transitivePeerDependencies:
       - bufferutil
       - canvas
@@ -4665,7 +4665,7 @@ packages:
       supports-color: 8.1.1
     dev: true
 
-  /jest/27.5.1_ts-node@10.6.0:
+  /jest/27.5.1_ts-node@10.7.0:
     resolution: {integrity: sha512-Yn0mADZB89zTtjkPJEXwrac3LHudkQMR+Paqa8uxJHCBr9agxztUifWCyiYrjhMPBoUVBjyny0I7XH6ozDr7QQ==}
     engines: {node: ^10.13.0 || ^12.13.0 || ^14.15.0 || >=15.0.0}
     hasBin: true
@@ -4675,9 +4675,9 @@ packages:
       node-notifier:
         optional: true
     dependencies:
-      '@jest/core': 27.5.1_ts-node@10.6.0
+      '@jest/core': 27.5.1_ts-node@10.7.0
       import-local: 3.1.0
-      jest-cli: 27.5.1_ts-node@10.6.0
+      jest-cli: 27.5.1_ts-node@10.7.0
     transitivePeerDependencies:
       - bufferutil
       - canvas
@@ -6874,7 +6874,7 @@ packages:
       '@types/jest': 27.4.1
       bs-logger: 0.2.6
       fast-json-stable-stringify: 2.1.0
-      jest: 27.5.1_ts-node@10.6.0
+      jest: 27.5.1_ts-node@10.7.0
       jest-util: 27.5.1
       json5: 2.2.0
       lodash.memoize: 4.1.2
@@ -6884,8 +6884,8 @@ packages:
       yargs-parser: 20.2.9
     dev: true
 
-  /ts-node/10.6.0_045cabcbf8818eda83522fe731c87088:
-    resolution: {integrity: sha512-CJen6+dfOXolxudBQXnVjRVvYTmTWbyz7cn+xq2XTsvnaXbHqr4gXSCNbS2Jj8yTZMuGwUoBESLaOkLascVVvg==}
+  /ts-node/10.7.0_045cabcbf8818eda83522fe731c87088:
+    resolution: {integrity: sha512-TbIGS4xgJoX2i3do417KSaep1uRAW/Lu+WAL2doDHC0D6ummjirVOXU5/7aiZotbQ5p1Zp9tP7U6cYhA0O7M8A==}
     hasBin: true
     peerDependencies:
       '@swc/core': '>=1.2.50'
