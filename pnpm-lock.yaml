@@ -3,7 +3,7 @@ lockfileVersion: 5.3
 specifiers:
   '@commitlint/cli': 16.2.3
   '@commitlint/config-conventional': 16.2.1
-  '@prettier/plugin-xml': 1.2.0
+  '@prettier/plugin-xml': 2.0.1
   '@semantic-release/changelog': 6.0.1
   '@semantic-release/commit-analyzer': 9.0.2
   '@semantic-release/git': 10.0.1
@@ -59,7 +59,7 @@ specifiers:
 devDependencies:
   '@commitlint/cli': 16.2.3
   '@commitlint/config-conventional': 16.2.1
-  '@prettier/plugin-xml': 1.2.0
+  '@prettier/plugin-xml': 2.0.1
   '@semantic-release/changelog': 6.0.1_00a97abed8296618d95686649d8b9c1f
   '@semantic-release/commit-analyzer': 9.0.2_00a97abed8296618d95686649d8b9c1f
   '@semantic-release/git': 10.0.1_00a97abed8296618d95686649d8b9c1f
@@ -998,8 +998,8 @@ packages:
       '@octokit/openapi-types': 11.2.0
     dev: true
 
-  /@prettier/plugin-xml/1.2.0:
-    resolution: {integrity: sha512-bFvVAZKs59XNmntYjyefn3K4TBykS6E+d6ZW8IcylAs88ZO+TzLhp0dPpi0VKfPzq1Nb+kpDnPRTiwb4zY6NgA==}
+  /@prettier/plugin-xml/2.0.1:
+    resolution: {integrity: sha512-zJ2+/J5ujo23oHwaiuo3DEnxnRWSw/52IP7to+XmHiTC/qG17w2ld6FbDfVrsnO2PTPp0HFotPtZFlbrPJnaqA==}
     dependencies:
       '@xml-tools/parser': 1.0.11
       prettier: 2.6.0
