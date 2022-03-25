@@ -1,6 +1,6 @@
 {
     "name": "react-abac",
-    "version": "0.1.11",
+    "version": "0.1.12",
     "description": "Attribute Based Access Control and Role Based Access Control for React",
     "keywords": [
         "abac",
@@ -196,7 +196,7 @@
         "rollup-plugin-url": "3.0.1",
         "semantic-release": "github:rikhoffbauer/semantic-release",
         "sort-package-json": "1.55.0",
-        "ts-jest": "27.1.3",
+        "ts-jest": "27.1.4",
         "ts-node": "10.7.0",
         "tsc-watch": "4.6.2",
         "tslib": "2.3.1",
