@@ -17,7 +17,7 @@ specifiers:
   '@types/react-dom': 17.0.14
   '@typescript-eslint/eslint-plugin': 5.16.0
   '@typescript-eslint/parser': 5.16.0
-  '@wojtekmaj/enzyme-adapter-react-17': 0.6.6
+  '@wojtekmaj/enzyme-adapter-react-17': 0.6.7
   commitizen: 4.2.4
   cz-conventional-changelog: 3.3.0
   enzyme: 3.11.0
@@ -73,7 +73,7 @@ devDependencies:
   '@types/react-dom': 17.0.14
   '@typescript-eslint/eslint-plugin': 5.16.0_4df62b6e125e6f18efee2d013b4a9d80
   '@typescript-eslint/parser': 5.16.0_eslint@8.12.0+typescript@4.6.3
-  '@wojtekmaj/enzyme-adapter-react-17': 0.6.6_fae758709a8810ba97b4c03852dde4d0
+  '@wojtekmaj/enzyme-adapter-react-17': 0.6.7_fae758709a8810ba97b4c03852dde4d0
   commitizen: 4.2.4
   cz-conventional-changelog: 3.3.0
   enzyme: 3.11.0
@@ -1560,8 +1560,8 @@ packages:
       eslint-visitor-keys: 3.3.0
     dev: true
 
-  /@wojtekmaj/enzyme-adapter-react-17/0.6.6_fae758709a8810ba97b4c03852dde4d0:
-    resolution: {integrity: sha512-gSfhg8CiL0Vwc2UgUblGVZIy7M0KyXaZsd8+QwzV8TSVRLkGyzdLtYEcs9wRWyQTsdmOd+oRGqbVgUX7AVJxug==}
+  /@wojtekmaj/enzyme-adapter-react-17/0.6.7_fae758709a8810ba97b4c03852dde4d0:
+    resolution: {integrity: sha512-B+byiwi/T1bx5hcj9wc0fUL5Hlb5giSXJzcnEfJVl2j6dGV2NJfcxDBYX0WWwIxlzNiFz8kAvlkFWI2y/nscZQ==}
     peerDependencies:
       enzyme: ^3.0.0
       react: ^17.0.0-0
