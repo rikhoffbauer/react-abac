@@ -33,7 +33,7 @@ specifiers:
   jest: 27.5.1
   jest-cli: 27.5.1
   lint-staged: 12.3.7
-  prettier: 2.6.1
+  prettier: 2.6.2
   prettier-plugin-import-sort: 0.0.7
   prettier-plugin-sh: 0.8.1
   react: 18.0.0
@@ -80,7 +80,7 @@ devDependencies:
   enzyme-adapter-react-16: 1.15.6_959d5bde130227b86a90cb11647e1357
   eslint: 8.12.0
   eslint-config-prettier: 8.5.0_eslint@8.12.0
-  eslint-plugin-prettier: 4.0.0_b253a92c95b42c3296c682f11cccb3bd
+  eslint-plugin-prettier: 4.0.0_f2c91d0f54113167d2bd9214a5ab5a36
   husky: 7.0.4
   import-sort: 6.0.0
   import-sort-parser-typescript: 6.0.0
@@ -89,9 +89,9 @@ devDependencies:
   jest: 27.5.1_ts-node@10.7.0
   jest-cli: 27.5.1_ts-node@10.7.0
   lint-staged: 12.3.7
-  prettier: 2.6.1
-  prettier-plugin-import-sort: 0.0.7_prettier@2.6.1
-  prettier-plugin-sh: 0.8.1_prettier@2.6.1
+  prettier: 2.6.2
+  prettier-plugin-import-sort: 0.0.7_prettier@2.6.2
+  prettier-plugin-sh: 0.8.1_prettier@2.6.2
   react: 18.0.0
   react-dom: 18.0.0_react@18.0.0
   rimraf: 3.0.2
@@ -1002,7 +1002,7 @@ packages:
     resolution: {integrity: sha512-zJ2+/J5ujo23oHwaiuo3DEnxnRWSw/52IP7to+XmHiTC/qG17w2ld6FbDfVrsnO2PTPp0HFotPtZFlbrPJnaqA==}
     dependencies:
       '@xml-tools/parser': 1.0.11
-      prettier: 2.6.1
+      prettier: 2.6.2
     dev: true
 
   /@rollup/pluginutils/3.1.0_rollup@2.70.1:
@@ -2948,7 +2948,7 @@ packages:
       eslint: 8.12.0
     dev: true
 
-  /eslint-plugin-prettier/4.0.0_b253a92c95b42c3296c682f11cccb3bd:
+  /eslint-plugin-prettier/4.0.0_f2c91d0f54113167d2bd9214a5ab5a36:
     resolution: {integrity: sha512-98MqmCJ7vJodoQK359bqQWaxOE0CS8paAz/GgjaZLyex4TTk3g9HugoO89EqWCrFiOqn9EVvcoo7gZzONCWVwQ==}
     engines: {node: '>=6.0.0'}
     peerDependencies:
@@ -2961,7 +2961,7 @@ packages:
     dependencies:
       eslint: 8.12.0
       eslint-config-prettier: 8.5.0_eslint@8.12.0
-      prettier: 2.6.1
+      prettier: 2.6.2
       prettier-linter-helpers: 1.0.0
     dev: true
 
@@ -5726,7 +5726,7 @@ packages:
       fast-diff: 1.2.0
     dev: true
 
-  /prettier-plugin-import-sort/0.0.7_prettier@2.6.1:
+  /prettier-plugin-import-sort/0.0.7_prettier@2.6.2:
     resolution: {integrity: sha512-O0KlUSq+lwvh+UiN3wZDT6wWkf7TNxTVv2/XXE5KqpRNbFJq3nRg2ftzBYFFO8QGpdWIrOB0uCTCtFjIxmVKQw==}
     peerDependencies:
       prettier: '>= 2.0'
@@ -5735,22 +5735,22 @@ packages:
       import-sort-config: 6.0.0
       import-sort-parser-babylon: 6.0.0
       import-sort-parser-typescript: 6.0.0
-      prettier: 2.6.1
+      prettier: 2.6.2
     transitivePeerDependencies:
       - supports-color
     dev: true
 
-  /prettier-plugin-sh/0.8.1_prettier@2.6.1:
+  /prettier-plugin-sh/0.8.1_prettier@2.6.2:
     resolution: {integrity: sha512-tz0g6y+ZaJF0PWaa1F7vhCv4nLgYYl2zYzYU4XJFD1McoY0oHI+l2osvXqv1s5yQdtjdlzKszN6VY7WTaw2Gqw==}
     peerDependencies:
       prettier: ^2.0.0
     dependencies:
       mvdan-sh: 0.5.0
-      prettier: 2.6.1
+      prettier: 2.6.2
     dev: true
 
-  /prettier/2.6.1:
-    resolution: {integrity: sha512-8UVbTBYGwN37Bs9LERmxCPjdvPxlEowx2urIL6urHzdb3SDq4B/Z6xLFCblrSnE4iKWcS6ziJ3aOYrc1kz/E2A==}
+  /prettier/2.6.2:
+    resolution: {integrity: sha512-PkUpF+qoXTqhOeWL9fu7As8LXsIUZ1WYaJiY/a7McAQzxjk82OF0tibkFXVCDImZtWxbvojFjerkiLb0/q8mew==}
     engines: {node: '>=10.13.0'}
     hasBin: true
     dev: true
