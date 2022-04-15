@@ -1,3 +1,10 @@
+## [0.1.4](https://github.com/jewetnitg/react-abac/compare/v0.1.3...v0.1.4) (2022-04-15)
+
+
+### Bug Fixes
+
+* **deps:** update dependency react-scripts to v5.0.1 ([8229c99](https://github.com/jewetnitg/react-abac/commit/8229c9956dbc36792073bf5e835abc33268e23d3))
+
 ## [0.1.3](https://github.com/jewetnitg/react-abac/compare/v0.1.2...v0.1.3) (2022-03-18)
 
 
