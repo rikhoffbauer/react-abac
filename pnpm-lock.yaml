@@ -3,7 +3,7 @@ lockfileVersion: 5.3
 specifiers:
   '@commitlint/cli': 16.2.3
   '@commitlint/config-conventional': 16.2.1
-  '@prettier/plugin-xml': 2.0.1
+  '@prettier/plugin-xml': 2.1.0
   '@semantic-release/changelog': 6.0.1
   '@semantic-release/commit-analyzer': 9.0.2
   '@semantic-release/git': 10.0.1
@@ -59,7 +59,7 @@ specifiers:
 devDependencies:
   '@commitlint/cli': 16.2.3
   '@commitlint/config-conventional': 16.2.1
-  '@prettier/plugin-xml': 2.0.1
+  '@prettier/plugin-xml': 2.1.0
   '@semantic-release/changelog': 6.0.1_00a97abed8296618d95686649d8b9c1f
   '@semantic-release/commit-analyzer': 9.0.2_00a97abed8296618d95686649d8b9c1f
   '@semantic-release/git': 10.0.1_00a97abed8296618d95686649d8b9c1f
@@ -1009,8 +1009,8 @@ packages:
       tslib: 2.3.1
     dev: true
 
-  /@prettier/plugin-xml/2.0.1:
-    resolution: {integrity: sha512-zJ2+/J5ujo23oHwaiuo3DEnxnRWSw/52IP7to+XmHiTC/qG17w2ld6FbDfVrsnO2PTPp0HFotPtZFlbrPJnaqA==}
+  /@prettier/plugin-xml/2.1.0:
+    resolution: {integrity: sha512-gmmvjwOh6GcJ4yTr4L0IVWwUrML/P1xHotwAMlY8hTIHYcmaRzeJKou8omvAaYsjMXWXxfBP7ge0meadDStn+g==}
     dependencies:
       '@xml-tools/parser': 1.0.11
       prettier: 2.6.2
