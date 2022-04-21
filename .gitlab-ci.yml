@@ -5,7 +5,7 @@ stages:
 
 test:
     stage: test
-    image: node:17.9.0-alpine
+    image: node:18.0.0-alpine
     coverage: /All files[^|]*\|[^|]*\s+([\d\.]+)/
     artifacts:
         paths:
@@ -18,7 +18,7 @@ test:
 
 publish:
     stage: publish
-    image: node:17.9.0-alpine
+    image: node:18.0.0-alpine
     only:
         - tags
     script:
@@ -31,7 +31,7 @@ publish:
 
 pages:
     stage: pages
-    image: node:17.9.0-alpine
+    image: node:18.0.0-alpine
     script:
         - npm ci
         - npm run build
