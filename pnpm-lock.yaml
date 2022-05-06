@@ -35,7 +35,7 @@ specifiers:
   lint-staged: 12.4.1
   prettier: 2.6.2
   prettier-plugin-import-sort: 0.0.7
-  prettier-plugin-sh: 0.10.1
+  prettier-plugin-sh: 0.10.2
   react: 18.1.0
   react-dom: 18.1.0
   rimraf: 3.0.2
@@ -91,7 +91,7 @@ devDependencies:
   lint-staged: 12.4.1
   prettier: 2.6.2
   prettier-plugin-import-sort: 0.0.7_prettier@2.6.2
-  prettier-plugin-sh: 0.10.1_prettier@2.6.2
+  prettier-plugin-sh: 0.10.2_prettier@2.6.2
   react: 18.1.0
   react-dom: 18.1.0_react@18.1.0
   rimraf: 3.0.2
@@ -516,31 +516,10 @@ packages:
       '@commitlint/types': 16.2.1
     dev: true
 
-  /@commitlint/load/16.2.3:
-    resolution: {integrity: sha512-Hb4OUlMnBUK6UxJEZ/VJ5k0LocIS7PtEMbRXEAA7eSpOgORIFexC4K/RaRpVd5UTtu3M0ST3ddPPijF9rdW6nw==}
-    engines: {node: '>=v12'}
-    requiresBuild: true
-    dependencies:
-      '@commitlint/config-validator': 16.2.1
-      '@commitlint/execute-rule': 16.2.1
-      '@commitlint/resolve-extends': 16.2.1
-      '@commitlint/types': 16.2.1
-      '@types/node': 16.11.27
-      chalk: 4.1.2
-      cosmiconfig: 7.0.1
-      cosmiconfig-typescript-loader: 1.0.9_719e7c013adecafa50303831d1b06222
-      lodash: 4.17.21
-      resolve-from: 5.0.0
-      typescript: 4.6.3
-    transitivePeerDependencies:
-      - '@swc/core'
-      - '@swc/wasm'
-    dev: true
-    optional: true
-
   /@commitlint/load/16.2.4:
     resolution: {integrity: sha512-HjANm3/29ROV+zt4yfaY/K6gpr9Dbzgtlp0kSwZGW0poDXlD/yqVYgPQ6JolJzZii5FUz5R4yVLC15hVL/w60w==}
     engines: {node: '>=v12'}
+    requiresBuild: true
     dependencies:
       '@commitlint/config-validator': 16.2.1
       '@commitlint/execute-rule': 16.2.1
@@ -2556,7 +2535,7 @@ packages:
       longest: 2.0.1
       word-wrap: 1.2.3
     optionalDependencies:
-      '@commitlint/load': 16.2.3
+      '@commitlint/load': 16.2.4
     transitivePeerDependencies:
       - '@swc/core'
       - '@swc/wasm'
@@ -5818,8 +5797,8 @@ packages:
       - supports-color
     dev: true
 
-  /prettier-plugin-sh/0.10.1_prettier@2.6.2:
-    resolution: {integrity: sha512-bEcEMvgivqNB/9r9UIN6CTPoux7pmZKFtzDkEb/hSwj/j/PlHfNpiOwLtDZ44D8RtUAZloMz7j1ucqdPqcTawQ==}
+  /prettier-plugin-sh/0.10.2_prettier@2.6.2:
+    resolution: {integrity: sha512-4HnLebvyiZ8Ilj5cEu5D8rCxrHqCE/1c+6GhZ0rARxFfqHhxcLBcG6Lx48wAD00IPYj2YPDtfnSlS9owWtLhvA==}
     engines: {node: '>=12.20'}
     peerDependencies:
       prettier: ^2.0.0
