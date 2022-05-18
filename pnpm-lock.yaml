@@ -11,7 +11,7 @@ specifiers:
   '@semantic-release/release-notes-generator': 10.0.3
   '@types/enzyme': 3.10.12
   '@types/enzyme-adapter-react-16': 1.0.6
-  '@types/jest': 27.5.0
+  '@types/jest': 27.5.1
   '@types/node': 16.11.33
   '@types/react': 18.0.9
   '@types/react-dom': 18.0.3
@@ -67,7 +67,7 @@ devDependencies:
   '@semantic-release/release-notes-generator': 10.0.3_00a97abed8296618d95686649d8b9c1f
   '@types/enzyme': 3.10.12
   '@types/enzyme-adapter-react-16': 1.0.6
-  '@types/jest': 27.5.0
+  '@types/jest': 27.5.1
   '@types/node': 16.11.33
   '@types/react': 18.0.9
   '@types/react-dom': 18.0.3
@@ -106,7 +106,7 @@ devDependencies:
   rollup-plugin-url: 3.0.1_rollup@2.72.1
   semantic-release: github.com/rikhoffbauer/semantic-release/9a7bff0cfa08c9e6940b1ad7eb75959b34f051cc
   sort-package-json: 1.57.0
-  ts-jest: 28.0.2_cecb7ff85d54a968efd277ddda0b4a16
+  ts-jest: 28.0.2_863acde8f66073d610345a87311f22cf
   ts-node: 10.7.0_fd4b5ff48b408bf425abfec4a641da13
   tsc-watch: 5.0.3_typescript@4.6.4
   tslib: 2.4.0
@@ -1385,8 +1385,8 @@ packages:
       '@types/istanbul-lib-report': 3.0.0
     dev: true
 
-  /@types/jest/27.5.0:
-    resolution: {integrity: sha512-9RBFx7r4k+msyj/arpfaa0WOOEcaAZNmN+j80KFbFCoSqCJGHTz7YMAMGQW9Xmqm5w6l5c25vbSjMwlikJi5+g==}
+  /@types/jest/27.5.1:
+    resolution: {integrity: sha512-fUy7YRpT+rHXto1YlL+J9rs0uLGyiqVt3ZOTQR+4ROc47yNl8WLdVLgUloBRhOxP1PZvguHl44T3H0wAWxahYQ==}
     dependencies:
       jest-matcher-utils: 27.5.1
       pretty-format: 27.5.1
@@ -1779,7 +1779,7 @@ packages:
     dev: true
 
   /ansicolors/0.3.2:
-    resolution: {integrity: sha1-ZlWX3oap/+Oqm/vmyuXG6kJrSXk=}
+    resolution: {integrity: sha512-QXu7BPrP29VllRxH8GwB7x5iX5qWKAAMLqKQGWTeLWVlNHNOpVMJ91dsxQAIWXpjuW5wqvxu3Jd/nRjrJ+0pqg==}
     dev: true
 
   /anymatch/3.1.2:
@@ -1805,7 +1805,7 @@ packages:
     dev: true
 
   /argv-formatter/1.0.0:
-    resolution: {integrity: sha1-oMoMvCmltz6Dbuvhy/bF4OTrgvk=}
+    resolution: {integrity: sha512-F2+Hkm9xFaRg+GkaNnbwXNDV5O6pnCFEmqyhvfC/Ic5LbgOWjJh3L+mN/s91rxVL3znE7DYVpW0GJFT+4YBgWw==}
     dev: true
 
   /array-back/3.1.0:
@@ -2074,7 +2074,7 @@ packages:
     dev: true
 
   /cardinal/2.1.1:
-    resolution: {integrity: sha1-fMEFXYItISlU0HsIXeolHMe8VQU=}
+    resolution: {integrity: sha512-JSr5eOgoEymtYHBjNWyjrMqet9Am2miJhlfKNdqLp6zoeAh0KN5dRAcxlecj5mAJrmQomgiOBj35xHLrFjqBpw==}
     hasBin: true
     dependencies:
       ansicolors: 0.3.2
@@ -6738,7 +6738,7 @@ packages:
     engines: {node: '>=8'}
     dev: true
 
-  /ts-jest/28.0.2_cecb7ff85d54a968efd277ddda0b4a16:
+  /ts-jest/28.0.2_863acde8f66073d610345a87311f22cf:
     resolution: {integrity: sha512-IOZMb3D0gx6IHO9ywPgiQxJ3Zl4ECylEFwoVpENB55aTn5sdO0Ptyx/7noNBxAaUff708RqQL4XBNxxOVjY0vQ==}
     engines: {node: ^12.13.0 || ^14.15.0 || ^16.10.0 || >=17.0.0}
     hasBin: true
@@ -6759,7 +6759,7 @@ packages:
       esbuild:
         optional: true
     dependencies:
-      '@types/jest': 27.5.0
+      '@types/jest': 27.5.1
       bs-logger: 0.2.6
       fast-json-stable-stringify: 2.1.0
       jest: 28.1.0_7e831b5fcdbf72f231750b6cae739986
