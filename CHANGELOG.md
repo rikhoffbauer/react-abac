@@ -1,3 +1,10 @@
+## [0.1.6](https://github.com/jewetnitg/react-abac/compare/v0.1.5...v0.1.6) (2022-05-19)
+
+
+### Bug Fixes
+
+* **types:** mark userHasPermissions as an arrow function explicitly ([7bc290f](https://github.com/jewetnitg/react-abac/commit/7bc290f13d5a02fdf0696a712538fe372c3f09f3))
+
 ## [0.1.5](https://github.com/jewetnitg/react-abac/compare/v0.1.4...v0.1.5) (2022-05-02)
 
 
