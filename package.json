@@ -140,7 +140,7 @@
         "setupFiles": [
             "<rootDir>/test/setupTests.ts"
         ],
-        "testEnvironment": "jsdom",
+        "testEnvironment": "<rootDir>/test/testEnvironment.js",
         "testRegex": "(.*\\.(spec))\\.(ts|tsx|js)$",
         "transform": {
             "^.+\\.(t|j)s$": "ts-jest"
@@ -178,6 +178,8 @@
         "import-sort-style-module": "6.0.0",
         "jest": "28.1.0",
         "jest-cli": "28.1.0",
+        "jest-environment-jsdom": "^28.1.0",
+        "jest-environment-jsdom-global": "^3.1.1",
         "lint-staged": "12.4.1",
         "prettier": "2.6.2",
         "prettier-plugin-import-sort": "0.0.7",
