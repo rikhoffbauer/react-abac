@@ -14,7 +14,7 @@ specifiers:
   '@types/jest': 27.5.1
   '@types/node': 16.11.36
   '@types/react': 18.0.9
-  '@types/react-dom': 18.0.4
+  '@types/react-dom': 18.0.5
   '@typescript-eslint/eslint-plugin': 5.25.0
   '@typescript-eslint/parser': 5.25.0
   '@wojtekmaj/enzyme-adapter-react-17': 0.6.7
@@ -72,7 +72,7 @@ devDependencies:
   '@types/jest': 27.5.1
   '@types/node': 16.11.36
   '@types/react': 18.0.9
-  '@types/react-dom': 18.0.4
+  '@types/react-dom': 18.0.5
   '@typescript-eslint/eslint-plugin': 5.25.0_4ba2eb2aa3853cfb440cb10dd593ed15
   '@typescript-eslint/parser': 5.25.0_eslint@8.16.0+typescript@4.6.4
   '@wojtekmaj/enzyme-adapter-react-17': 0.6.7_0c25cc24844b81e7207b5e92d8c7bf46
@@ -1427,8 +1427,8 @@ packages:
     resolution: {integrity: sha512-JCB8C6SnDoQf0cNycqd/35A7MjcnK+ZTqE7judS6o7utxUCg6imJg3QK2qzHKszlTjcj2cn+NwMB2i96ubpj7w==}
     dev: true
 
-  /@types/react-dom/18.0.4:
-    resolution: {integrity: sha512-FgTtbqPOCI3dzZPZoC2T/sx3L34qxy99ITWn4eoSA95qPyXDMH0ALoAqUp49ITniiJFsXUVBtalh/KffMpg21Q==}
+  /@types/react-dom/18.0.5:
+    resolution: {integrity: sha512-OWPWTUrY/NIrjsAPkAk1wW9LZeIjSvkXRhclsFO8CZcZGCOg2G0YZy4ft+rOyYxy8B7ui5iZzi9OkDebZ7/QSA==}
     dependencies:
       '@types/react': 18.0.9
     dev: true
