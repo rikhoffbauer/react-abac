@@ -52,7 +52,7 @@ specifiers:
   rollup-plugin-url: 3.0.1
   semantic-release: github:rikhoffbauer/semantic-release
   sort-package-json: 1.57.0
-  ts-jest: 28.0.2
+  ts-jest: 28.0.3
   ts-node: 10.8.0
   tsc-watch: 5.0.3
   tslib: 2.4.0
@@ -110,7 +110,7 @@ devDependencies:
   rollup-plugin-url: 3.0.1_rollup@2.74.1
   semantic-release: github.com/rikhoffbauer/semantic-release/9a7bff0cfa08c9e6940b1ad7eb75959b34f051cc
   sort-package-json: 1.57.0
-  ts-jest: 28.0.2_863acde8f66073d610345a87311f22cf
+  ts-jest: 28.0.3_863acde8f66073d610345a87311f22cf
   ts-node: 10.8.0_886bd2d6c7dc0003e7c3b88eefc7328e
   tsc-watch: 5.0.3_typescript@4.6.4
   tslib: 2.4.0
@@ -693,7 +693,7 @@ packages:
       '@types/node': 16.11.36
       ansi-escapes: 4.3.2
       chalk: 4.1.2
-      ci-info: 3.3.0
+      ci-info: 3.3.1
       exit: 0.1.2
       graceful-fs: 4.2.10
       jest-changed-files: 28.0.2
@@ -2173,10 +2173,6 @@ packages:
     resolution: {integrity: sha512-wy3mC1x4ye+O+QkEinVJkPf5u2vsrDIYW9G7ZuwFl6v/Yu0LwUuT2POsb+NUWApebyxfkQq6+yDfRExbnI5rcw==}
     dependencies:
       regexp-to-ast: 0.5.0
-    dev: true
-
-  /ci-info/3.3.0:
-    resolution: {integrity: sha512-riT/3vI5YpVH6/qomlDnJow6TBee2PBKSEpx3O32EGPYbWGIRsIlGRms3Sm74wYE1JMo8RnO04Hb12+v1J5ICw==}
     dev: true
 
   /ci-info/3.3.1:
@@ -4347,7 +4343,7 @@ packages:
       '@types/node': 16.11.36
       babel-jest: 28.1.0_@babel+core@7.17.9
       chalk: 4.1.2
-      ci-info: 3.3.0
+      ci-info: 3.3.1
       deepmerge: 4.2.2
       glob: 7.2.0
       graceful-fs: 4.2.10
@@ -6949,8 +6945,8 @@ packages:
     engines: {node: '>=8'}
     dev: true
 
-  /ts-jest/28.0.2_863acde8f66073d610345a87311f22cf:
-    resolution: {integrity: sha512-IOZMb3D0gx6IHO9ywPgiQxJ3Zl4ECylEFwoVpENB55aTn5sdO0Ptyx/7noNBxAaUff708RqQL4XBNxxOVjY0vQ==}
+  /ts-jest/28.0.3_863acde8f66073d610345a87311f22cf:
+    resolution: {integrity: sha512-HzgbEDQ2KgVtDmpXToqAcKTyGHdHsG23i/iUjfxji92G5eT09S1m9UHZd7csF0Bfgh9txM4JzwHnv7r1waFPlw==}
     engines: {node: ^12.13.0 || ^14.15.0 || ^16.10.0 || >=17.0.0}
     hasBin: true
     peerDependencies:
