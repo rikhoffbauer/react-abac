@@ -11,7 +11,7 @@ specifiers:
   '@semantic-release/release-notes-generator': 10.0.3
   '@types/enzyme': 3.10.12
   '@types/enzyme-adapter-react-16': 1.0.6
-  '@types/jest': 27.5.1
+  '@types/jest': 27.5.2
   '@types/node': 16.11.38
   '@types/react': 18.0.10
   '@types/react-dom': 18.0.5
@@ -69,7 +69,7 @@ devDependencies:
   '@semantic-release/release-notes-generator': 10.0.3_00a97abed8296618d95686649d8b9c1f
   '@types/enzyme': 3.10.12
   '@types/enzyme-adapter-react-16': 1.0.6
-  '@types/jest': 27.5.1
+  '@types/jest': 27.5.2
   '@types/node': 16.11.38
   '@types/react': 18.0.10
   '@types/react-dom': 18.0.5
@@ -110,7 +110,7 @@ devDependencies:
   rollup-plugin-url: 3.0.1_rollup@2.75.5
   semantic-release: github.com/rikhoffbauer/semantic-release/9a7bff0cfa08c9e6940b1ad7eb75959b34f051cc
   sort-package-json: 1.57.0
-  ts-jest: 28.0.3_fc81a27b80351b0ea93cc89cb3c5aa0b
+  ts-jest: 28.0.3_f6f727943e090f94126b3f1356235d8d
   ts-node: 10.8.0_08e84cade539e9a9016ef48bfdf07f6c
   tsc-watch: 5.0.3_typescript@4.7.2
   tslib: 2.4.0
@@ -1373,8 +1373,8 @@ packages:
       '@types/istanbul-lib-report': 3.0.0
     dev: true
 
-  /@types/jest/27.5.1:
-    resolution: {integrity: sha512-fUy7YRpT+rHXto1YlL+J9rs0uLGyiqVt3ZOTQR+4ROc47yNl8WLdVLgUloBRhOxP1PZvguHl44T3H0wAWxahYQ==}
+  /@types/jest/27.5.2:
+    resolution: {integrity: sha512-mpT8LJJ4CMeeahobofYWIjFo0xonRS/HfxnVEPMPFSQdGUt1uHCnoPT7Zhb+sjDU2wz0oKV0OLUR0WzrHNgfeA==}
     dependencies:
       jest-matcher-utils: 27.5.1
       pretty-format: 27.5.1
@@ -6986,7 +6986,7 @@ packages:
     engines: {node: '>=8'}
     dev: true
 
-  /ts-jest/28.0.3_fc81a27b80351b0ea93cc89cb3c5aa0b:
+  /ts-jest/28.0.3_f6f727943e090f94126b3f1356235d8d:
     resolution: {integrity: sha512-HzgbEDQ2KgVtDmpXToqAcKTyGHdHsG23i/iUjfxji92G5eT09S1m9UHZd7csF0Bfgh9txM4JzwHnv7r1waFPlw==}
     engines: {node: ^12.13.0 || ^14.15.0 || ^16.10.0 || >=17.0.0}
     hasBin: true
@@ -7007,7 +7007,7 @@ packages:
       esbuild:
         optional: true
     dependencies:
-      '@types/jest': 27.5.1
+      '@types/jest': 27.5.2
       bs-logger: 0.2.6
       fast-json-stable-stringify: 2.1.0
       jest: 28.1.0_5f12839729b5ab18dfaf77fa6c428194
