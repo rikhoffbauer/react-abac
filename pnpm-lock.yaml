@@ -13,7 +13,7 @@ specifiers:
   '@types/enzyme-adapter-react-16': 1.0.6
   '@types/jest': 28.1.1
   '@types/node': 16.11.38
-  '@types/react': 18.0.10
+  '@types/react': 18.0.12
   '@types/react-dom': 18.0.5
   '@typescript-eslint/eslint-plugin': 5.27.0
   '@typescript-eslint/parser': 5.27.0
@@ -71,7 +71,7 @@ devDependencies:
   '@types/enzyme-adapter-react-16': 1.0.6
   '@types/jest': 28.1.1
   '@types/node': 16.11.38
-  '@types/react': 18.0.10
+  '@types/react': 18.0.12
   '@types/react-dom': 18.0.5
   '@typescript-eslint/eslint-plugin': 5.27.0_53a3a26d566b734365db03aac28a1a58
   '@typescript-eslint/parser': 5.27.0_eslint@8.17.0+typescript@4.7.3
@@ -1333,7 +1333,7 @@ packages:
     resolution: {integrity: sha512-xryQlOEIe1TduDWAOphR0ihfebKFSWOXpIsk+70JskCfRfW+xALdnJ0r1ZOTo85F9Qsjk6vtlU7edTYHbls9tA==}
     dependencies:
       '@types/cheerio': 0.22.31
-      '@types/react': 18.0.10
+      '@types/react': 18.0.12
     dev: true
 
   /@types/estree/0.0.39:
@@ -1431,11 +1431,11 @@ packages:
   /@types/react-dom/18.0.5:
     resolution: {integrity: sha512-OWPWTUrY/NIrjsAPkAk1wW9LZeIjSvkXRhclsFO8CZcZGCOg2G0YZy4ft+rOyYxy8B7ui5iZzi9OkDebZ7/QSA==}
     dependencies:
-      '@types/react': 18.0.10
+      '@types/react': 18.0.12
     dev: true
 
-  /@types/react/18.0.10:
-    resolution: {integrity: sha512-dIugadZuIPrRzvIEevIu7A1smqOAjkSMv8qOfwPt9Ve6i6JT/FQcCHyk2qIAxwsQNKZt5/oGR0T4z9h2dXRAkg==}
+  /@types/react/18.0.12:
+    resolution: {integrity: sha512-duF1OTASSBQtcigUvhuiTB1Ya3OvSy+xORCiEf20H0P0lzx+/KeVsA99U5UjLXSbyo1DRJDlLKqTeM1ngosqtg==}
     dependencies:
       '@types/prop-types': 15.7.5
       '@types/scheduler': 0.16.2
@@ -6062,7 +6062,7 @@ packages:
     dev: true
 
   /redeyed/2.1.1:
-    resolution: {integrity: sha1-iYS1gV2ZyyIEacme7v/jiRPmzAs=}
+    resolution: {integrity: sha512-FNpGGo1DycYAdnrKFxCMmKYgo/mILAqtRYbkdQD8Ep/Hk2PQ5+aEAEx+IU713RTDmuBaH0c8P5ZozurNu5ObRQ==}
     dependencies:
       esprima: 4.0.1
     dev: true
@@ -6093,7 +6093,7 @@ packages:
     dev: true
 
   /require-directory/2.1.1:
-    resolution: {integrity: sha1-jGStX9MNqxyXbiNE/+f3kqam30I=}
+    resolution: {integrity: sha512-fGxEI7+wsG9xrvdjsrlmL22OMTTiHRwAMroiEeMgq8gzoLC/PQr7RsRDSTLUg/bZAZtF+TVIkHc6/4RIKrui+Q==}
     engines: {node: '>=0.10.0'}
     dev: true
 
@@ -6117,7 +6117,7 @@ packages:
     dev: true
 
   /resolve-from/3.0.0:
-    resolution: {integrity: sha1-six699nWiBvItuZTM17rywoYh0g=}
+    resolution: {integrity: sha512-GnlH6vxLymXJNMBo7XP1fJIzBFbdYt49CuTwmB/6N53t+kMPRMFKz783LlQ4tv28XoQfMWinAJX6WCGf2IlaIw==}
     engines: {node: '>=4'}
     dev: true
 
