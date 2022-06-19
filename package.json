@@ -1,6 +1,6 @@
 {
     "name": "react-abac",
-    "version": "0.1.12",
+    "version": "0.1.13",
     "description": "Attribute Based Access Control and Role Based Access Control for React",
     "keywords": [
         "abac",
@@ -180,7 +180,7 @@
         "jest-cli": "28.1.1",
         "jest-environment-jsdom": "^28.1.0",
         "jest-environment-jsdom-global": "^3.1.1",
-        "lint-staged": "13.0.1",
+        "lint-staged": "13.0.2",
         "prettier": "2.7.1",
         "prettier-plugin-import-sort": "0.0.7",
         "prettier-plugin-sh": "0.11.0",
