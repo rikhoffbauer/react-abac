@@ -34,7 +34,7 @@ specifiers:
   jest-cli: 28.1.1
   jest-environment-jsdom: ^28.1.0
   jest-environment-jsdom-global: ^3.1.1
-  lint-staged: 13.0.2
+  lint-staged: 13.0.3
   prettier: 2.7.1
   prettier-plugin-import-sort: 0.0.7
   prettier-plugin-sh: 0.11.0
@@ -92,7 +92,7 @@ devDependencies:
   jest-cli: 28.1.1_74bd5344295ff274a1213531fe16bbb0
   jest-environment-jsdom: 28.1.0
   jest-environment-jsdom-global: 3.1.1_jest-environment-jsdom@28.1.0
-  lint-staged: 13.0.2
+  lint-staged: 13.0.3
   prettier: 2.7.1
   prettier-plugin-import-sort: 0.0.7_prettier@2.7.1
   prettier-plugin-sh: 0.11.0_prettier@2.7.1
@@ -4919,8 +4919,8 @@ packages:
     resolution: {integrity: sha512-7ylylesZQ/PV29jhEDl3Ufjo6ZX7gCqJr5F7PKrqc93v7fzSymt1BpwEU8nAUXs8qzzvqhbjhK5QZg6Mt/HkBg==}
     dev: true
 
-  /lint-staged/13.0.2:
-    resolution: {integrity: sha512-qQLfLTh9z34eMzfEHENC+QBskZfxjomrf+snF3xJ4BzilORbD989NLqQ00ughsF/A+PT41e87+WsMFabf9++pQ==}
+  /lint-staged/13.0.3:
+    resolution: {integrity: sha512-9hmrwSCFroTSYLjflGI8Uk+GWAwMB4OlpU4bMJEAT5d/llQwtYKoim4bLOyLCuWFAhWEupE0vkIFqtw/WIsPug==}
     engines: {node: ^14.13.1 || >=16.0.0}
     hasBin: true
     dependencies:
