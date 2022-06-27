@@ -1,8 +1,8 @@
 lockfileVersion: 5.3
 
 specifiers:
-  '@commitlint/cli': 17.0.2
-  '@commitlint/config-conventional': 17.0.2
+  '@commitlint/cli': 17.0.3
+  '@commitlint/config-conventional': 17.0.3
   '@prettier/plugin-xml': 2.2.0
   '@semantic-release/changelog': 6.0.1
   '@semantic-release/commit-analyzer': 9.0.2
@@ -59,8 +59,8 @@ specifiers:
   typescript: 4.7.4
 
 devDependencies:
-  '@commitlint/cli': 17.0.2
-  '@commitlint/config-conventional': 17.0.2
+  '@commitlint/cli': 17.0.3
+  '@commitlint/config-conventional': 17.0.3
   '@prettier/plugin-xml': 2.2.0
   '@semantic-release/changelog': 6.0.1_00a97abed8296618d95686649d8b9c1f
   '@semantic-release/commit-analyzer': 9.0.2_00a97abed8296618d95686649d8b9c1f
@@ -449,14 +449,14 @@ packages:
     dev: true
     optional: true
 
-  /@commitlint/cli/17.0.2:
-    resolution: {integrity: sha512-Axe89Js0YzGGd4gxo3JLlF7yIdjOVpG1LbOorGc6PfYF+drBh14PvarSDLzyd2TNqdylUCq9wb9/A88ZjIdyhA==}
+  /@commitlint/cli/17.0.3:
+    resolution: {integrity: sha512-oAo2vi5d8QZnAbtU5+0cR2j+A7PO8zuccux65R/EycwvsZrDVyW518FFrnJK2UQxbRtHFFIG+NjQ6vOiJV0Q8A==}
     engines: {node: '>=v14'}
     hasBin: true
     dependencies:
       '@commitlint/format': 17.0.0
-      '@commitlint/lint': 17.0.0
-      '@commitlint/load': 17.0.0
+      '@commitlint/lint': 17.0.3
+      '@commitlint/load': 17.0.3
       '@commitlint/read': 17.0.0
       '@commitlint/types': 17.0.0
       execa: 5.1.1
@@ -469,8 +469,8 @@ packages:
       - '@swc/wasm'
     dev: true
 
-  /@commitlint/config-conventional/17.0.2:
-    resolution: {integrity: sha512-MfP0I/JbxKkzo+HXWB7B3WstGS4BiniotU3d3xQ9gK8cR0DbeZ4MuyGCWF65YDyrcDTS3WlrJ3ndSPA1pqhoPw==}
+  /@commitlint/config-conventional/17.0.3:
+    resolution: {integrity: sha512-HCnzTm5ATwwwzNVq5Y57poS0a1oOOcd5pc1MmBpLbGmSysc4i7F/++JuwtdFPu16sgM3H9J/j2zznRLOSGVO2A==}
     engines: {node: '>=v14'}
     dependencies:
       conventional-changelog-conventionalcommits: 5.0.0
@@ -482,6 +482,15 @@ packages:
     dependencies:
       '@commitlint/types': 17.0.0
       ajv: 6.12.6
+    dev: true
+    optional: true
+
+  /@commitlint/config-validator/17.0.3:
+    resolution: {integrity: sha512-3tLRPQJKapksGE7Kee9axv+9z5I2GDHitDH4q63q7NmNA0wkB+DAorJ0RHz2/K00Zb1/MVdHzhCga34FJvDihQ==}
+    engines: {node: '>=v14'}
+    dependencies:
+      '@commitlint/types': 17.0.0
+      ajv: 8.11.0
     dev: true
 
   /@commitlint/ensure/17.0.0:
@@ -505,19 +514,19 @@ packages:
       chalk: 4.1.2
     dev: true
 
-  /@commitlint/is-ignored/17.0.0:
-    resolution: {integrity: sha512-UmacD0XM/wWykgdXn5CEWVS4XGuqzU+ZGvM2hwv85+SXGnIOaG88XHrt81u37ZeVt1riWW+YdOxcJW6+nd5v5w==}
+  /@commitlint/is-ignored/17.0.3:
+    resolution: {integrity: sha512-/wgCXAvPtFTQZxsVxj7owLeRf5wwzcXLaYmrZPR4a87iD4sCvUIRl1/ogYrtOyUmHwWfQsvjqIB4mWE/SqWSnA==}
     engines: {node: '>=v14'}
     dependencies:
       '@commitlint/types': 17.0.0
       semver: 7.3.7
     dev: true
 
-  /@commitlint/lint/17.0.0:
-    resolution: {integrity: sha512-5FL7VLvGJQby24q0pd4UdM8FNFcL+ER1T/UBf8A9KRL5+QXV1Rkl6Zhcl7+SGpGlVo6Yo0pm6aLW716LVKWLGg==}
+  /@commitlint/lint/17.0.3:
+    resolution: {integrity: sha512-2o1fk7JUdxBUgszyt41sHC/8Nd5PXNpkmuOo9jvGIjDHzOwXyV0PSdbEVTH3xGz9NEmjohFHr5l+N+T9fcxong==}
     engines: {node: '>=v14'}
     dependencies:
-      '@commitlint/is-ignored': 17.0.0
+      '@commitlint/is-ignored': 17.0.3
       '@commitlint/parse': 17.0.0
       '@commitlint/rules': 17.0.0
       '@commitlint/types': 17.0.0
@@ -531,6 +540,27 @@ packages:
       '@commitlint/config-validator': 17.0.0
       '@commitlint/execute-rule': 17.0.0
       '@commitlint/resolve-extends': 17.0.0
+      '@commitlint/types': 17.0.0
+      '@types/node': 16.11.41
+      chalk: 4.1.2
+      cosmiconfig: 7.0.1
+      cosmiconfig-typescript-loader: 2.0.0_841f2a74d64cdda652a10d589e346265
+      lodash: 4.17.21
+      resolve-from: 5.0.0
+      typescript: 4.7.4
+    transitivePeerDependencies:
+      - '@swc/core'
+      - '@swc/wasm'
+    dev: true
+    optional: true
+
+  /@commitlint/load/17.0.3:
+    resolution: {integrity: sha512-3Dhvr7GcKbKa/ey4QJ5MZH3+J7QFlARohUow6hftQyNjzoXXROm+RwpBes4dDFrXG1xDw9QPXA7uzrOShCd4bw==}
+    engines: {node: '>=v14'}
+    dependencies:
+      '@commitlint/config-validator': 17.0.3
+      '@commitlint/execute-rule': 17.0.0
+      '@commitlint/resolve-extends': 17.0.3
       '@commitlint/types': 17.0.0
       '@types/node': 16.11.41
       chalk: 4.1.2
@@ -573,6 +603,19 @@ packages:
     engines: {node: '>=v14'}
     dependencies:
       '@commitlint/config-validator': 17.0.0
+      '@commitlint/types': 17.0.0
+      import-fresh: 3.3.0
+      lodash: 4.17.21
+      resolve-from: 5.0.0
+      resolve-global: 1.0.0
+    dev: true
+    optional: true
+
+  /@commitlint/resolve-extends/17.0.3:
+    resolution: {integrity: sha512-H/RFMvrcBeJCMdnVC4i8I94108UDccIHrTke2tyQEg9nXQnR5/Hd6MhyNWkREvcrxh9Y+33JLb+PiPiaBxCtBA==}
+    engines: {node: '>=v14'}
+    dependencies:
+      '@commitlint/config-validator': 17.0.3
       '@commitlint/types': 17.0.0
       import-fresh: 3.3.0
       lodash: 4.17.21
@@ -1771,6 +1814,15 @@ packages:
       uri-js: 4.4.1
     dev: true
 
+  /ajv/8.11.0:
+    resolution: {integrity: sha512-wGgprdCvMalC0BztXvitD2hC04YffAvtsUn93JbGXYLAtCUO4xd17mCCZQxUOItiBwZvJScWo8NIvQMQ71rdpg==}
+    dependencies:
+      fast-deep-equal: 3.1.3
+      json-schema-traverse: 1.0.0
+      require-from-string: 2.0.2
+      uri-js: 4.4.1
+    dev: true
+
   /ansi-escapes/3.2.0:
     resolution: {integrity: sha512-cBhpre4ma+U0T1oM5fXg7Dy1Jw7zzwv7lt/GoCpr+hDQJoYnKVPLL4dCvSEFMmQurOQvSrwT7SL/DAlhBI97RQ==}
     engines: {node: '>=4'}
@@ -2578,7 +2630,7 @@ packages:
       longest: 2.0.1
       word-wrap: 1.2.3
     optionalDependencies:
-      '@commitlint/load': 17.0.0
+      '@commitlint/load': 17.0.3
     transitivePeerDependencies:
       - '@swc/core'
       - '@swc/wasm'
@@ -4846,6 +4898,10 @@ packages:
     resolution: {integrity: sha512-xbbCH5dCYU5T8LcEhhuh7HJ88HXuW3qsI3Y0zOZFKfZEHcpWiHU/Jxzk629Brsab/mMiHQti9wMP+845RPe3Vg==}
     dev: true
 
+  /json-schema-traverse/1.0.0:
+    resolution: {integrity: sha512-NM8/P9n3XjXhIZn1lLhkFaACTOURQXjWhV4BA/RnOv8xvgqtqpAX9IO4mRQxSx1Rlo4tqzeqb0sOlruaOy3dug==}
+    dev: true
+
   /json-stable-stringify-without-jsonify/1.0.1:
     resolution: {integrity: sha512-Bdboy+l7tA3OGW6FjyFHWkP5LuByj1Tk33Ljyq0axyzdk9//JSi2u3fP1QSmd1KNwq6VOKYGlAu87CisVir6Pw==}
     dev: true
@@ -6111,6 +6167,11 @@ packages:
 
   /require-directory/2.1.1:
     resolution: {integrity: sha512-fGxEI7+wsG9xrvdjsrlmL22OMTTiHRwAMroiEeMgq8gzoLC/PQr7RsRDSTLUg/bZAZtF+TVIkHc6/4RIKrui+Q==}
+    engines: {node: '>=0.10.0'}
+    dev: true
+
+  /require-from-string/2.0.2:
+    resolution: {integrity: sha512-Xf0nWe6RseziFMu+Ap9biiUbmplq6S9/p+7w7YXP/JBHhrUDDUhwa+vANyubuqfZWTveU//DYVGsDG7RKL/vEw==}
     engines: {node: '>=0.10.0'}
     dev: true
 
