@@ -37,7 +37,7 @@ specifiers:
   lint-staged: 13.0.3
   prettier: 2.7.1
   prettier-plugin-import-sort: 0.0.7
-  prettier-plugin-sh: 0.11.0
+  prettier-plugin-sh: 0.12.4
   react: 18.2.0
   react-dom: 18.2.0
   rimraf: 3.0.2
@@ -95,7 +95,7 @@ devDependencies:
   lint-staged: 13.0.3
   prettier: 2.7.1
   prettier-plugin-import-sort: 0.0.7_prettier@2.7.1
-  prettier-plugin-sh: 0.11.0_prettier@2.7.1
+  prettier-plugin-sh: 0.12.4_prettier@2.7.1
   react: 18.2.0
   react-dom: 18.2.0_react@18.2.0
   rimraf: 3.0.2
@@ -5854,9 +5854,9 @@ packages:
       - supports-color
     dev: true
 
-  /prettier-plugin-sh/0.11.0_prettier@2.7.1:
-    resolution: {integrity: sha512-YwuWGYuf6UiF80BZ3Lrby2yot0zRcktcBl+VD/xSLoPrmiH/yXcopz3RBtNMNcBeP13ALim9N/LtlTCmvUziVQ==}
-    engines: {node: '>=12.20'}
+  /prettier-plugin-sh/0.12.4_prettier@2.7.1:
+    resolution: {integrity: sha512-s0SK0hdng0Qv44Gs5yjUyk/j+LEmgoCpvEZ4LS0GglkeTyCR4gqgCrJ/ksbK+1ZuHB6UJ8e2ReOoln0Qfu2T9w==}
+    engines: {node: ^12.20 || ^14.18.0 || >=16.0.0}
     peerDependencies:
       prettier: ^2.0.0
     dependencies:
