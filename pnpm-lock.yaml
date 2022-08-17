@@ -52,7 +52,7 @@ specifiers:
   rollup-plugin-url: 3.0.1
   semantic-release: github:rikhoffbauer/semantic-release
   sort-package-json: 1.57.0
-  ts-jest: 28.0.7
+  ts-jest: 28.0.8
   ts-node: 10.9.1
   tsc-watch: 5.0.3
   tslib: 2.4.0
@@ -110,7 +110,7 @@ devDependencies:
   rollup-plugin-url: 3.0.1_rollup@2.78.0
   semantic-release: github.com/rikhoffbauer/semantic-release/9a7bff0cfa08c9e6940b1ad7eb75959b34f051cc
   sort-package-json: 1.57.0
-  ts-jest: 28.0.7_jest@28.1.3+typescript@4.7.4
+  ts-jest: 28.0.8_jest@28.1.3+typescript@4.7.4
   ts-node: 10.9.1_4d1d6a2472d3ea20ef42984a0daa64ff
   tsc-watch: 5.0.3_typescript@4.7.4
   tslib: 2.4.0
@@ -7104,8 +7104,8 @@ packages:
     engines: {node: '>=8'}
     dev: true
 
-  /ts-jest/28.0.7_jest@28.1.3+typescript@4.7.4:
-    resolution: {integrity: sha512-wWXCSmTwBVmdvWrOpYhal79bDpioDy4rTT+0vyUnE3ZzM7LOAAGG9NXwzkEL/a516rQEgnMmS/WKP9jBPCVJyA==}
+  /ts-jest/28.0.8_jest@28.1.3+typescript@4.7.4:
+    resolution: {integrity: sha512-5FaG0lXmRPzApix8oFG8RKjAz4ehtm8yMKOTy5HX3fY6W8kmvOrmcY0hKDElW52FJov+clhUbrKAqofnj4mXTg==}
     engines: {node: ^12.13.0 || ^14.15.0 || ^16.10.0 || >=17.0.0}
     hasBin: true
     peerDependencies:
