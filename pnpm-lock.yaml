@@ -11,7 +11,7 @@ specifiers:
   '@semantic-release/release-notes-generator': 10.0.3
   '@types/enzyme': 3.10.12
   '@types/enzyme-adapter-react-16': 1.0.6
-  '@types/jest': 28.1.7
+  '@types/jest': 28.1.8
   '@types/node': 16.11.56
   '@types/react': 18.0.17
   '@types/react-dom': 18.0.6
@@ -69,7 +69,7 @@ devDependencies:
   '@semantic-release/release-notes-generator': 10.0.3_00a97abed8296618d95686649d8b9c1f
   '@types/enzyme': 3.10.12
   '@types/enzyme-adapter-react-16': 1.0.6
-  '@types/jest': 28.1.7
+  '@types/jest': 28.1.8
   '@types/node': 16.11.56
   '@types/react': 18.0.17
   '@types/react-dom': 18.0.6
@@ -1503,8 +1503,8 @@ packages:
       '@types/istanbul-lib-report': 3.0.0
     dev: true
 
-  /@types/jest/28.1.7:
-    resolution: {integrity: sha512-acDN4VHD40V24tgu0iC44jchXavRNVFXQ/E6Z5XNsswgoSO/4NgsXoEYmPUGookKldlZQyIpmrEXsHI9cA3ZTA==}
+  /@types/jest/28.1.8:
+    resolution: {integrity: sha512-8TJkV++s7B6XqnDrzR1m/TT0A0h948Pnl/097veySPN67VRAgQ4gZ7n2KfJo2rVq6njQjdxU3GCCyDvAeuHoiw==}
     dependencies:
       expect: 28.1.3
       pretty-format: 28.1.3
