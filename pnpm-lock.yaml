@@ -7,7 +7,7 @@ specifiers:
   '@semantic-release/changelog': 6.0.1
   '@semantic-release/commit-analyzer': 9.0.2
   '@semantic-release/git': 10.0.1
-  '@semantic-release/github': 8.0.5
+  '@semantic-release/github': 8.0.6
   '@semantic-release/release-notes-generator': 10.0.3
   '@types/enzyme': 3.10.12
   '@types/enzyme-adapter-react-16': 1.0.6
@@ -65,7 +65,7 @@ devDependencies:
   '@semantic-release/changelog': 6.0.1_00a97abed8296618d95686649d8b9c1f
   '@semantic-release/commit-analyzer': 9.0.2_00a97abed8296618d95686649d8b9c1f
   '@semantic-release/git': 10.0.1_00a97abed8296618d95686649d8b9c1f
-  '@semantic-release/github': 8.0.5_00a97abed8296618d95686649d8b9c1f
+  '@semantic-release/github': 8.0.6_00a97abed8296618d95686649d8b9c1f
   '@semantic-release/release-notes-generator': 10.0.3_00a97abed8296618d95686649d8b9c1f
   '@types/enzyme': 3.10.12
   '@types/enzyme-adapter-react-16': 1.0.6
@@ -1330,14 +1330,14 @@ packages:
       - supports-color
     dev: true
 
-  /@semantic-release/github/8.0.5_00a97abed8296618d95686649d8b9c1f:
-    resolution: {integrity: sha512-9pGxRM3gv1hgoZ/muyd4pWnykdIUVfCiev6MXE9lOyGQof4FQy95GFE26nDcifs9ZG7bBzV8ue87bo/y1zVf0g==}
+  /@semantic-release/github/8.0.6_00a97abed8296618d95686649d8b9c1f:
+    resolution: {integrity: sha512-ZxgaxYCeqt9ylm2x3OPqUoUqBw1p60LhxzdX6BqJlIBThupGma98lttsAbK64T6L6AlNa2G5T66BbiG8y0PIHQ==}
     engines: {node: '>=14.17'}
     peerDependencies:
       semantic-release: '>=18.0.0-beta.1'
     dependencies:
       '@octokit/rest': 19.0.3
-      '@semantic-release/error': 2.2.0
+      '@semantic-release/error': 3.0.0
       aggregate-error: 3.1.0
       bottleneck: 2.19.5
       debug: 4.3.4
