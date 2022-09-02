@@ -13,7 +13,7 @@ specifiers:
   '@types/enzyme-adapter-react-16': 1.0.6
   '@types/jest': 29.0.0
   '@types/node': 16.11.56
-  '@types/react': 18.0.17
+  '@types/react': 18.0.18
   '@types/react-dom': 18.0.6
   '@typescript-eslint/eslint-plugin': 5.35.1
   '@typescript-eslint/parser': 5.35.1
@@ -71,7 +71,7 @@ devDependencies:
   '@types/enzyme-adapter-react-16': 1.0.6
   '@types/jest': 29.0.0
   '@types/node': 16.11.56
-  '@types/react': 18.0.17
+  '@types/react': 18.0.18
   '@types/react-dom': 18.0.6
   '@typescript-eslint/eslint-plugin': 5.35.1_796d3a3e9b8f2d761837f1d3f35998a5
   '@typescript-eslint/parser': 5.35.1_eslint@8.23.0+typescript@4.8.2
@@ -1503,7 +1503,7 @@ packages:
     resolution: {integrity: sha512-xryQlOEIe1TduDWAOphR0ihfebKFSWOXpIsk+70JskCfRfW+xALdnJ0r1ZOTo85F9Qsjk6vtlU7edTYHbls9tA==}
     dependencies:
       '@types/cheerio': 0.22.31
-      '@types/react': 18.0.17
+      '@types/react': 18.0.18
     dev: true
 
   /@types/estree/0.0.39:
@@ -1601,11 +1601,11 @@ packages:
   /@types/react-dom/18.0.6:
     resolution: {integrity: sha512-/5OFZgfIPSwy+YuIBP/FgJnQnsxhZhjjrnxudMddeblOouIodEQ75X14Rr4wGSG/bknL+Omy9iWlLo1u/9GzAA==}
     dependencies:
-      '@types/react': 18.0.17
+      '@types/react': 18.0.18
     dev: true
 
-  /@types/react/18.0.17:
-    resolution: {integrity: sha512-38ETy4tL+rn4uQQi7mB81G7V1g0u2ryquNmsVIOKUAEIDK+3CUjZ6rSRpdvS99dNBnkLFL83qfmtLacGOTIhwQ==}
+  /@types/react/18.0.18:
+    resolution: {integrity: sha512-6hI08umYs6NaiHFEEGioXnxJ+oEhY3eRz8VCUaudZmGdtvPviCJB8mgaMxaDWAdPSYd4eFavrPk2QIolwbLYrg==}
     dependencies:
       '@types/prop-types': 15.7.5
       '@types/scheduler': 0.16.2
