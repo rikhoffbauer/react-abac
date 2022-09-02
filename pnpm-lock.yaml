@@ -33,7 +33,7 @@ specifiers:
   jest: 29.0.1
   jest-cli: 29.0.1
   jest-environment-jsdom: 29.0.1
-  jest-environment-jsdom-global: 3.1.2
+  jest-environment-jsdom-global: 4.0.0
   lint-staged: 13.0.3
   prettier: 2.7.1
   prettier-plugin-import-sort: 0.0.7
@@ -91,7 +91,7 @@ devDependencies:
   jest: 29.0.1_727f77aebcf199bfa4a516b56c7c4ef3
   jest-cli: 29.0.1_727f77aebcf199bfa4a516b56c7c4ef3
   jest-environment-jsdom: 29.0.1
-  jest-environment-jsdom-global: 3.1.2_jest-environment-jsdom@29.0.1
+  jest-environment-jsdom-global: 4.0.0_jest-environment-jsdom@29.0.1
   lint-staged: 13.0.3
   prettier: 2.7.1
   prettier-plugin-import-sort: 0.0.7_prettier@2.7.1
@@ -4605,11 +4605,11 @@ packages:
       pretty-format: 29.0.1
     dev: true
 
-  /jest-environment-jsdom-global/3.1.2_jest-environment-jsdom@29.0.1:
-    resolution: {integrity: sha512-Suq/B0c8OVUYrx05j8ynKqKMzNCTNll72SLxzoTeBtjnsbrScM2Az0dBEBPN8EVTuP1lcgWN0tV0M9+hfkvXHQ==}
-    engines: {node: '>= 12'}
+  /jest-environment-jsdom-global/4.0.0_jest-environment-jsdom@29.0.1:
+    resolution: {integrity: sha512-qEV8j61oV5XhOBUQbrld2nMYKnp/AGINUaoYTtkwJ9rjvMNRN7ZaZ/dgoPpW83oFtrSiVM1gie6ajdsKFBUlLA==}
+    engines: {node: '>= 14'}
     peerDependencies:
-      jest-environment-jsdom: 22.x || 23.x || 24.x || 25.x || 26.x || 27.x || 28.x
+      jest-environment-jsdom: 22.x || 23.x || 24.x || 25.x || 26.x || 27.x || 28.x || 29.x
     dependencies:
       jest-environment-jsdom: 29.0.1
     dev: true
