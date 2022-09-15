@@ -47,7 +47,7 @@ specifiers:
   rollup-plugin-peer-deps-external: 2.2.4
   rollup-plugin-sourcemaps: 0.6.3
   rollup-plugin-terser: 7.0.2
-  rollup-plugin-typescript2: 0.33.0
+  rollup-plugin-typescript2: 0.34.0
   rollup-plugin-uglify: 6.0.4
   rollup-plugin-url: 3.0.1
   semantic-release: github:rikhoffbauer/semantic-release
@@ -105,7 +105,7 @@ devDependencies:
   rollup-plugin-peer-deps-external: 2.2.4_rollup@2.79.0
   rollup-plugin-sourcemaps: 0.6.3_cfda10670f31731f2f7fc32710fdefbb
   rollup-plugin-terser: 7.0.2_rollup@2.79.0
-  rollup-plugin-typescript2: 0.33.0_rollup@2.79.0+typescript@4.8.3
+  rollup-plugin-typescript2: 0.34.0_rollup@2.79.0+typescript@4.8.3
   rollup-plugin-uglify: 6.0.4_rollup@2.79.0
   rollup-plugin-url: 3.0.1_rollup@2.79.0
   semantic-release: github.com/rikhoffbauer/semantic-release/9a7bff0cfa08c9e6940b1ad7eb75959b34f051cc
@@ -6487,8 +6487,8 @@ packages:
       terser: 5.12.1
     dev: true
 
-  /rollup-plugin-typescript2/0.33.0_rollup@2.79.0+typescript@4.8.3:
-    resolution: {integrity: sha512-7ZXoZeX93kNb4/ICzOi2AlperVV6cAsNz8THqrbz+KNvpn47P2F/nFdK/BGhkoOsOwuYDuY57vccdZZrcd8/dA==}
+  /rollup-plugin-typescript2/0.34.0_rollup@2.79.0+typescript@4.8.3:
+    resolution: {integrity: sha512-dGtOz2kL6nQVgfIOmnA4Xh+5cFrs3bdu4jja/ej7WKR92RzOOixsn71LY5ZFFmKe1R677nUh+k2++NiY3un2PQ==}
     peerDependencies:
       rollup: '>=1.26.3'
       typescript: '>=2.4.0'
