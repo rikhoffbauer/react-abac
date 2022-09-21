@@ -1,4 +1,5 @@
 [![Rate on Openbase](https://badges.openbase.com/js/rating/react-abac.svg)](https://openbase.com/js/react-abac?utm_source=embedded&utm_medium=badge&utm_campaign=rate-badge)
+[![kandi X-Ray](https://kandi.openweaver.com/badges/xray.svg)](https://kandi.openweaver.com/typescript/rikhoffbauer/react-abac)
 
 # react-abac
 
