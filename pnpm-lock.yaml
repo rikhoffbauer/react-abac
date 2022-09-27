@@ -52,7 +52,7 @@ specifiers:
   rollup-plugin-url: 3.0.1
   semantic-release: github:rikhoffbauer/semantic-release
   sort-package-json: 1.57.0
-  ts-jest: 29.0.1
+  ts-jest: 29.0.2
   ts-node: 10.9.1
   tsc-watch: 5.0.3
   tslib: 2.4.0
@@ -110,7 +110,7 @@ devDependencies:
   rollup-plugin-url: 3.0.1_rollup@2.79.1
   semantic-release: github.com/rikhoffbauer/semantic-release/9a7bff0cfa08c9e6940b1ad7eb75959b34f051cc
   sort-package-json: 1.57.0
-  ts-jest: 29.0.1_jest@29.0.3+typescript@4.8.3
+  ts-jest: 29.0.2_jest@29.0.3+typescript@4.8.3
   ts-node: 10.9.1_03bba433ca420ee50bf31a7f62506788
   tsc-watch: 5.0.3_typescript@4.8.3
   tslib: 2.4.0
@@ -4867,18 +4867,6 @@ packages:
       - supports-color
     dev: true
 
-  /jest-util/29.0.2:
-    resolution: {integrity: sha512-ozk8ruEEEACxqpz0hN9UOgtPZS0aN+NffwQduR5dVlhN+eN47vxurtvgZkYZYMpYrsmlAEx1XabkB3BnN0GfKQ==}
-    engines: {node: ^14.15.0 || ^16.10.0 || >=18.0.0}
-    dependencies:
-      '@jest/types': 29.0.3
-      '@types/node': 16.11.59
-      chalk: 4.1.2
-      ci-info: 3.3.1
-      graceful-fs: 4.2.10
-      picomatch: 2.3.1
-    dev: true
-
   /jest-util/29.0.3:
     resolution: {integrity: sha512-Q0xaG3YRG8QiTC4R6fHjHQPaPpz9pJBEi0AeOE4mQh/FuWOijFjGXMMOfQEaU9i3z76cNR7FobZZUQnL6IyfdQ==}
     engines: {node: ^14.15.0 || ^16.10.0 || >=18.0.0}
@@ -7173,8 +7161,8 @@ packages:
     engines: {node: '>=8'}
     dev: true
 
-  /ts-jest/29.0.1_jest@29.0.3+typescript@4.8.3:
-    resolution: {integrity: sha512-htQOHshgvhn93QLxrmxpiQPk69+M1g7govO1g6kf6GsjCv4uvRV0znVmDrrvjUrVCnTYeY4FBxTYYYD4airyJA==}
+  /ts-jest/29.0.2_jest@29.0.3+typescript@4.8.3:
+    resolution: {integrity: sha512-P03IUItnAjG6RkJXtjjD5pu0TryQFOwcb1YKmW63rO19V0UFqL3wiXZrmR5D7qYjI98btzIOAcYafLZ0GHAcQg==}
     engines: {node: ^14.15.0 || ^16.10.0 || >=18.0.0}
     hasBin: true
     peerDependencies:
@@ -7197,7 +7185,7 @@ packages:
       bs-logger: 0.2.6
       fast-json-stable-stringify: 2.1.0
       jest: 29.0.3_e10479ebf907e8af132991d81b88ac36
-      jest-util: 29.0.2
+      jest-util: 29.0.3
       json5: 2.2.1
       lodash.memoize: 4.1.2
       make-error: 1.3.6
