@@ -1,6 +1,6 @@
 {
     "name": "react-abac-example",
-    "version": "0.1.213",
+    "version": "0.1.214",
     "private": true,
     "homepage": ".",
     "dependencies": {
@@ -14,7 +14,7 @@
         "react-dom": "18.2.0",
         "react-scripts": "5.0.1",
         "react-syntax-highlighter": "15.5.0",
-        "typescript": "4.8.3"
+        "typescript": "4.8.4"
     },
     "scripts": {
         "start": "react-scripts start",
