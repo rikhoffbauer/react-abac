@@ -1,6 +1,6 @@
 {
     "name": "react-abac",
-    "version": "0.1.55",
+    "version": "0.1.56",
     "description": "Attribute Based Access Control and Role Based Access Control for React",
     "keywords": [
         "abac",
@@ -187,7 +187,7 @@
         "react": "18.2.0",
         "react-dom": "18.2.0",
         "rimraf": "3.0.2",
-        "rollup": "2.79.1",
+        "rollup": "3.2.3",
         "rollup-plugin-commonjs": "10.1.0",
         "rollup-plugin-node-resolve": "5.2.0",
         "rollup-plugin-peer-deps-external": "2.2.4",
