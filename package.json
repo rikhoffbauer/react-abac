@@ -20,6 +20,7 @@
     "main": "dist/index.js",
     "module": "dist/index.es.js",
     "jsnext:main": "dist/index.es.js",
+    "type": "module",
     "types": "dist/index.d.ts",
     "typings": "./dist/index.d.ts",
     "files": [

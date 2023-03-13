@@ -6,7 +6,7 @@ import { terser } from "rollup-plugin-terser";
 import typescript from "rollup-plugin-typescript2";
 import url from "rollup-plugin-url";
 
-import pkg from "./package.json";
+import pkg from "./package.json" assert { type: "json" };
 
 export default {
     input: "src/index.ts",
@@ -30,7 +30,6 @@ export default {
         resolve(),
         typescript({
             clean: true,
-            rollupCommonJSResolveHack: true,
             exclude: ["*.d.ts", "**/*.d.ts"],
         }),
         commonjs(),
