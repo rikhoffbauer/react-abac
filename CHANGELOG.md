@@ -1,3 +1,10 @@
+## [0.1.11](https://github.com/jewetnitg/react-abac/compare/v0.1.10...v0.1.11) (2023-03-13)
+
+
+### Bug Fixes
+
+* forcefully rendering child components ([737cb4b](https://github.com/jewetnitg/react-abac/commit/737cb4b9e11136dd29fb9f6233ce795530d5b1fa))
+
 ## [0.1.10](https://github.com/jewetnitg/react-abac/compare/v0.1.9...v0.1.10) (2022-08-27)
 
 
