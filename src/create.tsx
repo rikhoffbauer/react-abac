@@ -80,8 +80,8 @@ const create = <Role extends string, Permission extends string, User>() => {
     const AllowedTo = ({
         perform = [],
         children,
-        yes: Yes = () => <React.Fragment>{children}</React.Fragment>,
-        no: No = () => null,
+        yes: Yes,
+        no: No,
         data,
     }: AllowedToProps<Permission>) => {
         const ctx = useAbac();
@@ -93,16 +93,15 @@ const create = <Role extends string, Permission extends string, User>() => {
             return null;
         }
 
-        return ctx.userHasPermissions(ensureArray(perform), data) ? (
-            <Yes />
-        ) : (
-            <No />
-        );
+        if (ctx.userHasPermissions(ensureArray(perform), data)) {
+            return Yes ? <Yes /> : <React.Fragment>{children}</React.Fragment>;
+        }
+
+        return No ? <No /> : null;
     };
 
     const NotAllowedTo = ({
-        children,
-        yes = () => <React.Fragment>{children}</React.Fragment>,
+        yes,
         no,
         ...props
     }: AllowedToProps<Permission>) => (
