@@ -101,12 +101,27 @@ const create = <Role extends string, Permission extends string, User>() => {
     };
 
     const NotAllowedTo = ({
-        yes,
-        no,
-        ...props
-    }: AllowedToProps<Permission>) => (
-        <AllowedTo no={yes} yes={no} {...props} />
-    );
+        perform = [],
+        children,
+        yes: Yes,
+        no: No,
+        data,
+    }: AllowedToProps<Permission>) => {
+        const ctx = useAbac();
+
+        if (ctx === AbacContextDefaults) {
+            console.error(
+                `Can't render <AllowedTo />, wrap your app with an <AbacProvider />.`,
+            );
+            return null;
+        }
+
+        if (!ctx.userHasPermissions(ensureArray(perform), data)) {
+            return Yes ? <Yes /> : <React.Fragment>{children}</React.Fragment>;
+        }
+
+        return No ? <No /> : null;
+    };
 
     const secured =
         <Props, Data>({
