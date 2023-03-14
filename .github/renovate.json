@@ -12,7 +12,6 @@
     "rollbackPrs": true,
     "masterIssue": true,
     "enabled": true,
-    "forkMode": true,
     "lockFileMaintenance": {
         "enabled": true
     },
