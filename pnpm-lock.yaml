@@ -25,7 +25,7 @@ specifiers:
   eslint: 8.25.0
   eslint-config-prettier: 8.5.0
   eslint-plugin-prettier: 4.2.1
-  husky: 8.0.1
+  husky: 8.0.3
   import-sort: 6.0.0
   import-sort-parser-typescript: 6.0.0
   import-sort-style-custom: 2.1.2
@@ -83,7 +83,7 @@ devDependencies:
   eslint: 8.25.0
   eslint-config-prettier: 8.5.0_eslint@8.25.0
   eslint-plugin-prettier: 4.2.1_hvbqyfstm4urdpm6ffpwfka4e4
-  husky: 8.0.1
+  husky: 8.0.3
   import-sort: 6.0.0
   import-sort-parser-typescript: 6.0.0
   import-sort-style-custom: 2.1.2
@@ -3997,8 +3997,8 @@ packages:
     engines: {node: '>=12.20.0'}
     dev: true
 
-  /husky/8.0.1:
-    resolution: {integrity: sha512-xs7/chUH/CKdOCs7Zy0Aev9e/dKOMZf3K1Az1nar3tzlv0jfqnYtu235bstsWTmXOR0EfINrPa97yy4Lz6RiKw==}
+  /husky/8.0.3:
+    resolution: {integrity: sha512-+dQSyqPh4x1hlO1swXBiNb2HzTDN1I2IGLQx1GrBuiqFJfoMrnZWwVmatvSiO+Iz8fBUnf+lekwNo4c2LlXItg==}
     engines: {node: '>=14'}
     hasBin: true
     dev: true
