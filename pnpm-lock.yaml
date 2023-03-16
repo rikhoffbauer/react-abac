@@ -4,10 +4,10 @@ specifiers:
   '@commitlint/cli': 17.1.2
   '@commitlint/config-conventional': 17.1.0
   '@prettier/plugin-xml': 2.2.0
-  '@semantic-release/changelog': 6.0.1
+  '@semantic-release/changelog': 6.0.2
   '@semantic-release/commit-analyzer': 9.0.2
   '@semantic-release/git': 10.0.1
-  '@semantic-release/github': 8.0.6
+  '@semantic-release/github': 8.0.7
   '@semantic-release/release-notes-generator': 10.0.3
   '@types/enzyme': 3.10.12
   '@types/enzyme-adapter-react-16': 1.0.6
@@ -62,10 +62,10 @@ devDependencies:
   '@commitlint/cli': 17.1.2
   '@commitlint/config-conventional': 17.1.0
   '@prettier/plugin-xml': 2.2.0
-  '@semantic-release/changelog': 6.0.1_acuxvpwyfftbrwkwqzsj3c44d4
+  '@semantic-release/changelog': 6.0.2_acuxvpwyfftbrwkwqzsj3c44d4
   '@semantic-release/commit-analyzer': 9.0.2_acuxvpwyfftbrwkwqzsj3c44d4
   '@semantic-release/git': 10.0.1_acuxvpwyfftbrwkwqzsj3c44d4
-  '@semantic-release/github': 8.0.6_acuxvpwyfftbrwkwqzsj3c44d4
+  '@semantic-release/github': 8.0.7_acuxvpwyfftbrwkwqzsj3c44d4
   '@semantic-release/release-notes-generator': 10.0.3_acuxvpwyfftbrwkwqzsj3c44d4
   '@types/enzyme': 3.10.12
   '@types/enzyme-adapter-react-16': 1.0.6
@@ -1241,15 +1241,15 @@ packages:
       picomatch: 2.3.1
     dev: true
 
-  /@semantic-release/changelog/6.0.1_acuxvpwyfftbrwkwqzsj3c44d4:
-    resolution: {integrity: sha512-FT+tAGdWHr0RCM3EpWegWnvXJ05LQtBkQUaQRIExONoXjVjLuOILNm4DEKNaV+GAQyJjbLRVs57ti//GypH6PA==}
+  /@semantic-release/changelog/6.0.2_acuxvpwyfftbrwkwqzsj3c44d4:
+    resolution: {integrity: sha512-jHqfTkoPbDEOAgAP18mGP53IxeMwxTISN+GwTRy9uLu58UjARoZU8ScCgWGeO2WPkEsm57H8AkyY02W2ntIlIw==}
     engines: {node: '>=14.17'}
     peerDependencies:
       semantic-release: '>=18.0.0'
     dependencies:
       '@semantic-release/error': 3.0.0
       aggregate-error: 3.1.0
-      fs-extra: 9.1.0
+      fs-extra: 11.1.0
       lodash: 4.17.21
       semantic-release: github.com/rikhoffbauer/semantic-release/9a7bff0cfa08c9e6940b1ad7eb75959b34f051cc
     dev: true
@@ -1346,8 +1346,8 @@ packages:
       - supports-color
     dev: true
 
-  /@semantic-release/github/8.0.6_acuxvpwyfftbrwkwqzsj3c44d4:
-    resolution: {integrity: sha512-ZxgaxYCeqt9ylm2x3OPqUoUqBw1p60LhxzdX6BqJlIBThupGma98lttsAbK64T6L6AlNa2G5T66BbiG8y0PIHQ==}
+  /@semantic-release/github/8.0.7_acuxvpwyfftbrwkwqzsj3c44d4:
+    resolution: {integrity: sha512-VtgicRIKGvmTHwm//iqTh/5NGQwsncOMR5vQK9pMT92Aem7dv37JFKKRuulUsAnUOIlO4G8wH3gPiBAA0iW0ww==}
     engines: {node: '>=14.17'}
     peerDependencies:
       semantic-release: '>=18.0.0-beta.1'
@@ -1358,7 +1358,7 @@ packages:
       bottleneck: 2.19.5
       debug: 4.3.4
       dir-glob: 3.0.1
-      fs-extra: 10.1.0
+      fs-extra: 11.1.0
       globby: 11.1.0
       http-proxy-agent: 5.0.0
       https-proxy-agent: 5.0.1
@@ -3617,6 +3617,15 @@ packages:
   /fs-extra/10.1.0:
     resolution: {integrity: sha512-oRXApq54ETRj4eMiFzGnHWGy+zo5raudjuxN0b8H7s/RU2oW0Wvsx9O0ACRN/kRq9E8Vu/ReskGB5o3ji+FzHQ==}
     engines: {node: '>=12'}
+    dependencies:
+      graceful-fs: 4.2.10
+      jsonfile: 6.1.0
+      universalify: 2.0.0
+    dev: true
+
+  /fs-extra/11.1.0:
+    resolution: {integrity: sha512-0rcTq621PD5jM/e0a3EJoGC/1TC5ZBCERW82LQuwfGnCa1V8w7dpYH1yNu+SLb6E5dkeCBzKEyLGlFrnr+dUyw==}
+    engines: {node: '>=14.14'}
     dependencies:
       graceful-fs: 4.2.10
       jsonfile: 6.1.0
