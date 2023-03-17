@@ -54,7 +54,7 @@ specifiers:
   sort-package-json: 2.4.1
   ts-jest: 29.0.5
   ts-node: 10.9.1
-  tsc-watch: 5.0.3
+  tsc-watch: 6.0.0
   tslib: 2.5.0
   typescript: 4.9.5
 
@@ -112,7 +112,7 @@ devDependencies:
   sort-package-json: 2.4.1
   ts-jest: 29.0.5_doipufordlnvh5g4adbwayvyvy
   ts-node: 10.9.1_cbfmry4sbbh4vatmdrsmatfg5a
-  tsc-watch: 5.0.3_typescript@4.9.5
+  tsc-watch: 6.0.0_typescript@4.9.5
   tslib: 2.5.0
   typescript: 4.9.5
 
@@ -7000,11 +7000,6 @@ packages:
       readable-stream: 2.3.8
     dev: true
 
-  /string-argv/0.1.2:
-    resolution: {integrity: sha512-mBqPGEOMNJKXRo7z0keX0wlAhbBAjilUdPW13nN0PecVryZxdHIeM7TqbsSUA7VYuS00HGC6mojP7DlQzfa9ZA==}
-    engines: {node: '>=0.6.19'}
-    dev: true
-
   /string-argv/0.3.1:
     resolution: {integrity: sha512-a1uQGz7IyVy9YwhqjZIZu1c8JO8dNIe20xBmSS6qu9kv++k3JGzCVmprbNN5Kn+BgzD5E7YYwg1CcjuJMRNsvg==}
     engines: {node: '>=0.6.19'}
@@ -7373,9 +7368,9 @@ packages:
       yn: 3.1.1
     dev: true
 
-  /tsc-watch/5.0.3_typescript@4.9.5:
-    resolution: {integrity: sha512-Hz2UawwELMSLOf0xHvAFc7anLeMw62cMVXr1flYmhRuOhOyOljwmb1l/O60ZwRyy1k7N1iC1mrn1QYM2zITfuw==}
-    engines: {node: '>=8.17.0'}
+  /tsc-watch/6.0.0_typescript@4.9.5:
+    resolution: {integrity: sha512-zgpju+/z5z29/kK5V28Nz16CMkX2voFOUxkTlCim/R25hxzbyUqu2NfTnmJBQfESBSPbEQUGqDdB9A8opAcB4A==}
+    engines: {node: '>=12.12.0'}
     hasBin: true
     peerDependencies:
       typescript: '*'
@@ -7383,8 +7378,7 @@ packages:
       cross-spawn: 7.0.3
       node-cleanup: 2.1.2
       ps-tree: 1.2.0
-      string-argv: 0.1.2
-      strip-ansi: 6.0.1
+      string-argv: 0.3.1
       typescript: 4.9.5
     dev: true
 
