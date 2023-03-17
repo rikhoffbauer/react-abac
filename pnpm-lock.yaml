@@ -17,7 +17,7 @@ specifiers:
   '@types/react-dom': 18.0.11
   '@typescript-eslint/eslint-plugin': 5.40.1
   '@typescript-eslint/parser': 5.40.1
-  '@wojtekmaj/enzyme-adapter-react-17': 0.6.7
+  '@wojtekmaj/enzyme-adapter-react-17': 0.8.0
   commitizen: 4.2.5
   cz-conventional-changelog: 3.3.0
   enzyme: 3.11.0
@@ -75,7 +75,7 @@ devDependencies:
   '@types/react-dom': 18.0.11
   '@typescript-eslint/eslint-plugin': 5.40.1_ukgdydjtebaxmxfqp5v5ulh64y
   '@typescript-eslint/parser': 5.40.1_z4bbprzjrhnsfa24uvmcbu7f5q
-  '@wojtekmaj/enzyme-adapter-react-17': 0.6.7_todk22eekuihjg65rlnudp4qdi
+  '@wojtekmaj/enzyme-adapter-react-17': 0.8.0_todk22eekuihjg65rlnudp4qdi
   commitizen: 4.2.5
   cz-conventional-changelog: 3.3.0
   enzyme: 3.11.0
@@ -1794,16 +1794,16 @@ packages:
       eslint-visitor-keys: 3.3.0
     dev: true
 
-  /@wojtekmaj/enzyme-adapter-react-17/0.6.7_todk22eekuihjg65rlnudp4qdi:
-    resolution: {integrity: sha512-B+byiwi/T1bx5hcj9wc0fUL5Hlb5giSXJzcnEfJVl2j6dGV2NJfcxDBYX0WWwIxlzNiFz8kAvlkFWI2y/nscZQ==}
+  /@wojtekmaj/enzyme-adapter-react-17/0.8.0_todk22eekuihjg65rlnudp4qdi:
+    resolution: {integrity: sha512-zeUGfQRziXW7R7skzNuJyi01ZwuKCH8WiBNnTgUJwdS/CURrJwAhWsfW7nG7E30ak8Pu3ZwD9PlK9skBfAoOBw==}
     peerDependencies:
       enzyme: ^3.0.0
       react: ^17.0.0-0
       react-dom: ^17.0.0-0
     dependencies:
-      '@wojtekmaj/enzyme-adapter-utils': 0.1.4_react@18.2.0
+      '@wojtekmaj/enzyme-adapter-utils': 0.2.0_react@18.2.0
       enzyme: 3.11.0
-      enzyme-shallow-equal: 1.0.4
+      enzyme-shallow-equal: 1.0.5
       has: 1.0.3
       prop-types: 15.8.1
       react: 18.2.0
@@ -1812,8 +1812,8 @@ packages:
       react-test-renderer: 17.0.2_react@18.2.0
     dev: true
 
-  /@wojtekmaj/enzyme-adapter-utils/0.1.4_react@18.2.0:
-    resolution: {integrity: sha512-ARGIQSIIv3oBia1m5Ihn1VU0FGmft6KPe39SBKTb8p7LSXO23YI4kNtc4M/cKoIY7P+IYdrZcgMObvedyjoSQA==}
+  /@wojtekmaj/enzyme-adapter-utils/0.2.0_react@18.2.0:
+    resolution: {integrity: sha512-ZvZm9kZxZEKAbw+M1/Q3iDuqQndVoN8uLnxZ8bzxm7KgGTBejrGRoJAp8f1EN8eoO3iAjBNEQnTDW/H4Ekb0FQ==}
     peerDependencies:
       react: ^17.0.0-0
     dependencies:
