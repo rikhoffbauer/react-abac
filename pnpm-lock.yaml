@@ -4,7 +4,7 @@ specifiers:
   '@commitlint/cli': 17.4.4
   '@commitlint/config-conventional': 17.4.4
   '@prettier/plugin-xml': 2.2.0
-  '@rollup/plugin-node-resolve': 6.0.0
+  '@rollup/plugin-node-resolve': 6.1.0
   '@semantic-release/changelog': 6.0.2
   '@semantic-release/commit-analyzer': 9.0.2
   '@semantic-release/git': 10.0.1
@@ -62,7 +62,7 @@ devDependencies:
   '@commitlint/cli': 17.4.4
   '@commitlint/config-conventional': 17.4.4
   '@prettier/plugin-xml': 2.2.0
-  '@rollup/plugin-node-resolve': 6.0.0_rollup@3.19.1
+  '@rollup/plugin-node-resolve': 6.1.0_rollup@3.19.1
   '@semantic-release/changelog': 6.0.2_acuxvpwyfftbrwkwqzsj3c44d4
   '@semantic-release/commit-analyzer': 9.0.2_acuxvpwyfftbrwkwqzsj3c44d4
   '@semantic-release/git': 10.0.1_acuxvpwyfftbrwkwqzsj3c44d4
@@ -1242,8 +1242,8 @@ packages:
       prettier: 2.8.4
     dev: true
 
-  /@rollup/plugin-node-resolve/6.0.0_rollup@3.19.1:
-    resolution: {integrity: sha512-GqWz1CfXOsqpeVMcoM315+O7zMxpRsmhWyhJoxLFHVSp9S64/u02i7len/FnbTNbmgYs+sZyilasijH8UiuboQ==}
+  /@rollup/plugin-node-resolve/6.1.0_rollup@3.19.1:
+    resolution: {integrity: sha512-Cv7PDIvxdE40SWilY5WgZpqfIUEaDxFxs89zCAHjqyRwlTSuql4M5hjIuc5QYJkOH0/vyiyNXKD72O+LhRipGA==}
     engines: {node: '>= 8.0.0'}
     peerDependencies:
       rollup: ^1.20.0
