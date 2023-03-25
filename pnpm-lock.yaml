@@ -41,7 +41,7 @@ specifiers:
   prettier-plugin-sh: 0.12.8
   react: 18.2.0
   react-dom: 18.2.0
-  rimraf: 4.4.0
+  rimraf: 4.4.1
   rollup: 3.20.0
   rollup-plugin-commonjs: 10.1.0
   rollup-plugin-peer-deps-external: 2.2.4
@@ -99,7 +99,7 @@ devDependencies:
   prettier-plugin-sh: 0.12.8_prettier@2.8.6
   react: 18.2.0
   react-dom: 18.2.0_react@18.2.0
-  rimraf: 4.4.0
+  rimraf: 4.4.1
   rollup: 3.20.0
   rollup-plugin-commonjs: 10.1.0_rollup@3.20.0
   rollup-plugin-peer-deps-external: 2.2.4_rollup@3.20.0
@@ -543,31 +543,6 @@ packages:
       '@commitlint/rules': 17.4.4
       '@commitlint/types': 17.4.4
     dev: true
-
-  /@commitlint/load/17.4.4:
-    resolution: {integrity: sha512-z6uFIQ7wfKX5FGBe1AkOF4l/ShOQsaa1ml/nLMkbW7R/xF8galGS7Zh0yHvzVp/srtfS0brC+0bUfQfmpMPFVQ==}
-    engines: {node: '>=v14'}
-    requiresBuild: true
-    dependencies:
-      '@commitlint/config-validator': 17.4.4
-      '@commitlint/execute-rule': 17.4.0
-      '@commitlint/resolve-extends': 17.4.4
-      '@commitlint/types': 17.4.4
-      '@types/node': 18.15.5
-      chalk: 4.1.2
-      cosmiconfig: 8.1.3
-      cosmiconfig-typescript-loader: 4.3.0_7woy4ibcfjwmaucoravjxjqwpq
-      lodash.isplainobject: 4.0.6
-      lodash.merge: 4.6.2
-      lodash.uniq: 4.5.0
-      resolve-from: 5.0.0
-      ts-node: 10.9.1_345kigqis4fipgyy5xb3ndshmq
-      typescript: 4.9.5
-    transitivePeerDependencies:
-      - '@swc/core'
-      - '@swc/wasm'
-    dev: true
-    optional: true
 
   /@commitlint/load/17.5.0:
     resolution: {integrity: sha512-l+4W8Sx4CD5rYFsrhHH8HP01/8jEP7kKf33Xlx2Uk2out/UKoKPYMOIRcDH5ppT8UXLMV+x6Wm5osdRKKgaD1Q==}
@@ -2816,7 +2791,7 @@ packages:
       longest: 2.0.1
       word-wrap: 1.2.3
     optionalDependencies:
-      '@commitlint/load': 17.4.4
+      '@commitlint/load': 17.5.0
     transitivePeerDependencies:
       - '@swc/core'
       - '@swc/wasm'
@@ -6609,8 +6584,8 @@ packages:
       glob: 7.2.3
     dev: true
 
-  /rimraf/4.4.0:
-    resolution: {integrity: sha512-X36S+qpCUR0HjXlkDe4NAOhS//aHH0Z+h8Ckf2auGJk3PTnx5rLmrHkwNdbVQuCSUhOyFrlRvFEllZOYE+yZGQ==}
+  /rimraf/4.4.1:
+    resolution: {integrity: sha512-Gk8NlF062+T9CqNGn6h4tls3k6T1+/nXdOcSZVikNVtlRdYpA7wRJJMoXmuvOnLW844rPjdQ7JgXCYM6PPC/og==}
     engines: {node: '>=14'}
     hasBin: true
     dependencies:
