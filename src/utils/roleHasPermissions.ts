@@ -20,7 +20,7 @@ const roleHasPermission = <
 
     // rule for the provided permission for the provided role
     // true, false or (data, user) => boolean
-    const rule = rules[role]![permission as any];
+   const rule = (rules[role] as Record<Permission, any>)[permission];
 
     return evaluateRule(rule, user, data);
 };
