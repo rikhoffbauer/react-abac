@@ -23,7 +23,6 @@
         "sourceMap": true,
         "strict": true,
         "strictNullChecks": true,
-        "suppressImplicitAnyIndexErrors": true,
         "target": "es5"
     },
     "exclude": ["build", "dist", "node_modules", "rollup.config.js"],
