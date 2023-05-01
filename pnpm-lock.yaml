@@ -161,8 +161,8 @@ devDependencies:
     specifier: 10.9.1
     version: 10.9.1(@types/node@18.16.2)(typescript@5.0.4)
   tsc-watch:
-    specifier: 6.0.0
-    version: 6.0.0(typescript@5.0.4)
+    specifier: 6.0.1
+    version: 6.0.1(typescript@5.0.4)
   tslib:
     specifier: 2.5.0
     version: 2.5.0
@@ -7484,8 +7484,8 @@ packages:
       yn: 3.1.1
     dev: true
 
-  /tsc-watch@6.0.0(typescript@5.0.4):
-    resolution: {integrity: sha512-zgpju+/z5z29/kK5V28Nz16CMkX2voFOUxkTlCim/R25hxzbyUqu2NfTnmJBQfESBSPbEQUGqDdB9A8opAcB4A==}
+  /tsc-watch@6.0.1(typescript@5.0.4):
+    resolution: {integrity: sha512-npQCgDnE308qOPk9WnMK+s4wO2MuTGOy9YUVFKnOikC+t9f6LQsIpCUenMkaj8a2qzDJlKnzaySLPDeinGExGQ==}
     engines: {node: '>=12.12.0'}
     hasBin: true
     peerDependencies:
