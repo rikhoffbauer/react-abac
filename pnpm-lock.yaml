@@ -156,8 +156,8 @@ devDependencies:
     specifier: github:rikhoffbauer/semantic-release
     version: github.com/rikhoffbauer/semantic-release/9a7bff0cfa08c9e6940b1ad7eb75959b34f051cc
   sort-package-json:
-    specifier: 2.4.1
-    version: 2.4.1
+    specifier: 2.5.0
+    version: 2.5.0
   ts-jest:
     specifier: 29.1.1
     version: 29.1.1(@babel/core@7.22.5)(jest@29.5.0)(typescript@5.1.6)
@@ -3962,6 +3962,11 @@ packages:
     engines: {node: '>=8.0.0'}
     dev: true
 
+  /get-stdin@9.0.0:
+    resolution: {integrity: sha512-dVKBjfWisLAicarI2Sf+JuBE/DghV4UzNAVe9yhEJuzeREd3JhOTE9cUaJTeSa77fsbQUK3pcOpJfM59+VKZaA==}
+    engines: {node: '>=12'}
+    dev: true
+
   /get-stream@5.2.0:
     resolution: {integrity: sha512-nBF+F1rAZVCu/p7rjzgA+Yb4lfYXrpl7a6VmJrU8wF9I1CKvP/QwPNZHnOlwbTkY6dvtFIzFMSyQXbLoTQPRpA==}
     engines: {node: '>=8'}
@@ -7217,12 +7222,13 @@ packages:
     resolution: {integrity: sha512-855pvK+VkU7PaKYPc+Jjnmt4EzejQHyhhF33q31qG8x7maDzkeFhAAThdCYay11CISO+qAMwjOBP+fPZe0IPyg==}
     dev: true
 
-  /sort-package-json@2.4.1:
-    resolution: {integrity: sha512-Nd3rgLBJcZ4iw7tpuOhwBupG6SvUDU0Fy1cZGAMorA2JmDUb+29Dg5phJK9gapa2Ak9d15w/RuMl/viwX+nKwQ==}
+  /sort-package-json@2.5.0:
+    resolution: {integrity: sha512-KIsqEi/ameVyhhatpzwialQVSMP1mFzRLJgTBKJDz0duQmhnBDjf8MFyFoIoVnW69SqjH3/bziCSlgiuz2KbHg==}
     hasBin: true
     dependencies:
       detect-indent: 7.0.1
       detect-newline: 4.0.0
+      get-stdin: 9.0.0
       git-hooks-list: 3.1.0
       globby: 13.2.1
       is-plain-obj: 4.1.0
