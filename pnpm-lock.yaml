@@ -156,8 +156,8 @@ devDependencies:
     specifier: github:rikhoffbauer/semantic-release
     version: github.com/rikhoffbauer/semantic-release/9a7bff0cfa08c9e6940b1ad7eb75959b34f051cc
   sort-package-json:
-    specifier: 2.5.0
-    version: 2.5.0
+    specifier: 2.5.1
+    version: 2.5.1
   ts-jest:
     specifier: 29.1.1
     version: 29.1.1(@babel/core@7.22.8)(jest@29.6.1)(typescript@5.1.6)
@@ -7268,8 +7268,8 @@ packages:
     resolution: {integrity: sha512-855pvK+VkU7PaKYPc+Jjnmt4EzejQHyhhF33q31qG8x7maDzkeFhAAThdCYay11CISO+qAMwjOBP+fPZe0IPyg==}
     dev: true
 
-  /sort-package-json@2.5.0:
-    resolution: {integrity: sha512-KIsqEi/ameVyhhatpzwialQVSMP1mFzRLJgTBKJDz0duQmhnBDjf8MFyFoIoVnW69SqjH3/bziCSlgiuz2KbHg==}
+  /sort-package-json@2.5.1:
+    resolution: {integrity: sha512-vx/KoZxm8YNMUqdlw7SGTfqR5pqZ/sUfgOuRtDILiOy/3AvzhAibyUe2cY3OpLs3oRSow9up4yLVtQaM24rbDQ==}
     hasBin: true
     dependencies:
       detect-indent: 7.0.1
