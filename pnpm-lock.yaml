@@ -117,8 +117,8 @@ devDependencies:
     specifier: 0.0.7
     version: 0.0.7(prettier@3.0.0)
   prettier-plugin-sh:
-    specifier: 0.13.0
-    version: 0.13.0(prettier@3.0.0)
+    specifier: 0.13.1
+    version: 0.13.1(prettier@3.0.0)
   react:
     specifier: 18.2.0
     version: 18.2.0
@@ -6546,8 +6546,8 @@ packages:
       - supports-color
     dev: true
 
-  /prettier-plugin-sh@0.13.0(prettier@3.0.0):
-    resolution: {integrity: sha512-YAoRiG/CJ5cK7ha5khzwrKTTAsYv0v+bgImTPo/ITuFJy68ThAUhz0shzY2xaEkLHy/e4yFI+VcmLsNdCzVxkA==}
+  /prettier-plugin-sh@0.13.1(prettier@3.0.0):
+    resolution: {integrity: sha512-ytMcl1qK4s4BOFGvsc9b0+k9dYECal7U29bL/ke08FEUsF/JLN0j6Peo0wUkFDG4y2UHLMhvpyd6Sd3zDXe/eg==}
     engines: {node: '>=16.0.0'}
     peerDependencies:
       prettier: ^3.0.0
@@ -6555,7 +6555,6 @@ packages:
       mvdan-sh: 0.10.1
       prettier: 3.0.0
       sh-syntax: 0.4.1
-      synckit: 0.8.5
     dev: true
 
   /prettier@3.0.0:
