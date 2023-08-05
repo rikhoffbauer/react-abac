@@ -1,5 +1,7 @@
 import React, { useState } from "react";
-import { AbacProvider } from "react-abac";
+import dynamic from 'next/dynamic';
+const reactAbac = dynamic(() => import("react-abac"), { ssr: false });
+const { AbacProvider } = reactAbac;
 
 import DeletePost from "./components/DeletePost";
 import EditPost from "./components/EditPost";
