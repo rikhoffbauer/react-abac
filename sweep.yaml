@@ -7,6 +7,6 @@ branch: 'main'
 gha_enabled: True
 # This is the description of your project. It will be used by sweep when creating PRs. You can tell Sweep what's unique about your project, what frameworks you use, or anything else you want.
 # Here's an example: sweepai/sweep is a python project. The main api endpoints are in sweepai/api.py. Write code that adheres to PEP8.
-description: ''
+description: 'react-abac is a TypeScript project that provides Attribute Based Access Control for React applications. The main functionalities are defined in the src directory. The project uses React and TypeScript, and adheres to the best practices for these technologies.'
 
 # Default Values: https://github.com/sweepai/sweep/blob/main/sweep.yaml
