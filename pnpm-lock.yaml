@@ -12,8 +12,8 @@ devDependencies:
     specifier: 17.6.7
     version: 17.6.7
   '@prettier/plugin-xml':
-    specifier: 3.1.1
-    version: 3.1.1(prettier@3.0.1)
+    specifier: 3.2.0
+    version: 3.2.0(prettier@3.0.1)
   '@rollup/plugin-node-resolve':
     specifier: 15.1.0
     version: 15.1.0(rollup@3.27.2)
@@ -1303,8 +1303,8 @@ packages:
       tslib: 2.6.1
     dev: true
 
-  /@prettier/plugin-xml@3.1.1(prettier@3.0.1):
-    resolution: {integrity: sha512-kf20whg987pD/GWz0s1H2iA2170NnyP7chfmSkY55Dhs8wZwWxVxPItfWsfJo1FVMvTuNUPZY/hTqqHrzxb6Pg==}
+  /@prettier/plugin-xml@3.2.0(prettier@3.0.1):
+    resolution: {integrity: sha512-1SgnoMIOLjGcKqstr6gmly7J6VoVSXULz0kMDimBE36yj59GrNvaOBPjoeYUmcpU3/IwLiCIJRaCX8qiVSvy/A==}
     peerDependencies:
       prettier: ^3.0.0
     dependencies:
