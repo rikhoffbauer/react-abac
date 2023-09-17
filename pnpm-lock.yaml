@@ -27,8 +27,8 @@ devDependencies:
     specifier: 10.0.1
     version: 10.0.1(semantic-release@0.0.0-development)
   '@semantic-release/github':
-    specifier: 9.0.5
-    version: 9.0.5(semantic-release@0.0.0-development)
+    specifier: 9.0.6
+    version: 9.0.6(semantic-release@0.0.0-development)
   '@semantic-release/release-notes-generator':
     specifier: 11.0.7
     version: 11.0.7(semantic-release@0.0.0-development)
@@ -1468,8 +1468,8 @@ packages:
       - supports-color
     dev: true
 
-  /@semantic-release/github@9.0.5(semantic-release@0.0.0-development):
-    resolution: {integrity: sha512-d1ZZjMvXpSa4E1L3XjdNOqgUy00o9QZX55L75pMsb/w+1NV6CCfDYOvH8qwKygHS/rKzI3FkBTcR40ahOodsgg==}
+  /@semantic-release/github@9.0.6(semantic-release@0.0.0-development):
+    resolution: {integrity: sha512-GBGt9c3c2UdSvso4jcyQQSUpZA9hbfHqGQerZKN9WvVzCIkaBy8xkhOyiFVX08LjRHHT/H221SJNBLtuihX5iw==}
     engines: {node: '>=18'}
     peerDependencies:
       semantic-release: '>=20.1.0'
@@ -1479,7 +1479,7 @@ packages:
       '@octokit/plugin-retry': 6.0.0(@octokit/core@5.0.0)
       '@octokit/plugin-throttling': 7.0.0(@octokit/core@5.0.0)
       '@semantic-release/error': 4.0.0
-      aggregate-error: 4.0.1
+      aggregate-error: 5.0.0
       debug: 4.3.4
       dir-glob: 3.0.1
       globby: 13.2.2
@@ -2021,6 +2021,14 @@ packages:
       indent-string: 5.0.0
     dev: true
 
+  /aggregate-error@5.0.0:
+    resolution: {integrity: sha512-gOsf2YwSlleG6IjRYG2A7k0HmBMEo6qVNk9Bp/EaLgAJT5ngH6PXbqa4ItvnEwCm/velL5jAnQgsHsWnjhGmvw==}
+    engines: {node: '>=18'}
+    dependencies:
+      clean-stack: 5.2.0
+      indent-string: 5.0.0
+    dev: true
+
   /airbnb-prop-types@2.16.0(react@18.2.0):
     resolution: {integrity: sha512-7WHOFolP/6cS96PhKNrslCLMYAI8yB1Pp6u6XmxozQOiZbsI5ycglZr5cHhBFfuRcQQjzCMith5ZPZdYiJCxUg==}
     peerDependencies:
@@ -2552,6 +2560,13 @@ packages:
   /clean-stack@4.2.0:
     resolution: {integrity: sha512-LYv6XPxoyODi36Dp976riBtSY27VmFo+MKqEU9QCCWyTrdEPDog+RWA7xQWHi6Vbp61j5c4cdzzX1NidnwtUWg==}
     engines: {node: '>=12'}
+    dependencies:
+      escape-string-regexp: 5.0.0
+    dev: true
+
+  /clean-stack@5.2.0:
+    resolution: {integrity: sha512-TyUIUJgdFnCISzG5zu3291TAsE77ddchd0bepon1VVQrKLGKFED4iXFEDQ24mIPdPBbyE16PK3F8MYE1CmcBEQ==}
+    engines: {node: '>=14.16'}
     dependencies:
       escape-string-regexp: 5.0.0
     dev: true
