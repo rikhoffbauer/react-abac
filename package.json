@@ -1,6 +1,6 @@
 {
     "name": "react-abac",
-    "version": "0.1.150",
+    "version": "0.1.151",
     "description": "Attribute Based Access Control and Role Based Access Control for React",
     "keywords": [
         "abac",
@@ -157,7 +157,7 @@
         "@semantic-release/github": "9.0.7",
         "@semantic-release/release-notes-generator": "12.0.0",
         "@types/enzyme": "3.10.14",
-        "@types/enzyme-adapter-react-16": "1.0.6",
+        "@types/enzyme-adapter-react-16": "1.0.7",
         "@types/jest": "29.5.5",
         "@types/node": "18.17.18",
         "@types/react": "18.2.21",
