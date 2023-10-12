@@ -1,3 +1,10 @@
+## [0.1.14](https://github.com/jewetnitg/react-abac/compare/v0.1.13...v0.1.14) (2023-10-12)
+
+
+### Bug Fixes
+
+* **deps:** update dependency @types/react-syntax-highlighter to v15.5.8 ([825da00](https://github.com/jewetnitg/react-abac/commit/825da00a4052b1ca7aba176d61e6597811c6f653))
+
 ## [0.1.13](https://github.com/jewetnitg/react-abac/compare/v0.1.12...v0.1.13) (2023-05-28)
 
 
