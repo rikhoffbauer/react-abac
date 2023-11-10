@@ -36,8 +36,8 @@ devDependencies:
     specifier: 3.10.16
     version: 3.10.16
   '@types/enzyme-adapter-react-16':
-    specifier: 1.0.8
-    version: 1.0.8
+    specifier: 1.0.9
+    version: 1.0.9
   '@types/jest':
     specifier: 29.5.7
     version: 29.5.7
@@ -1724,8 +1724,8 @@ packages:
       '@types/node': 20.8.10
     dev: true
 
-  /@types/enzyme-adapter-react-16@1.0.8:
-    resolution: {integrity: sha512-nzYumRvxSh2Vbk7mkseYbInmpMbVZRc1EJQVeQmXhNCNVmLg2VOKAJujc7YJ/gDdPW+X03wYrDGa1Bj0Q/NTaw==}
+  /@types/enzyme-adapter-react-16@1.0.9:
+    resolution: {integrity: sha512-z24MMxGtUL8HhXdye3tWzjp+19QTsABqLaX2oOZpxMPHRJgLfahQmOeTTrEBQd9ogW20+UmPBXD9j+XOasFHvw==}
     dependencies:
       '@types/enzyme': 3.10.16
     dev: true
