@@ -16,7 +16,7 @@ devDependencies:
     version: 3.2.2(prettier@3.0.3)
   '@rollup/plugin-node-resolve':
     specifier: 15.2.3
-    version: 15.2.3(rollup@4.3.0)
+    version: 15.2.3(rollup@4.3.1)
   '@semantic-release/changelog':
     specifier: 6.0.3
     version: 6.0.3(semantic-release@0.0.0-development)
@@ -129,29 +129,29 @@ devDependencies:
     specifier: 5.0.5
     version: 5.0.5
   rollup:
-    specifier: 4.3.0
-    version: 4.3.0
+    specifier: 4.3.1
+    version: 4.3.1
   rollup-plugin-commonjs:
     specifier: 10.1.0
-    version: 10.1.0(rollup@4.3.0)
+    version: 10.1.0(rollup@4.3.1)
   rollup-plugin-peer-deps-external:
     specifier: 2.2.4
-    version: 2.2.4(rollup@4.3.0)
+    version: 2.2.4(rollup@4.3.1)
   rollup-plugin-sourcemaps:
     specifier: 0.6.3
-    version: 0.6.3(@types/node@20.9.0)(rollup@4.3.0)
+    version: 0.6.3(@types/node@20.9.0)(rollup@4.3.1)
   rollup-plugin-terser:
     specifier: 7.0.2
-    version: 7.0.2(rollup@4.3.0)
+    version: 7.0.2(rollup@4.3.1)
   rollup-plugin-typescript2:
     specifier: 0.36.0
-    version: 0.36.0(rollup@4.3.0)(typescript@5.2.2)
+    version: 0.36.0(rollup@4.3.1)(typescript@5.2.2)
   rollup-plugin-uglify:
     specifier: 6.0.4
-    version: 6.0.4(rollup@4.3.0)
+    version: 6.0.4(rollup@4.3.1)
   rollup-plugin-url:
     specifier: 3.0.1
-    version: 3.0.1(rollup@4.3.0)
+    version: 3.0.1(rollup@4.3.1)
   semantic-release:
     specifier: github:rikhoffbauer/semantic-release
     version: github.com/rikhoffbauer/semantic-release/9a7bff0cfa08c9e6940b1ad7eb75959b34f051cc
@@ -1294,7 +1294,7 @@ packages:
       prettier: 3.0.3
     dev: true
 
-  /@rollup/plugin-node-resolve@15.2.3(rollup@4.3.0):
+  /@rollup/plugin-node-resolve@15.2.3(rollup@4.3.1):
     resolution: {integrity: sha512-j/lym8nf5E21LwBT4Df1VD6hRO2L2iwUeUmP7litikRsVp1H6NWx20NEp0Y7su+7XGc476GnXXc4kFeZNGmaSQ==}
     engines: {node: '>=14.0.0'}
     peerDependencies:
@@ -1303,16 +1303,16 @@ packages:
       rollup:
         optional: true
     dependencies:
-      '@rollup/pluginutils': 5.0.5(rollup@4.3.0)
+      '@rollup/pluginutils': 5.0.5(rollup@4.3.1)
       '@types/resolve': 1.20.2
       deepmerge: 4.3.1
       is-builtin-module: 3.2.1
       is-module: 1.0.0
       resolve: 1.22.8
-      rollup: 4.3.0
+      rollup: 4.3.1
     dev: true
 
-  /@rollup/pluginutils@3.1.0(rollup@4.3.0):
+  /@rollup/pluginutils@3.1.0(rollup@4.3.1):
     resolution: {integrity: sha512-GksZ6pr6TpIjHm8h9lSQ8pi8BE9VeubNT0OMJ3B5uZJ8pz73NPiqOtCog/x2/QzM1ENChPKxMDhiQuRHsqc+lg==}
     engines: {node: '>= 8.0.0'}
     peerDependencies:
@@ -1321,7 +1321,7 @@ packages:
       '@types/estree': 0.0.39
       estree-walker: 1.0.1
       picomatch: 2.3.1
-      rollup: 4.3.0
+      rollup: 4.3.1
     dev: true
 
   /@rollup/pluginutils@4.2.1:
@@ -1332,7 +1332,7 @@ packages:
       picomatch: 2.3.1
     dev: true
 
-  /@rollup/pluginutils@5.0.5(rollup@4.3.0):
+  /@rollup/pluginutils@5.0.5(rollup@4.3.1):
     resolution: {integrity: sha512-6aEYR910NyP73oHiJglti74iRyOwgFU4x3meH/H8OJx6Ry0j6cOVZ5X/wTvub7G7Ao6qaHBEaNsV3GLJkSsF+Q==}
     engines: {node: '>=14.0.0'}
     peerDependencies:
@@ -1344,99 +1344,99 @@ packages:
       '@types/estree': 1.0.5
       estree-walker: 2.0.2
       picomatch: 2.3.1
-      rollup: 4.3.0
+      rollup: 4.3.1
     dev: true
 
-  /@rollup/rollup-android-arm-eabi@4.3.0:
-    resolution: {integrity: sha512-/4pns6BYi8MXdwnXM44yoGAcFYVHL/BYlB2q1HXZ6AzH++LaiEVWFpBWQ/glXhbMbv3E3o09igrHFbP/snhAvA==}
+  /@rollup/rollup-android-arm-eabi@4.3.1:
+    resolution: {integrity: sha512-D+opNc1CnFmN6EcpG2BXUo9dI/vgoqo6xijv/nUPE1t7Y0Iz9IaXkSjaqw5MJq7B1DUawXfEaIdVCod27IsAOQ==}
     cpu: [arm]
     os: [android]
     requiresBuild: true
     dev: true
     optional: true
 
-  /@rollup/rollup-android-arm64@4.3.0:
-    resolution: {integrity: sha512-nLO/JsL9idr416vzi3lHm3Xm+QZh4qHij8k3Er13kZr5YhL7/+kBAx84kDmPc7HMexLmwisjDCeDIKNFp8mDlQ==}
+  /@rollup/rollup-android-arm64@4.3.1:
+    resolution: {integrity: sha512-3UbtU+7ocBMxYoMCDymHnFYB8tALVaEOjTe5pzAB65AJwXfDFAxADYGCJnBzDXD9u/G+7ktoYnMGYhitYphFkg==}
     cpu: [arm64]
     os: [android]
     requiresBuild: true
     dev: true
     optional: true
 
-  /@rollup/rollup-darwin-arm64@4.3.0:
-    resolution: {integrity: sha512-dGhVBlllt4iHwTGy21IEoMOTN5wZoid19zEIxsdY29xcEiOEHqzDa7Sqrkh5OE7LKCowL61eFJXxYe/+pYa7ZQ==}
+  /@rollup/rollup-darwin-arm64@4.3.1:
+    resolution: {integrity: sha512-F19xNgrLNnLTS/LFnTdlmxYvkIjFttDSQmJ6/oXLRZpGX+LAoYZpFcz2sYk5l/umk3M34Dfgnvt1fcMfTuIjzA==}
     cpu: [arm64]
     os: [darwin]
     requiresBuild: true
     dev: true
     optional: true
 
-  /@rollup/rollup-darwin-x64@4.3.0:
-    resolution: {integrity: sha512-h8wRfHeLEbU3NzaP1Oku7BYXCJQiTRr+8U0lklyOQXxXiEpHLL8tk1hFl+tezoRKLcPJD7joKaK74ASsqt3Ekg==}
+  /@rollup/rollup-darwin-x64@4.3.1:
+    resolution: {integrity: sha512-+63fn9QVEHsDz+ZafHN1R7tAjqfVG4LaFEPeHVcM0YWSNc6vq7UOdi7IUTdQ++RZHev5rYm8GTGwJccULX1XnQ==}
     cpu: [x64]
     os: [darwin]
     requiresBuild: true
     dev: true
     optional: true
 
-  /@rollup/rollup-linux-arm-gnueabihf@4.3.0:
-    resolution: {integrity: sha512-wP4VgR/gfV18sylTuym3sxRTkAgUR2vh6YLeX/GEznk5jCYcYSlx585XlcUcl0c8UffIZlRJ09raWSX3JDb4GA==}
+  /@rollup/rollup-linux-arm-gnueabihf@4.3.1:
+    resolution: {integrity: sha512-eG/9q+W0KPLu4xG3EwqDsG+wz9VoPMW0IDZ4bXdq2yyi2qA/CcmHb5956ZOw9PPAmL2krHvDaPyQIzFkZP0BLA==}
     cpu: [arm]
     os: [linux]
     requiresBuild: true
     dev: true
     optional: true
 
-  /@rollup/rollup-linux-arm64-gnu@4.3.0:
-    resolution: {integrity: sha512-v/14JCYVkqRSJeQbxFx4oUkwVQQw6lFMN7bd4vuARBc3X2lmomkxBsc+BFiIDL/BK+CTx5AOh/k9XmqDnKWRVg==}
+  /@rollup/rollup-linux-arm64-gnu@4.3.1:
+    resolution: {integrity: sha512-zjnPmrnXz59M6SaVwJSD0bWQ3ljFxpDMDVDi94Xn60/XX/qokZco9/psvu4hSvV+3A4OKwt4XwAULygXwN8y5w==}
     cpu: [arm64]
     os: [linux]
     requiresBuild: true
     dev: true
     optional: true
 
-  /@rollup/rollup-linux-arm64-musl@4.3.0:
-    resolution: {integrity: sha512-tNhfYqFH5OxtRzfkTOKdgFYlPSZnlDLNW4+leNEvQZhwTJxoTwsZAAhR97l3qVry/kkLyJPBK+Q8EAJLPinDIg==}
+  /@rollup/rollup-linux-arm64-musl@4.3.1:
+    resolution: {integrity: sha512-/QqGJI0Jk/Ln32EmpkJYmwpKIe+Da40zmJL8YYvJKYQWhvj7qYOJM6HntQndTWNpF5/33vpLVhngCaHqmiVhNg==}
     cpu: [arm64]
     os: [linux]
     requiresBuild: true
     dev: true
     optional: true
 
-  /@rollup/rollup-linux-x64-gnu@4.3.0:
-    resolution: {integrity: sha512-pw77m8QywdsoFdFOgmc8roF1inBI0rciqzO8ffRUgLoq7+ee9o5eFqtEcS6hHOOplgifAUUisP8cAnwl9nUYPw==}
+  /@rollup/rollup-linux-x64-gnu@4.3.1:
+    resolution: {integrity: sha512-Q1nbux0VbjeSSYns31wa4r8pssxg/bmYD7kH9ArSfSLxN0OaJaDTaBfHuGC/Ou7dWbg83ca0YQTYHQ6rzZVvgg==}
     cpu: [x64]
     os: [linux]
     requiresBuild: true
     dev: true
     optional: true
 
-  /@rollup/rollup-linux-x64-musl@4.3.0:
-    resolution: {integrity: sha512-tJs7v2MnV2F8w6X1UpPHl/43OfxjUy9SuJ2ZPoxn79v9vYteChVYO/ueLHCpRMmyTUIVML3N9z4azl9ENH8Xxg==}
+  /@rollup/rollup-linux-x64-musl@4.3.1:
+    resolution: {integrity: sha512-5i71ndo6vZ/EaYpWV8h0TypEc5lCmPru6hST35XiTzV9XUtvbLDfbD2T3nSU5MeQMZVgQHCHXelsH3KCGTA8WA==}
     cpu: [x64]
     os: [linux]
     requiresBuild: true
     dev: true
     optional: true
 
-  /@rollup/rollup-win32-arm64-msvc@4.3.0:
-    resolution: {integrity: sha512-OKGxp6kATQdTyI2DF+e9s+hB3/QZB45b6e+dzcfW1SUqiF6CviWyevhmT4USsMEdP3mlpC9zxLz3Oh+WaTMOSw==}
+  /@rollup/rollup-win32-arm64-msvc@4.3.1:
+    resolution: {integrity: sha512-aYKKmlrLL7C0oY43B2Q4uMIlfF1BsSlSYf3R7q7SGB/SrK7Tkj2DHuxqBSYuFqSxuYuAP4PaHt230McvMpZg5A==}
     cpu: [arm64]
     os: [win32]
     requiresBuild: true
     dev: true
     optional: true
 
-  /@rollup/rollup-win32-ia32-msvc@4.3.0:
-    resolution: {integrity: sha512-DDZ5AH68JJ2ClQFEA1aNnfA7Ybqyeh0644rGbrLOdNehTmzfICHiWSn0OprzYi9HAshTPQvlwrM+bi2kuaIOjQ==}
+  /@rollup/rollup-win32-ia32-msvc@4.3.1:
+    resolution: {integrity: sha512-/B5g1WqoXecmHyVsXsSGWfGE+QqiSIMk2I4+EOGcziXfZsUHoUbwXwaiAy5Sir/xUwdi9nEZDqj4jxwMchZPkQ==}
     cpu: [ia32]
     os: [win32]
     requiresBuild: true
     dev: true
     optional: true
 
-  /@rollup/rollup-win32-x64-msvc@4.3.0:
-    resolution: {integrity: sha512-dMvGV8p92GQ8jhNlGIKpyhVZPzJlT258pPrM5q2F8lKcc9Iv9BbfdnhX1OfinYWnb9ms5zLw6MlaMnqLfUkKnQ==}
+  /@rollup/rollup-win32-x64-msvc@4.3.1:
+    resolution: {integrity: sha512-2cRSO5SflYT21SKh1G+2zchLUotL2g7/jhYxbeFpJ8gfVU6CMd2YiIfN++Rs8kzTsuwaTqrE8CAK8GORqoVOeQ==}
     cpu: [x64]
     os: [win32]
     requiresBuild: true
@@ -7143,7 +7143,7 @@ packages:
       glob: 10.3.10
     dev: true
 
-  /rollup-plugin-commonjs@10.1.0(rollup@4.3.0):
+  /rollup-plugin-commonjs@10.1.0(rollup@4.3.1):
     resolution: {integrity: sha512-jlXbjZSQg8EIeAAvepNwhJj++qJWNJw1Cl0YnOqKtP5Djx+fFGkp3WRh+W0ASCaFG5w1jhmzDxgu3SJuVxPF4Q==}
     deprecated: This package has been deprecated and is no longer maintained. Please use @rollup/plugin-commonjs.
     peerDependencies:
@@ -7153,19 +7153,19 @@ packages:
       is-reference: 1.2.1
       magic-string: 0.25.9
       resolve: 1.22.8
-      rollup: 4.3.0
+      rollup: 4.3.1
       rollup-pluginutils: 2.8.2
     dev: true
 
-  /rollup-plugin-peer-deps-external@2.2.4(rollup@4.3.0):
+  /rollup-plugin-peer-deps-external@2.2.4(rollup@4.3.1):
     resolution: {integrity: sha512-AWdukIM1+k5JDdAqV/Cxd+nejvno2FVLVeZ74NKggm3Q5s9cbbcOgUPGdbxPi4BXu7xGaZ8HG12F+thImYu/0g==}
     peerDependencies:
       rollup: '*'
     dependencies:
-      rollup: 4.3.0
+      rollup: 4.3.1
     dev: true
 
-  /rollup-plugin-sourcemaps@0.6.3(@types/node@20.9.0)(rollup@4.3.0):
+  /rollup-plugin-sourcemaps@0.6.3(@types/node@20.9.0)(rollup@4.3.1):
     resolution: {integrity: sha512-paFu+nT1xvuO1tPFYXGe+XnQvg4Hjqv/eIhG8i5EspfYYPBKL57X7iVbfv55aNVASg3dzWvES9dmWsL2KhfByw==}
     engines: {node: '>=10.0.0'}
     peerDependencies:
@@ -7175,13 +7175,13 @@ packages:
       '@types/node':
         optional: true
     dependencies:
-      '@rollup/pluginutils': 3.1.0(rollup@4.3.0)
+      '@rollup/pluginutils': 3.1.0(rollup@4.3.1)
       '@types/node': 20.9.0
-      rollup: 4.3.0
+      rollup: 4.3.1
       source-map-resolve: 0.6.0
     dev: true
 
-  /rollup-plugin-terser@7.0.2(rollup@4.3.0):
+  /rollup-plugin-terser@7.0.2(rollup@4.3.1):
     resolution: {integrity: sha512-w3iIaU4OxcF52UUXiZNsNeuXIMDvFrr+ZXK6bFZ0Q60qyVfq4uLptoS4bbq3paG3x216eQllFZX7zt6TIImguQ==}
     deprecated: This package has been deprecated and is no longer maintained. Please use @rollup/plugin-terser
     peerDependencies:
@@ -7189,12 +7189,12 @@ packages:
     dependencies:
       '@babel/code-frame': 7.22.13
       jest-worker: 26.6.2
-      rollup: 4.3.0
+      rollup: 4.3.1
       serialize-javascript: 4.0.0
       terser: 5.24.0
     dev: true
 
-  /rollup-plugin-typescript2@0.36.0(rollup@4.3.0)(typescript@5.2.2):
+  /rollup-plugin-typescript2@0.36.0(rollup@4.3.1)(typescript@5.2.2):
     resolution: {integrity: sha512-NB2CSQDxSe9+Oe2ahZbf+B4bh7pHwjV5L+RSYpCu7Q5ROuN94F9b6ioWwKfz3ueL3KTtmX4o2MUH2cgHDIEUsw==}
     peerDependencies:
       rollup: '>=1.26.3'
@@ -7203,25 +7203,25 @@ packages:
       '@rollup/pluginutils': 4.2.1
       find-cache-dir: 3.3.2
       fs-extra: 10.1.0
-      rollup: 4.3.0
+      rollup: 4.3.1
       semver: 7.5.4
       tslib: 2.6.2
       typescript: 5.2.2
     dev: true
 
-  /rollup-plugin-uglify@6.0.4(rollup@4.3.0):
+  /rollup-plugin-uglify@6.0.4(rollup@4.3.1):
     resolution: {integrity: sha512-ddgqkH02klveu34TF0JqygPwZnsbhHVI6t8+hGTcYHngPkQb5MIHI0XiztXIN/d6V9j+efwHAqEL7LspSxQXGw==}
     peerDependencies:
       rollup: '>=0.66.0 <2'
     dependencies:
       '@babel/code-frame': 7.22.13
       jest-worker: 24.9.0
-      rollup: 4.3.0
+      rollup: 4.3.1
       serialize-javascript: 2.1.2
       uglify-js: 3.17.4
     dev: true
 
-  /rollup-plugin-url@3.0.1(rollup@4.3.0):
+  /rollup-plugin-url@3.0.1(rollup@4.3.1):
     resolution: {integrity: sha512-fQVrxlW335snHfPqZ7a0JIkkYEIrLeFobpAxRMQnyv7xQeJOY1yOd84STIdCaLYPoGzwOq8waOdGipNH181kzg==}
     engines: {node: '>=10.0.0'}
     deprecated: This module has been deprecated and is no longer maintained. Please use @rollup/plugin-url.
@@ -7229,7 +7229,7 @@ packages:
       rollup: '>=0.60.0'
     dependencies:
       mime: 2.6.0
-      rollup: 4.3.0
+      rollup: 4.3.1
       rollup-pluginutils: 2.8.2
     dev: true
 
@@ -7239,23 +7239,23 @@ packages:
       estree-walker: 0.6.1
     dev: true
 
-  /rollup@4.3.0:
-    resolution: {integrity: sha512-scIi1NrKLDIYSPK66jjECtII7vIgdAMFmFo8h6qm++I6nN9qDSV35Ku6erzGVqYjx+lj+j5wkusRMr++8SyDZg==}
+  /rollup@4.3.1:
+    resolution: {integrity: sha512-gkvK/OnwbyacmUVjxNzuMMqSihBVQSdX9OtZkThN946cpMHA7izVzc03tHg3NVAeWXUNPzkrP7RW/rV68a42BA==}
     engines: {node: '>=18.0.0', npm: '>=8.0.0'}
     hasBin: true
     optionalDependencies:
-      '@rollup/rollup-android-arm-eabi': 4.3.0
-      '@rollup/rollup-android-arm64': 4.3.0
-      '@rollup/rollup-darwin-arm64': 4.3.0
-      '@rollup/rollup-darwin-x64': 4.3.0
-      '@rollup/rollup-linux-arm-gnueabihf': 4.3.0
-      '@rollup/rollup-linux-arm64-gnu': 4.3.0
-      '@rollup/rollup-linux-arm64-musl': 4.3.0
-      '@rollup/rollup-linux-x64-gnu': 4.3.0
-      '@rollup/rollup-linux-x64-musl': 4.3.0
-      '@rollup/rollup-win32-arm64-msvc': 4.3.0
-      '@rollup/rollup-win32-ia32-msvc': 4.3.0
-      '@rollup/rollup-win32-x64-msvc': 4.3.0
+      '@rollup/rollup-android-arm-eabi': 4.3.1
+      '@rollup/rollup-android-arm64': 4.3.1
+      '@rollup/rollup-darwin-arm64': 4.3.1
+      '@rollup/rollup-darwin-x64': 4.3.1
+      '@rollup/rollup-linux-arm-gnueabihf': 4.3.1
+      '@rollup/rollup-linux-arm64-gnu': 4.3.1
+      '@rollup/rollup-linux-arm64-musl': 4.3.1
+      '@rollup/rollup-linux-x64-gnu': 4.3.1
+      '@rollup/rollup-linux-x64-musl': 4.3.1
+      '@rollup/rollup-win32-arm64-msvc': 4.3.1
+      '@rollup/rollup-win32-ia32-msvc': 4.3.1
+      '@rollup/rollup-win32-x64-msvc': 4.3.1
       fsevents: 2.3.3
     dev: true
 
