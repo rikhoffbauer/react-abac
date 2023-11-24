@@ -1,13 +1,13 @@
 {
     "name": "react-abac-example",
-    "version": "0.1.355",
+    "version": "0.1.356",
     "private": true,
     "homepage": ".",
     "dependencies": {
         "@types/jest": "29.5.9",
         "@types/node": "20.9.3",
-        "@types/react": "18.2.37",
-        "@types/react-dom": "18.2.15",
+        "@types/react": "18.2.38",
+        "@types/react-dom": "18.2.16",
         "@types/react-syntax-highlighter": "15.5.10",
         "react": "18.2.0",
         "react-abac": "file:..",
