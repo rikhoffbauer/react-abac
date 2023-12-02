@@ -27,8 +27,8 @@ devDependencies:
     specifier: 10.0.1
     version: 10.0.1(semantic-release@0.0.0-development)
   '@semantic-release/github':
-    specifier: 9.2.3
-    version: 9.2.3(semantic-release@0.0.0-development)
+    specifier: 9.2.4
+    version: 9.2.4(semantic-release@0.0.0-development)
   '@semantic-release/release-notes-generator':
     specifier: 12.1.0
     version: 12.1.0(semantic-release@0.0.0-development)
@@ -1554,8 +1554,8 @@ packages:
       - supports-color
     dev: true
 
-  /@semantic-release/github@9.2.3(semantic-release@0.0.0-development):
-    resolution: {integrity: sha512-FAjXb1F84CVI6IG8fWi+XS9ErYD+s3MHkP03zBa3+GyUrV4kqwYu/WPppIciHxujGFR51SAWPkOY5rnH6ZlrxA==}
+  /@semantic-release/github@9.2.4(semantic-release@0.0.0-development):
+    resolution: {integrity: sha512-VMzqiuSLhHc0/1Q8M/FmWnOaclh5aXL2pQWceldWBYSWLNzQu8GOR4bkGl57ciUtvm+MCMi4FaStZxSDJGEfUg==}
     engines: {node: '>=18'}
     peerDependencies:
       semantic-release: '>=20.1.0'
@@ -1573,7 +1573,7 @@ packages:
       https-proxy-agent: 7.0.2
       issue-parser: 6.0.0
       lodash-es: 4.17.21
-      mime: 3.0.0
+      mime: 4.0.0
       p-filter: 3.0.0
       semantic-release: github.com/rikhoffbauer/semantic-release/9a7bff0cfa08c9e6940b1ad7eb75959b34f051cc
       url-join: 5.0.0
@@ -6035,9 +6035,9 @@ packages:
     hasBin: true
     dev: true
 
-  /mime@3.0.0:
-    resolution: {integrity: sha512-jSCU7/VB1loIWBZe14aEYHU/+1UMEHoaO7qxCOVJOw9GgH72VAWppxNcjU+x9a2k3GSIBXNKxXQFqRvvZ7vr3A==}
-    engines: {node: '>=10.0.0'}
+  /mime@4.0.0:
+    resolution: {integrity: sha512-pzhgdeqU5pJ9t5WK9m4RT4GgGWqYJylxUf62Yb9datXRwdcw5MjiD1BYI5evF8AgTXN9gtKX3CFLvCUL5fAhEA==}
+    engines: {node: '>=16'}
     hasBin: true
     dev: true
 
