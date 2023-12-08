@@ -33,8 +33,8 @@ devDependencies:
     specifier: 12.1.0
     version: 12.1.0(semantic-release@0.0.0-development)
   '@types/enzyme':
-    specifier: 3.10.17
-    version: 3.10.17
+    specifier: 3.10.18
+    version: 3.10.18
   '@types/enzyme-adapter-react-16':
     specifier: 1.0.9
     version: 1.0.9
@@ -1730,11 +1730,11 @@ packages:
   /@types/enzyme-adapter-react-16@1.0.9:
     resolution: {integrity: sha512-z24MMxGtUL8HhXdye3tWzjp+19QTsABqLaX2oOZpxMPHRJgLfahQmOeTTrEBQd9ogW20+UmPBXD9j+XOasFHvw==}
     dependencies:
-      '@types/enzyme': 3.10.17
+      '@types/enzyme': 3.10.18
     dev: true
 
-  /@types/enzyme@3.10.17:
-    resolution: {integrity: sha512-4+CMYPx8cToXnF1WxUdjKCZFSrslJqkIW5N5D27stzJsnJmw4dWbOcmhPERJpe+CufV0LanV7BgTWuj63Z2/Vg==}
+  /@types/enzyme@3.10.18:
+    resolution: {integrity: sha512-RaO/TyyHZvXkpzinbMTZmd/S5biU4zxkvDsn22ujC29t9FMSzq8tnn8f2MxQ2P8GVhFRG5jTAL05DXKyTtpEQQ==}
     dependencies:
       '@types/cheerio': 0.22.35
       '@types/react': 16.14.52
@@ -6560,6 +6560,7 @@ packages:
   /parent-module@1.0.1:
     resolution: {integrity: sha512-GQ2EWRpQV8/o+Aw8YqtfZZPfNRWZYkbidE9k5rpl/hC3vtHHBfGm2Ifi6qWV+coDGkrUKZAxE3Lot5kcsRlh+g==}
     engines: {node: '>=6'}
+    requiresBuild: true
     dependencies:
       callsites: 3.1.0
     dev: true
