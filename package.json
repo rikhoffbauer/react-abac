@@ -1,6 +1,6 @@
 {
     "name": "react-abac",
-    "version": "0.1.44",
+    "version": "0.1.45",
     "description": "Attribute Based Access Control and Role Based Access Control for React",
     "keywords": [
         "abac",
@@ -148,8 +148,8 @@
         }
     },
     "devDependencies": {
-        "@commitlint/cli": "18.4.3",
-        "@commitlint/config-conventional": "18.4.3",
+        "@commitlint/cli": "18.4.4",
+        "@commitlint/config-conventional": "18.4.4",
         "@prettier/plugin-xml": "3.2.2",
         "@semantic-release/changelog": "6.0.3",
         "@semantic-release/commit-analyzer": "11.1.0",
