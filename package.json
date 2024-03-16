@@ -1,6 +1,6 @@
 {
     "name": "react-abac",
-    "version": "0.1.142",
+    "version": "0.1.143",
     "description": "Attribute Based Access Control and Role Based Access Control for React",
     "keywords": [
         "abac",
@@ -161,7 +161,7 @@
         "@types/jest": "29.5.12",
         "@types/node": "20.11.27",
         "@types/react": "18.2.65",
-        "@types/react-dom": "18.2.21",
+        "@types/react-dom": "18.2.22",
         "@typescript-eslint/eslint-plugin": "7.2.0",
         "@typescript-eslint/parser": "7.2.0",
         "@wojtekmaj/enzyme-adapter-react-17": "0.8.0",
