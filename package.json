@@ -1,6 +1,6 @@
 {
     "name": "react-abac",
-    "version": "0.1.148",
+    "version": "0.1.150",
     "description": "Attribute Based Access Control and Role Based Access Control for React",
     "keywords": [
         "abac",
@@ -148,11 +148,11 @@
         }
     },
     "devDependencies": {
-        "@commitlint/cli": "19.2.0",
+        "@commitlint/cli": "19.2.1",
         "@commitlint/config-conventional": "19.1.0",
         "@prettier/plugin-xml": "3.3.1",
         "@semantic-release/changelog": "6.0.3",
-        "@semantic-release/commit-analyzer": "11.1.0",
+        "@semantic-release/commit-analyzer": "12.0.0",
         "@semantic-release/git": "10.0.1",
         "@semantic-release/github": "10.0.2",
         "@semantic-release/release-notes-generator": "12.1.0",
@@ -160,10 +160,10 @@
         "@types/enzyme-adapter-react-16": "1.0.9",
         "@types/jest": "29.5.12",
         "@types/node": "20.11.28",
-        "@types/react": "18.2.66",
+        "@types/react": "18.2.69",
         "@types/react-dom": "18.2.22",
-        "@typescript-eslint/eslint-plugin": "7.2.0",
-        "@typescript-eslint/parser": "7.2.0",
+        "@typescript-eslint/eslint-plugin": "7.3.1",
+        "@typescript-eslint/parser": "7.3.1",
         "@wojtekmaj/enzyme-adapter-react-17": "0.8.0",
         "commitizen": "4.3.0",
         "cz-conventional-changelog": "3.3.0",
