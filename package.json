@@ -202,7 +202,7 @@
         "ts-jest": "29.1.4",
         "ts-node": "10.9.2",
         "tsc-watch": "6.2.0",
-        "tslib": "2.6.2",
+        "tslib": "2.6.3",
         "typescript": "5.4.5"
     },
     "peerDependencies": {
