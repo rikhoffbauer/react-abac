@@ -172,7 +172,7 @@
         "eslint": "9.7.0",
         "eslint-config-prettier": "9.1.0",
         "eslint-plugin-prettier": "5.2.1",
-        "husky": "9.1.1",
+        "husky": "9.1.2",
         "import-sort": "6.0.0",
         "import-sort-parser-typescript": "6.0.0",
         "import-sort-style-custom": "2.1.2",
