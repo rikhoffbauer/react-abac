@@ -199,7 +199,7 @@
         "rollup-plugin-url": "3.0.1",
         "semantic-release": "github:rikhoffbauer/semantic-release",
         "sort-package-json": "2.10.0",
-        "ts-jest": "29.2.3",
+        "ts-jest": "29.2.4",
         "ts-node": "10.9.2",
         "tsc-watch": "6.2.0",
         "tslib": "2.6.3",
