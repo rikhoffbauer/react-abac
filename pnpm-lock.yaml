@@ -30,8 +30,8 @@ devDependencies:
     specifier: 10.0.1
     version: 10.0.1(semantic-release@0.0.0-development)
   '@semantic-release/github':
-    specifier: 10.3.5
-    version: 10.3.5(semantic-release@0.0.0-development)
+    specifier: 11.0.0
+    version: 11.0.0(semantic-release@0.0.0-development)
   '@semantic-release/release-notes-generator':
     specifier: 14.0.1
     version: 14.0.1(semantic-release@0.0.0-development)
@@ -1570,11 +1570,11 @@ packages:
       - supports-color
     dev: true
 
-  /@semantic-release/github@10.3.5(semantic-release@0.0.0-development):
-    resolution: {integrity: sha512-svvRglGmvqvxjmDgkXhrjf0lC88oZowFhOfifTldbgX9Dzj0inEtMLaC+3/MkDEmxmaQjWmF5Q/0CMIvPNSVdQ==}
+  /@semantic-release/github@11.0.0(semantic-release@0.0.0-development):
+    resolution: {integrity: sha512-Uon6G6gJD8U1JNvPm7X0j46yxNRJ8Ui6SgK4Zw5Ktu8RgjEft3BGn+l/RX1TTzhhO3/uUcKuqM+/9/ETFxWS/Q==}
     engines: {node: '>=20.8.1'}
     peerDependencies:
-      semantic-release: '>=20.1.0'
+      semantic-release: '>=24.1.0'
     dependencies:
       '@octokit/core': 6.1.2
       '@octokit/plugin-paginate-rest': 11.3.5(@octokit/core@6.1.2)
