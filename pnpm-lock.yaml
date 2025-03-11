@@ -6,11 +6,11 @@ settings:
 
 devDependencies:
   '@commitlint/cli':
-    specifier: 19.7.1
-    version: 19.7.1(@types/node@22.13.10)(typescript@5.8.2)
+    specifier: 19.8.0
+    version: 19.8.0(@types/node@22.13.10)(typescript@5.8.2)
   '@commitlint/config-conventional':
-    specifier: 19.7.1
-    version: 19.7.1
+    specifier: 19.8.0
+    version: 19.8.0
   '@prettier/plugin-xml':
     specifier: 3.4.1
     version: 3.4.1(prettier@3.5.3)
@@ -505,8 +505,8 @@ packages:
     dev: true
     optional: true
 
-  /@commitlint/cli@19.7.1(@types/node@22.13.10)(typescript@5.8.2):
-    resolution: {integrity: sha512-iObGjR1tE/PfDtDTEfd+tnRkB3/HJzpQqRTyofS2MPPkDn1mp3DBC8SoPDayokfAy+xKhF8+bwRCJO25Nea0YQ==}
+  /@commitlint/cli@19.8.0(@types/node@22.13.10)(typescript@5.8.2):
+    resolution: {integrity: sha512-t/fCrLVu+Ru01h0DtlgHZXbHV2Y8gKocTR5elDOqIRUzQd0/6hpt2VIWOj9b3NDo7y4/gfxeR2zRtXq/qO6iUg==}
     engines: {node: '>=v18'}
     hasBin: true
     dependencies:
@@ -522,8 +522,8 @@ packages:
       - typescript
     dev: true
 
-  /@commitlint/config-conventional@19.7.1:
-    resolution: {integrity: sha512-fsEIF8zgiI/FIWSnykdQNj/0JE4av08MudLTyYHm4FlLWemKoQvPNUYU2M/3tktWcCEyq7aOkDDgtjrmgWFbvg==}
+  /@commitlint/config-conventional@19.8.0:
+    resolution: {integrity: sha512-9I2kKJwcAPwMoAj38hwqFXG0CzS2Kj+SAByPUQ0SlHTfb7VUhYVmo7G2w2tBrqmOf7PFd6MpZ/a1GQJo8na8kw==}
     engines: {node: '>=v18'}
     dependencies:
       '@commitlint/types': 19.8.0
