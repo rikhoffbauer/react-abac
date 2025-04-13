@@ -120,8 +120,8 @@ devDependencies:
     specifier: 0.0.7
     version: 0.0.7(prettier@3.5.3)
   prettier-plugin-sh:
-    specifier: 0.16.0
-    version: 0.16.0(prettier@3.5.3)
+    specifier: 0.17.2
+    version: 0.17.2(prettier@3.5.3)
   react:
     specifier: 19.1.0
     version: 19.1.0
@@ -1307,6 +1307,11 @@ packages:
     dependencies:
       '@xml-tools/parser': 1.0.11
       prettier: 3.5.3
+    dev: true
+
+  /@reteps/dockerfmt@0.3.5:
+    resolution: {integrity: sha512-ib1LU/3lXHAH63hxaGu9O+G3nbe5JlCg5WoMS7zzfuuBUPenCeuO7cOhYhI7IwD2QaD1NBy8AJ+FrKyhaHtWLA==}
+    engines: {node: ^v12.20.0 || ^14.13.0 || >=16.0.0}
     dev: true
 
   /@rollup/plugin-node-resolve@16.0.1(rollup@4.39.0):
@@ -6417,10 +6422,6 @@ packages:
     resolution: {integrity: sha512-nnbWWOkoWyUsTjKrhgD0dcz22mdkSnpYqbEjIm2nhwhuxlSkpywJmBo8h0ZqJdkp73mb90SssHkN4rsRaBAfAA==}
     dev: true
 
-  /mvdan-sh@0.10.1:
-    resolution: {integrity: sha512-kMbrH0EObaKmK3nVRKUIIya1dpASHIEusM13S4V1ViHFuxuNxCo+arxoa6j/dbV22YBGjl7UKJm9QQKJ2Crzhg==}
-    dev: true
-
   /natural-compare@1.4.0:
     resolution: {integrity: sha512-OWND8ei3VtNC9h7V60qff3SVobHr996CTwgxubgyQYEpg290h9J0buyECNNJexkFm5sOajh5G116RYA1c8ZMSw==}
     dev: true
@@ -7080,15 +7081,15 @@ packages:
       - supports-color
     dev: true
 
-  /prettier-plugin-sh@0.16.0(prettier@3.5.3):
-    resolution: {integrity: sha512-QaVH0X56IUy9niNczUQ0TxqVezcGzACz9XObbyxyAZ6NU/VCKnR9RUAcETyzCiPgcHKq/tjerCsqxn5nL3yo/w==}
+  /prettier-plugin-sh@0.17.2(prettier@3.5.3):
+    resolution: {integrity: sha512-7+dEo/IYbhrUj4qP+1QXj41/5Hv9ZkxBuEatI1jywrcAlVF1aGhdYJF4Sn+M67nkA16iRL53W4FSRe1bitTdmQ==}
     engines: {node: '>=16.0.0'}
     peerDependencies:
       prettier: ^3.0.3
     dependencies:
-      mvdan-sh: 0.10.1
+      '@reteps/dockerfmt': 0.3.5
       prettier: 3.5.3
-      sh-syntax: 0.4.2
+      sh-syntax: 0.5.6
     dev: true
 
   /prettier@3.5.3:
@@ -7791,8 +7792,8 @@ packages:
       es-object-atoms: 1.1.1
     dev: true
 
-  /sh-syntax@0.4.2:
-    resolution: {integrity: sha512-/l2UZ5fhGZLVZa16XQM9/Vq/hezGGbdHeVEA01uWjOL1+7Ek/gt6FquW0iKKws4a9AYPYvlz6RyVvjh3JxOteg==}
+  /sh-syntax@0.5.6:
+    resolution: {integrity: sha512-hUprXSSgi3HLdIxufSsr0lceThj6vKsgOHcVVGujDGLWg9RD5Mt6j2m642qkTAU/7GFX65ed/g9h2jeURGuTlQ==}
     engines: {node: '>=16.0.0'}
     dependencies:
       tslib: 2.8.1
