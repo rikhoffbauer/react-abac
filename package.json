@@ -198,7 +198,7 @@
         "rollup-plugin-uglify": "6.0.4",
         "rollup-plugin-url": "3.0.1",
         "semantic-release": "github:rikhoffbauer/semantic-release",
-        "sort-package-json": "3.0.0",
+        "sort-package-json": "3.2.1",
         "ts-jest": "29.3.4",
         "ts-node": "10.9.2",
         "tsc-watch": "6.2.1",
