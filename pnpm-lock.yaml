@@ -81,8 +81,8 @@ devDependencies:
     specifier: 10.1.5
     version: 10.1.5(eslint@9.27.0)
   eslint-plugin-prettier:
-    specifier: 5.4.0
-    version: 5.4.0(eslint-config-prettier@10.1.5)(eslint@9.27.0)(prettier@3.5.3)
+    specifier: 5.4.1
+    version: 5.4.1(eslint-config-prettier@10.1.5)(eslint@9.27.0)(prettier@3.5.3)
   husky:
     specifier: 9.1.7
     version: 9.1.7
@@ -3767,8 +3767,8 @@ packages:
       eslint: 9.27.0
     dev: true
 
-  /eslint-plugin-prettier@5.4.0(eslint-config-prettier@10.1.5)(eslint@9.27.0)(prettier@3.5.3):
-    resolution: {integrity: sha512-BvQOvUhkVQM1i63iMETK9Hjud9QhqBnbtT1Zc642p9ynzBuCe5pybkOnvqZIBypXmMlsGcnU4HZ8sCTPfpAexA==}
+  /eslint-plugin-prettier@5.4.1(eslint-config-prettier@10.1.5)(eslint@9.27.0)(prettier@3.5.3):
+    resolution: {integrity: sha512-9dF+KuU/Ilkq27A8idRP7N2DH8iUR6qXcjF3FR2wETY21PZdBrIjwCau8oboyGj9b7etWmTGEeM8e7oOed6ZWg==}
     engines: {node: ^14.18.0 || >=16.0.0}
     peerDependencies:
       '@types/eslint': '>=8.0.0'
