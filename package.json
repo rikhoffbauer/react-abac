@@ -169,7 +169,7 @@
         "cz-conventional-changelog": "3.3.0",
         "enzyme": "3.11.0",
         "enzyme-adapter-react-16": "1.15.8",
-        "eslint": "9.28.0",
+        "eslint": "9.29.0",
         "eslint-config-prettier": "10.1.5",
         "eslint-plugin-prettier": "5.4.1",
         "husky": "9.1.7",
