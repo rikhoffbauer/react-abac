@@ -30,8 +30,8 @@ devDependencies:
     specifier: 10.0.1
     version: 10.0.1(semantic-release@0.0.0-development)
   '@semantic-release/github':
-    specifier: 11.0.3
-    version: 11.0.3(semantic-release@0.0.0-development)
+    specifier: 11.0.4
+    version: 11.0.4(semantic-release@0.0.0-development)
   '@semantic-release/release-notes-generator':
     specifier: 14.0.3
     version: 14.0.3(semantic-release@0.0.0-development)
@@ -1771,8 +1771,8 @@ packages:
       - supports-color
     dev: true
 
-  /@semantic-release/github@11.0.3(semantic-release@0.0.0-development):
-    resolution: {integrity: sha512-T2fKUyFkHHkUNa5XNmcsEcDPuG23hwBKptfUVcFXDVG2cSjXXZYDOfVYwfouqbWo/8UefotLaoGfQeK+k3ep6A==}
+  /@semantic-release/github@11.0.4(semantic-release@0.0.0-development):
+    resolution: {integrity: sha512-fU/nLSjkp9DmB0h7FVO5imhhWJMvq2LjD4+3lz3ZAzpDLY9+KYwC+trJ+g7LbZeJv9y3L9fSFSg2DduUpiT6bw==}
     engines: {node: '>=20.8.1'}
     peerDependencies:
       semantic-release: '>=24.1.0'
