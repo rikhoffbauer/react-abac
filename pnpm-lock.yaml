@@ -51,8 +51,8 @@ devDependencies:
     specifier: 19.1.12
     version: 19.1.12
   '@types/react-dom':
-    specifier: 19.1.8
-    version: 19.1.8(@types/react@19.1.12)
+    specifier: 19.1.9
+    version: 19.1.9(@types/react@19.1.12)
   '@typescript-eslint/eslint-plugin':
     specifier: 8.41.0
     version: 8.41.0(@typescript-eslint/parser@8.41.0)(eslint@9.34.0)(typescript@5.9.2)
@@ -2083,8 +2083,8 @@ packages:
     resolution: {integrity: sha512-F6bEyamV9jKGAFBEmlQnesRPGOQqS2+Uwi0Em15xenOxHaf2hv6L8YCVn3rPdPJOiJfPiCnLIRyvwVaqMY3MIw==}
     dev: true
 
-  /@types/react-dom@19.1.8(@types/react@19.1.12):
-    resolution: {integrity: sha512-xG7xaBMJCpcK0RpN8jDbAACQo54ycO6h4dSSmgv8+fu6ZIAdANkx/WsawASUjVXYfy+J9AbUpRMNNEsXCDfDBQ==}
+  /@types/react-dom@19.1.9(@types/react@19.1.12):
+    resolution: {integrity: sha512-qXRuZaOsAdXKFyOhRBg6Lqqc0yay13vN7KrIg4L7N4aaHN68ma9OK3NE1BoDFgFOTfM7zg+3/8+2n8rLUH3OKQ==}
     peerDependencies:
       '@types/react': ^19.0.0
     dependencies:
