@@ -5,7 +5,7 @@
     "homepage": ".",
     "dependencies": {
         "@types/jest": "30.0.0",
-        "@types/node": "22.17.2",
+        "@types/node": "22.18.0",
         "@types/react": "19.1.12",
         "@types/react-dom": "19.1.9",
         "@types/react-syntax-highlighter": "15.5.13",
