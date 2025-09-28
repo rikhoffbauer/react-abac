@@ -111,8 +111,8 @@ devDependencies:
     specifier: 4.0.0
     version: 4.0.0(jest-environment-jsdom@30.1.2)
   lint-staged:
-    specifier: 16.2.0
-    version: 16.2.0
+    specifier: 16.2.1
+    version: 16.2.1
   prettier:
     specifier: 3.6.2
     version: 3.6.2
@@ -6144,8 +6144,8 @@ packages:
     requiresBuild: true
     dev: true
 
-  /lint-staged@16.2.0:
-    resolution: {integrity: sha512-spdYSOCQ2MdZ9CM1/bu/kDmaYGsrpNOeu1InFFV8uhv14x6YIubGxbCpSmGILFoxkiheNQPDXSg5Sbb5ZuVnug==}
+  /lint-staged@16.2.1:
+    resolution: {integrity: sha512-KMeYmH9wKvHsXdUp+z6w7HN3fHKHXwT1pSTQTYxB9kI6ekK1rlL3kLZEoXZCppRPXFK9PFW/wfQctV7XUqMrPQ==}
     engines: {node: '>=20.17'}
     hasBin: true
     dependencies:
