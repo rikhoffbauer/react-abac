@@ -540,7 +540,6 @@ packages:
   /@commitlint/config-validator@20.0.0:
     resolution: {integrity: sha512-BeyLMaRIJDdroJuYM2EGhDMGwVBMZna9UiIqV9hxj+J551Ctc6yoGuGSmghOy/qPhBSuhA6oMtbEiTmxECafsg==}
     engines: {node: '>=v18'}
-    requiresBuild: true
     dependencies:
       '@commitlint/types': 20.0.0
       ajv: 8.17.1
@@ -561,7 +560,6 @@ packages:
   /@commitlint/execute-rule@20.0.0:
     resolution: {integrity: sha512-xyCoOShoPuPL44gVa+5EdZsBVao/pNzpQhkzq3RdtlFdKZtjWcLlUFQHSWBuhk5utKYykeJPSz2i8ABHQA+ZZw==}
     engines: {node: '>=v18'}
-    requiresBuild: true
     dev: true
 
   /@commitlint/format@20.0.0:
@@ -577,7 +575,7 @@ packages:
     engines: {node: '>=v18'}
     dependencies:
       '@commitlint/types': 20.0.0
-      semver: 7.7.2
+      semver: 7.7.3
     dev: true
 
   /@commitlint/lint@20.0.0:
@@ -600,7 +598,7 @@ packages:
       '@commitlint/types': 20.0.0
       chalk: 5.6.2
       cosmiconfig: 9.0.0(typescript@5.9.3)
-      cosmiconfig-typescript-loader: 6.1.0(@types/node@22.18.9)(cosmiconfig@9.0.0)(typescript@5.9.3)
+      cosmiconfig-typescript-loader: 6.2.0(@types/node@22.18.9)(cosmiconfig@9.0.0)(typescript@5.9.3)
       lodash.isplainobject: 4.0.6
       lodash.merge: 4.6.2
       lodash.uniq: 4.5.0
@@ -637,7 +635,6 @@ packages:
   /@commitlint/resolve-extends@20.1.0:
     resolution: {integrity: sha512-cxKXQrqHjZT3o+XPdqDCwOWVFQiae++uwd9dUBC7f2MdV58ons3uUvASdW7m55eat5sRiQ6xUHyMWMRm6atZWw==}
     engines: {node: '>=v18'}
-    requiresBuild: true
     dependencies:
       '@commitlint/config-validator': 20.0.0
       '@commitlint/types': 20.0.0
@@ -1856,7 +1853,7 @@ packages:
       read-pkg: 5.2.0
       registry-auth-token: 4.2.2
       semantic-release: github.com/rikhoffbauer/semantic-release/9a7bff0cfa08c9e6940b1ad7eb75959b34f051cc
-      semver: 7.7.2
+      semver: 7.7.3
       tempy: 1.0.1
     dev: true
 
@@ -1998,7 +1995,7 @@ packages:
     resolution: {integrity: sha512-kIfCo6/DdpgCHgmrLgPTugjzbZ46BUK8S2IP0kYo8+62LD2l1k8mSVsc+zQYNTdjDRoh2E9Spxu6F1NnEiW38Q==}
     dependencies:
       '@types/cheerio': 0.22.35
-      '@types/react': 16.14.66
+      '@types/react': 16.14.67
     dev: true
 
   /@types/estree@0.0.39:
@@ -2078,8 +2075,8 @@ packages:
       '@types/react': 19.2.2
     dev: true
 
-  /@types/react@16.14.66:
-    resolution: {integrity: sha512-KPilYP4+25N2ki7vrB4adSR2ucAj95xJcGfKC09bsxcHT+QtB//K7i1FenPnbkLA0Xt9pRi1/RXC1wxFvL9Wtw==}
+  /@types/react@16.14.67:
+    resolution: {integrity: sha512-6M9qGVD9UQWHDrBYvLKNHVRVsuFylGRaEoTLb8Y9eGAWxb0K0D84kViIcejUOq0RoEPSIOsipWRIEu46TS27ZQ==}
     dependencies:
       '@types/prop-types': 15.7.15
       '@types/scheduler': 0.16.8
@@ -2236,7 +2233,7 @@ packages:
       fast-glob: 3.3.3
       is-glob: 4.0.3
       minimatch: 9.0.5
-      semver: 7.7.2
+      semver: 7.7.3
       ts-api-utils: 2.1.0(typescript@5.9.3)
       typescript: 5.9.3
     transitivePeerDependencies:
@@ -2550,7 +2547,6 @@ packages:
 
   /ajv@8.17.1:
     resolution: {integrity: sha512-B/gBuNg5SiMTrPkC+A2+cW0RszwxYmn6VYxB/inlBStS5nx6xHIt/ehKRhIMhqusl7a8LjQoZnjCs5vhwxOQ1g==}
-    requiresBuild: true
     dependencies:
       fast-deep-equal: 3.1.3
       fast-uri: 3.1.0
@@ -2630,7 +2626,6 @@ packages:
 
   /argparse@2.0.1:
     resolution: {integrity: sha512-8+9WqebbFzpX9OR+Wa6O29asIogeRMzcGtAINdpMHHyAg10f05aSFVBbcEqGf/PXw1EjAZ+q2/bEBg3DvurK3Q==}
-    requiresBuild: true
     dev: true
 
   /argv-formatter@1.0.0:
@@ -2818,8 +2813,8 @@ packages:
     resolution: {integrity: sha512-AKpaYlHn8t4SVbOHCy+b5+KKgvR4vrsD8vbvrbiQJps7fKDTkjkDry6ji0rUJjC0kzbNePLwzxq8iypo41qeWA==}
     dev: true
 
-  /baseline-browser-mapping@2.8.12:
-    resolution: {integrity: sha512-vAPMQdnyKCBtkmQA6FMCBvU9qFIppS3nzyXnEM+Lo2IAhG4Mpjv9cCxMudhgV3YdNNJv6TNqXy97dfRVL2LmaQ==}
+  /baseline-browser-mapping@2.8.16:
+    resolution: {integrity: sha512-OMu3BGQ4E7P1ErFsIPpbJh0qvDudM/UuJeHgkAvfWe+0HFJCXh+t/l8L6fVLR55RI/UbKrVLnAXZSVwd9ysWYw==}
     hasBin: true
     dev: true
 
@@ -2872,9 +2867,9 @@ packages:
     engines: {node: ^6 || ^7 || ^8 || ^9 || ^10 || ^11 || ^12 || >=13.7}
     hasBin: true
     dependencies:
-      baseline-browser-mapping: 2.8.12
-      caniuse-lite: 1.0.30001748
-      electron-to-chromium: 1.5.230
+      baseline-browser-mapping: 2.8.16
+      caniuse-lite: 1.0.30001750
+      electron-to-chromium: 1.5.234
       node-releases: 2.0.23
       update-browserslist-db: 1.1.3(browserslist@4.26.3)
     dev: true
@@ -2982,8 +2977,8 @@ packages:
     engines: {node: '>=10'}
     dev: true
 
-  /caniuse-lite@1.0.30001748:
-    resolution: {integrity: sha512-5P5UgAr0+aBmNiplks08JLw+AW/XG/SurlgZLgB1dDLfAw7EfRGxIwzPHxdSCGY/BTKDqIVyJL87cCN6s0ZR0w==}
+  /caniuse-lite@1.0.30001750:
+    resolution: {integrity: sha512-cuom0g5sdX6rw00qOoLNSFCJ9/mYIsuSOA+yzpDw8eopiFqcVwQvZHqov0vmEighRxX++cfC0Vg1G+1Iy/mSpQ==}
     dev: true
 
   /cardinal@2.1.1:
@@ -3299,7 +3294,7 @@ packages:
       conventional-commits-filter: 5.0.0
       handlebars: 4.7.8
       meow: 13.2.0
-      semver: 7.7.2
+      semver: 7.7.3
     dev: true
 
   /conventional-commit-types@3.0.0:
@@ -3359,10 +3354,9 @@ packages:
     resolution: {integrity: sha512-ZQBvi1DcpJ4GDqanjucZ2Hj3wEO5pZDS89BWbkcrvdxksJorwUDDZamX9ldFkp9aw2lmBDLgkObEA4DWNJ9FYQ==}
     dev: true
 
-  /cosmiconfig-typescript-loader@6.1.0(@types/node@22.18.9)(cosmiconfig@9.0.0)(typescript@5.9.3):
-    resolution: {integrity: sha512-tJ1w35ZRUiM5FeTzT7DtYWAFFv37ZLqSRkGi2oeCK1gPhvaWjkAtfXvLmvE1pRfxxp9aQo6ba/Pvg1dKj05D4g==}
+  /cosmiconfig-typescript-loader@6.2.0(@types/node@22.18.9)(cosmiconfig@9.0.0)(typescript@5.9.3):
+    resolution: {integrity: sha512-GEN39v7TgdxgIoNcdkRE3uiAzQt3UXLyHbRHD6YoL048XAeOomyxaP+Hh/+2C6C2wYjxJ2onhJcsQp+L4YEkVQ==}
     engines: {node: '>=v18'}
-    requiresBuild: true
     peerDependencies:
       '@types/node': '*'
       cosmiconfig: '>=9'
@@ -3398,7 +3392,6 @@ packages:
   /cosmiconfig@9.0.0(typescript@5.9.3):
     resolution: {integrity: sha512-itvL5h8RETACmOTFc4UfIyB2RfEHi71Ax6E/PivVxq9NseKbOWpeyHEOIbmAw1rs8Ak0VursQNww7lf7YtUwzg==}
     engines: {node: '>=14'}
-    requiresBuild: true
     peerDependencies:
       typescript: '>=4.9.5'
     peerDependenciesMeta:
@@ -3724,8 +3717,8 @@ packages:
     resolution: {integrity: sha512-I88TYZWc9XiYHRQ4/3c5rjjfgkjhLyW2luGIheGERbNQ6OY7yTybanSpDXZa8y7VUP9YmDcYa+eyq4ca7iLqWA==}
     dev: true
 
-  /electron-to-chromium@1.5.230:
-    resolution: {integrity: sha512-A6A6Fd3+gMdaed9wX83CvHYJb4UuapPD5X5SLq72VZJzxHSY0/LUweGXRWmQlh2ln7KV7iw7jnwXK7dlPoOnHQ==}
+  /electron-to-chromium@1.5.234:
+    resolution: {integrity: sha512-RXfEp2x+VRYn8jbKfQlRImzoJU01kyDvVPBmG39eU2iuRVhuS6vQNocB8J0/8GrIMLnPzgz4eW6WiRnJkTuNWg==}
     dev: true
 
   /emittery@0.13.1:
@@ -3780,7 +3773,6 @@ packages:
   /env-paths@2.2.1:
     resolution: {integrity: sha512-+h1lkLKhZMTYjog1VEpJNG7NZJWcuc2DDk/qsqSTRRCOXiLjeQ1d1/udrUGhqMxUgAlwKNZ0cf2uqan5GLuS2A==}
     engines: {node: '>=6'}
-    requiresBuild: true
     dev: true
 
   /environment@1.1.0:
@@ -4256,7 +4248,6 @@ packages:
 
   /fast-uri@3.1.0:
     resolution: {integrity: sha512-iPeeDKJSWf4IEOasVVrknXpaBV0IApz/gp7S2bb7Z4Lljbl2MGJRqInZiUrQwV16cpzw/D3S5j5Julj/gT52AA==}
-    requiresBuild: true
     dev: true
 
   /fastq@1.19.1:
@@ -4668,7 +4659,6 @@ packages:
   /global-directory@4.0.1:
     resolution: {integrity: sha512-wHTUcDUoZ1H5/0iVqEudYW4/kAlN5cZ3j/bXn0Dpbizl9iaUVeWSHqiOjsgk6OW2bkLclbBjzewBz6weQ1zA2Q==}
     engines: {node: '>=18'}
-    requiresBuild: true
     dependencies:
       ini: 4.1.1
     dev: true
@@ -5093,7 +5083,6 @@ packages:
   /ini@4.1.1:
     resolution: {integrity: sha512-QQnnxNyfvmHFIsj7gkPcYymR8Jdw/o7mp5ZFihxn6h8Ci6fh3Dx4E1gPjpQEpIuPo9XVNY/ZUwh4BPMjGyL01g==}
     engines: {node: ^14.17.0 || ^16.13.0 || >=18.0.0}
-    requiresBuild: true
     dev: true
 
   /inquirer@8.2.5:
@@ -5153,7 +5142,6 @@ packages:
 
   /is-arrayish@0.2.1:
     resolution: {integrity: sha512-zz06S8t0ozoDXMG+ube26zeCTNXcKIPJZJi8hBrF4idCLms4CG9QtK7qBl1boi5ODzFpjswb5JPmHCbMpjaYzg==}
-    requiresBuild: true
     dev: true
 
   /is-async-function@2.1.1:
@@ -5492,7 +5480,7 @@ packages:
       '@babel/parser': 7.28.4
       '@istanbuljs/schema': 0.1.3
       istanbul-lib-coverage: 3.2.2
-      semver: 7.7.2
+      semver: 7.7.3
     transitivePeerDependencies:
       - supports-color
     dev: true
@@ -5911,7 +5899,7 @@ packages:
       jest-message-util: 30.2.0
       jest-util: 30.2.0
       pretty-format: 30.2.0
-      semver: 7.7.2
+      semver: 7.7.3
       synckit: 0.11.11
     transitivePeerDependencies:
       - supports-color
@@ -5999,7 +5987,6 @@ packages:
   /jiti@2.6.1:
     resolution: {integrity: sha512-ekilCSN1jwRvIbgeg/57YFh8qQDNbwDb9xT/qu2DAHbFFZUicIl4ygVaAvzveMhMVr3LnpSKTNnwt8PoOfmKhQ==}
     hasBin: true
-    requiresBuild: true
     dev: true
 
   /js-tokens@4.0.0:
@@ -6072,7 +6059,6 @@ packages:
 
   /json-parse-even-better-errors@2.3.1:
     resolution: {integrity: sha512-xyFwyhro/JEof6Ghe2iz2NcXoj2sloNsWr/XsERDK/oiPCfaNhl5ONfp+jQdAZRQQ0IJWNzH9zIZF7li91kh2w==}
-    requiresBuild: true
     dev: true
 
   /json-schema-traverse@0.4.1:
@@ -6081,7 +6067,6 @@ packages:
 
   /json-schema-traverse@1.0.0:
     resolution: {integrity: sha512-NM8/P9n3XjXhIZn1lLhkFaACTOURQXjWhV4BA/RnOv8xvgqtqpAX9IO4mRQxSx1Rlo4tqzeqb0sOlruaOy3dug==}
-    requiresBuild: true
     dev: true
 
   /json-stable-stringify-without-jsonify@1.0.1:
@@ -6137,7 +6122,6 @@ packages:
 
   /lines-and-columns@1.2.4:
     resolution: {integrity: sha512-7ylylesZQ/PV29jhEDl3Ufjo6ZX7gCqJr5F7PKrqc93v7fzSymt1BpwEU8nAUXs8qzzvqhbjhK5QZg6Mt/HkBg==}
-    requiresBuild: true
     dev: true
 
   /lint-staged@16.2.3:
@@ -6272,7 +6256,6 @@ packages:
 
   /lodash.mergewith@4.6.2:
     resolution: {integrity: sha512-GK3g5RPZWTRSeLSpgP8Xhra+pnjBC56q9FZYe1d5RN3TJ35dbkGy3YqBSMbyCrlbi+CM9Z3Jk5yTL7RCsqboyQ==}
-    requiresBuild: true
     dev: true
 
   /lodash.snakecase@4.1.1:
@@ -6285,7 +6268,6 @@ packages:
 
   /lodash.uniq@4.5.0:
     resolution: {integrity: sha512-xfBaXQd9ryd9dlSDvnvI0lvxfLJlYAZzXomUYzLKtUeOQvOP5piqAWuGtrhWeqaXK9hhoM/iyJc5AV+XfsX3HQ==}
-    requiresBuild: true
     dev: true
 
   /lodash.uniqby@4.7.0:
@@ -6370,7 +6352,7 @@ packages:
     resolution: {integrity: sha512-hXdUTZYIVOt1Ex//jAQi+wTZZpUpwBj/0QsOzqegb3rGMMeJiSEu5xLHnYfBrRV4RH2+OCSOO95Is/7x1WJ4bw==}
     engines: {node: '>=10'}
     dependencies:
-      semver: 7.7.2
+      semver: 7.7.3
     dev: true
 
   /make-error@1.3.6:
@@ -6634,7 +6616,7 @@ packages:
     dependencies:
       hosted-git-info: 4.1.0
       is-core-module: 2.16.1
-      semver: 7.7.2
+      semver: 7.7.3
       validate-npm-package-license: 3.0.4
     dev: true
 
@@ -6643,7 +6625,7 @@ packages:
     engines: {node: ^16.14.0 || >=18.0.0}
     dependencies:
       hosted-git-info: 7.0.2
-      semver: 7.7.2
+      semver: 7.7.3
       validate-npm-package-license: 3.0.4
     dev: true
 
@@ -7011,7 +6993,6 @@ packages:
   /parent-module@1.0.1:
     resolution: {integrity: sha512-GQ2EWRpQV8/o+Aw8YqtfZZPfNRWZYkbidE9k5rpl/hC3vtHHBfGm2Ifi6qWV+coDGkrUKZAxE3Lot5kcsRlh+g==}
     engines: {node: '>=6'}
-    requiresBuild: true
     dependencies:
       callsites: 3.1.0
     dev: true
@@ -7520,7 +7501,6 @@ packages:
   /require-from-string@2.0.2:
     resolution: {integrity: sha512-Xf0nWe6RseziFMu+Ap9biiUbmplq6S9/p+7w7YXP/JBHhrUDDUhwa+vANyubuqfZWTveU//DYVGsDG7RKL/vEw==}
     engines: {node: '>=0.10.0'}
-    requiresBuild: true
     dev: true
 
   /require-main-filename@2.0.0:
@@ -7667,7 +7647,7 @@ packages:
       find-cache-dir: 3.3.2
       fs-extra: 10.1.0
       rollup: 4.52.4
-      semver: 7.7.2
+      semver: 7.7.3
       tslib: 2.8.1
       typescript: 5.9.3
     dev: true
@@ -7849,8 +7829,8 @@ packages:
     hasBin: true
     dev: true
 
-  /semver@7.7.2:
-    resolution: {integrity: sha512-RF0Fw+rO5AMf9MAyaRXI4AV0Ulj5lMHqVxxdSgiVbixSCXoEmmX/jk0CuJw4+3SqroYO9VoUh+HcuJivvtJemA==}
+  /semver@7.7.3:
+    resolution: {integrity: sha512-SdsKMrI9TdgjdweUSR9MweHA4EJ8YxHn8DFaDisvhVlUOe4BF1tLD7GAj0lIqWVl+dPb/rExr0Btby5loQm20Q==}
     engines: {node: '>=10'}
     hasBin: true
     dev: true
@@ -8007,7 +7987,7 @@ packages:
       detect-newline: 4.0.1
       git-hooks-list: 4.1.1
       is-plain-obj: 4.1.0
-      semver: 7.7.2
+      semver: 7.7.3
       sort-object-keys: 1.1.3
       tinyglobby: 0.2.15
     dev: true
@@ -8507,7 +8487,7 @@ packages:
       json5: 2.2.3
       lodash.memoize: 4.1.2
       make-error: 1.3.6
-      semver: 7.7.2
+      semver: 7.7.3
       type-fest: 4.41.0
       typescript: 5.9.3
       yargs-parser: 21.1.1
@@ -9156,7 +9136,7 @@ packages:
       p-reduce: 2.1.0
       pkg-up: 3.1.0
       resolve-from: 5.0.0
-      semver: 7.7.2
+      semver: 7.7.3
       semver-diff: 3.1.1
       signale: 1.4.0
       yargs: 15.4.1
