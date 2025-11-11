@@ -30,8 +30,8 @@ devDependencies:
     specifier: 10.0.1
     version: 10.0.1(semantic-release@0.0.0-development)
   '@semantic-release/github':
-    specifier: 12.0.1
-    version: 12.0.1(semantic-release@0.0.0-development)
+    specifier: 12.0.2
+    version: 12.0.2(semantic-release@0.0.0-development)
   '@semantic-release/release-notes-generator':
     specifier: 14.1.0
     version: 14.1.0(semantic-release@0.0.0-development)
@@ -1780,8 +1780,8 @@ packages:
       - supports-color
     dev: true
 
-  /@semantic-release/github@12.0.1(semantic-release@0.0.0-development):
-    resolution: {integrity: sha512-BSC7Ko6aRPnH8ttVBpd3gC98LTiyPdmrmX4qHilLw5EZqVrXrXwcKp/JKUC5hgm0XpJACR3nPjgbfOjTJ75PIA==}
+  /@semantic-release/github@12.0.2(semantic-release@0.0.0-development):
+    resolution: {integrity: sha512-qyqLS+aSGH1SfXIooBKjs7mvrv0deg8v+jemegfJg1kq6ji+GJV8CO08VJDEsvjp3O8XJmTTIAjjZbMzagzsdw==}
     engines: {node: ^22.14.0 || >= 24.10.0}
     peerDependencies:
       semantic-release: '>=24.1.0'
@@ -1802,6 +1802,7 @@ packages:
       p-filter: 4.1.0
       semantic-release: github.com/rikhoffbauer/semantic-release/9a7bff0cfa08c9e6940b1ad7eb75959b34f051cc
       tinyglobby: 0.2.15
+      undici: 7.16.0
       url-join: 5.0.0
     transitivePeerDependencies:
       - supports-color
