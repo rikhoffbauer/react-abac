@@ -48,11 +48,11 @@ devDependencies:
     specifier: 24.10.1
     version: 24.10.1
   '@types/react':
-    specifier: 19.2.4
-    version: 19.2.4
+    specifier: 19.2.6
+    version: 19.2.6
   '@types/react-dom':
     specifier: 19.2.3
-    version: 19.2.3(@types/react@19.2.4)
+    version: 19.2.3(@types/react@19.2.6)
   '@typescript-eslint/eslint-plugin':
     specifier: 8.47.0
     version: 8.47.0(@typescript-eslint/parser@8.47.0)(eslint@9.39.1)(typescript@5.9.3)
@@ -2071,12 +2071,12 @@ packages:
     resolution: {integrity: sha512-F6bEyamV9jKGAFBEmlQnesRPGOQqS2+Uwi0Em15xenOxHaf2hv6L8YCVn3rPdPJOiJfPiCnLIRyvwVaqMY3MIw==}
     dev: true
 
-  /@types/react-dom@19.2.3(@types/react@19.2.4):
+  /@types/react-dom@19.2.3(@types/react@19.2.6):
     resolution: {integrity: sha512-jp2L/eY6fn+KgVVQAOqYItbF0VY/YApe5Mz2F0aykSO8gx31bYCZyvSeYxCHKvzHG5eZjc+zyaS5BrBWya2+kQ==}
     peerDependencies:
       '@types/react': ^19.2.0
     dependencies:
-      '@types/react': 19.2.4
+      '@types/react': 19.2.6
     dev: true
 
   /@types/react@16.14.67:
@@ -2087,8 +2087,8 @@ packages:
       csstype: 3.2.2
     dev: true
 
-  /@types/react@19.2.4:
-    resolution: {integrity: sha512-tBFxBp9Nfyy5rsmefN+WXc1JeW/j2BpBHFdLZbEVfs9wn3E3NRFxwV0pJg8M1qQAexFpvz73hJXFofV0ZAu92A==}
+  /@types/react@19.2.6:
+    resolution: {integrity: sha512-p/jUvulfgU7oKtj6Xpk8cA2Y1xKTtICGpJYeJXz2YVO2UcvjQgeRMLDGfDeqeRW2Ta+0QNFwcc8X3GH8SxZz6w==}
     dependencies:
       csstype: 3.2.2
     dev: true
@@ -6071,6 +6071,7 @@ packages:
 
   /json-parse-even-better-errors@2.3.1:
     resolution: {integrity: sha512-xyFwyhro/JEof6Ghe2iz2NcXoj2sloNsWr/XsERDK/oiPCfaNhl5ONfp+jQdAZRQQ0IJWNzH9zIZF7li91kh2w==}
+    requiresBuild: true
     dev: true
 
   /json-schema-traverse@0.4.1:
@@ -6135,6 +6136,7 @@ packages:
 
   /lines-and-columns@1.2.4:
     resolution: {integrity: sha512-7ylylesZQ/PV29jhEDl3Ufjo6ZX7gCqJr5F7PKrqc93v7fzSymt1BpwEU8nAUXs8qzzvqhbjhK5QZg6Mt/HkBg==}
+    requiresBuild: true
     dev: true
 
   /lint-staged@16.2.7:
