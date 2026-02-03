@@ -6,11 +6,11 @@ settings:
 
 devDependencies:
   '@commitlint/cli':
-    specifier: 20.3.1
-    version: 20.3.1(@types/node@24.10.9)(typescript@5.9.3)
+    specifier: 20.4.0
+    version: 20.4.0(@types/node@24.10.9)(typescript@5.9.3)
   '@commitlint/config-conventional':
-    specifier: 20.3.1
-    version: 20.3.1
+    specifier: 20.4.0
+    version: 20.4.0
   '@prettier/plugin-xml':
     specifier: 3.4.2
     version: 3.4.2(prettier@3.8.1)
@@ -512,8 +512,8 @@ packages:
     dev: true
     optional: true
 
-  /@commitlint/cli@20.3.1(@types/node@24.10.9)(typescript@5.9.3):
-    resolution: {integrity: sha512-NtInjSlyev/+SLPvx/ulz8hRE25Wf5S9dLNDcIwazq0JyB4/w1ROF/5nV0ObPTX8YpRaKYeKtXDYWqumBNHWsw==}
+  /@commitlint/cli@20.4.0(@types/node@24.10.9)(typescript@5.9.3):
+    resolution: {integrity: sha512-2lqrFrYNxjKxgMqeYiO3zNM14XN9v72/5xIJyvdLw7sHEGlfg6sweW01PGNWiqZa6/AuZwsb0uzkgWJy6F4N2w==}
     engines: {node: '>=v18'}
     hasBin: true
     dependencies:
@@ -529,12 +529,12 @@ packages:
       - typescript
     dev: true
 
-  /@commitlint/config-conventional@20.3.1:
-    resolution: {integrity: sha512-NCzwvxepstBZbmVXsvg49s+shCxlJDJPWxXqONVcAtJH9wWrOlkMQw/zyl+dJmt8lyVopt5mwQ3mR5M2N2rUWg==}
+  /@commitlint/config-conventional@20.4.0:
+    resolution: {integrity: sha512-nolhFe2YKIix0D4+tPXAWnnIc9WB5fOCgmm4h2EcRyEShC64oH/DpM9n++85NRdItvIhKb+Szsaeuug7KcEeIA==}
     engines: {node: '>=v18'}
     dependencies:
       '@commitlint/types': 20.4.0
-      conventional-changelog-conventionalcommits: 7.0.2
+      conventional-changelog-conventionalcommits: 9.1.0
     dev: true
 
   /@commitlint/config-validator@20.4.0:
@@ -3266,9 +3266,9 @@ packages:
       compare-func: 2.0.0
     dev: true
 
-  /conventional-changelog-conventionalcommits@7.0.2:
-    resolution: {integrity: sha512-NKXYmMR/Hr1DevQegFB4MwfM5Vv0m4UIxKZTTYuD98lpTknaZlSRrDOG4X7wIXpGkfsYxZTghUN+Qq+T0YQI7w==}
-    engines: {node: '>=16'}
+  /conventional-changelog-conventionalcommits@9.1.0:
+    resolution: {integrity: sha512-MnbEysR8wWa8dAEvbj5xcBgJKQlX/m0lhS8DsyAAWDHdfs2faDJxTgzRYlRYpXSe7UiKrIIlB4TrBKU9q9DgkA==}
+    engines: {node: '>=18'}
     dependencies:
       compare-func: 2.0.0
     dev: true
