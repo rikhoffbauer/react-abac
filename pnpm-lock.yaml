@@ -144,8 +144,8 @@ devDependencies:
     specifier: 0.6.3
     version: 0.6.3(@types/node@24.12.0)(rollup@4.60.1)
   rollup-plugin-typescript2:
-    specifier: 0.36.0
-    version: 0.36.0(rollup@4.60.1)(typescript@6.0.2)
+    specifier: 0.37.0
+    version: 0.37.0(rollup@4.60.1)(typescript@6.0.2)
   rollup-plugin-uglify:
     specifier: 6.0.4
     version: 6.0.4(rollup@4.60.1)
@@ -7581,8 +7581,8 @@ packages:
       source-map-resolve: 0.6.0
     dev: true
 
-  /rollup-plugin-typescript2@0.36.0(rollup@4.60.1)(typescript@6.0.2):
-    resolution: {integrity: sha512-NB2CSQDxSe9+Oe2ahZbf+B4bh7pHwjV5L+RSYpCu7Q5ROuN94F9b6ioWwKfz3ueL3KTtmX4o2MUH2cgHDIEUsw==}
+  /rollup-plugin-typescript2@0.37.0(rollup@4.60.1)(typescript@6.0.2):
+    resolution: {integrity: sha512-S1r/4Ufi13Yg/chPlh4iSHWq2Zs/sIAodW5SKUoCQfy/DEQhkS2XRFEtv+NRq3iBO4WHHfqKtDPOC5lJTYm7OQ==}
     peerDependencies:
       rollup: '>=1.26.3'
       typescript: '>=2.4.0'
