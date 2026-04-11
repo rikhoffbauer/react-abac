@@ -64,7 +64,7 @@ importers:
         version: 8.58.1(eslint@10.2.0(jiti@2.6.1))(typescript@6.0.2)
       '@wojtekmaj/enzyme-adapter-react-17':
         specifier: 0.8.0
-        version: 0.8.0(enzyme@3.11.0)(react-dom@19.2.4(react@19.2.4))(react@19.2.4)
+        version: 0.8.0(enzyme@3.11.0)(react-dom@19.2.5(react@19.2.5))(react@19.2.5)
       commitizen:
         specifier: 4.3.1
         version: 4.3.1(@types/node@24.12.2)(typescript@6.0.2)
@@ -76,7 +76,7 @@ importers:
         version: 3.11.0
       enzyme-adapter-react-16:
         specifier: 1.15.8
-        version: 1.15.8(enzyme@3.11.0)(react-dom@19.2.4(react@19.2.4))(react@19.2.4)
+        version: 1.15.8(enzyme@3.11.0)(react-dom@19.2.5(react@19.2.5))(react@19.2.5)
       eslint:
         specifier: 10.2.0
         version: 10.2.0(jiti@2.6.1)
@@ -126,11 +126,11 @@ importers:
         specifier: 0.18.1
         version: 0.18.1(prettier@3.8.1)
       react:
-        specifier: 19.2.4
-        version: 19.2.4
+        specifier: 19.2.5
+        version: 19.2.5
       react-dom:
-        specifier: 19.2.4
-        version: 19.2.4(react@19.2.4)
+        specifier: 19.2.5
+        version: 19.2.5(react@19.2.5)
       rimraf:
         specifier: 6.1.3
         version: 6.1.3
@@ -3873,10 +3873,10 @@ packages:
     resolution: {integrity: sha512-y3bGgqKj3QBdxLbLkomlohkvsA8gdAiUQlSBJnBhfn+BPxg4bc62d8TcBW15wavDfgexCgccckhcZvywyQYPOw==}
     hasBin: true
 
-  react-dom@19.2.4:
-    resolution: {integrity: sha512-AXJdLo8kgMbimY95O2aKQqsz2iWi9jMgKJhRBAxECE4IFxfcazB2LmzloIoibJI3C12IlY20+KFaLv+71bUJeQ==}
+  react-dom@19.2.5:
+    resolution: {integrity: sha512-J5bAZz+DXMMwW/wV3xzKke59Af6CHY7G4uYLN1OvBcKEsWOs4pQExj86BBKamxl/Ik5bx9whOrvBlSDfWzgSag==}
     peerDependencies:
-      react: ^19.2.4
+      react: ^19.2.5
 
   react-is@16.13.1:
     resolution: {integrity: sha512-24e6ynE2H+OKt4kqsOvNd8kBpV65zoxbA4BVsEOB3ARVWQki/DHzaUoC5KuON/BiccDaCCTZBuOcfZs70kR8bQ==}
@@ -3902,8 +3902,8 @@ packages:
     peerDependencies:
       react: 17.0.2
 
-  react@19.2.4:
-    resolution: {integrity: sha512-9nfp2hYpCwOjAN+8TZFGhtWEwgvWHXqESH8qT89AT/lWklpLON22Lc8pEtnpsZz7VmawabSU0gCjnj8aC0euHQ==}
+  react@19.2.5:
+    resolution: {integrity: sha512-llUJLzz1zTUBrskt2pwZgLq59AemifIftw4aB7JxOqf1HY2FDaGDxgwpAPVzHU1kdWabH7FauP4i1oEeer2WCA==}
     engines: {node: '>=0.10.0'}
 
   read-package-up@11.0.0:
@@ -6208,25 +6208,25 @@ snapshots:
   '@unrs/resolver-binding-win32-x64-msvc@1.11.1':
     optional: true
 
-  '@wojtekmaj/enzyme-adapter-react-17@0.8.0(enzyme@3.11.0)(react-dom@19.2.4(react@19.2.4))(react@19.2.4)':
+  '@wojtekmaj/enzyme-adapter-react-17@0.8.0(enzyme@3.11.0)(react-dom@19.2.5(react@19.2.5))(react@19.2.5)':
     dependencies:
-      '@wojtekmaj/enzyme-adapter-utils': 0.2.0(react@19.2.4)
+      '@wojtekmaj/enzyme-adapter-utils': 0.2.0(react@19.2.5)
       enzyme: 3.11.0
       enzyme-shallow-equal: 1.0.7
       has: 1.0.4
       prop-types: 15.8.1
-      react: 19.2.4
-      react-dom: 19.2.4(react@19.2.4)
+      react: 19.2.5
+      react-dom: 19.2.5(react@19.2.5)
       react-is: 17.0.2
-      react-test-renderer: 17.0.2(react@19.2.4)
+      react-test-renderer: 17.0.2(react@19.2.5)
 
-  '@wojtekmaj/enzyme-adapter-utils@0.2.0(react@19.2.4)':
+  '@wojtekmaj/enzyme-adapter-utils@0.2.0(react@19.2.5)':
     dependencies:
       function.prototype.name: 1.1.8
       has: 1.0.4
       object.fromentries: 2.0.8
       prop-types: 15.8.1
-      react: 19.2.4
+      react: 19.2.5
 
   '@xml-tools/parser@1.0.11':
     dependencies:
@@ -6265,7 +6265,7 @@ snapshots:
       clean-stack: 5.3.0
       indent-string: 5.0.0
 
-  airbnb-prop-types@2.16.0(react@19.2.4):
+  airbnb-prop-types@2.16.0(react@19.2.5):
     dependencies:
       array.prototype.find: 2.2.3
       function.prototype.name: 1.1.8
@@ -6275,7 +6275,7 @@ snapshots:
       object.entries: 1.1.9
       prop-types: 15.8.1
       prop-types-exact: 1.2.7
-      react: 19.2.4
+      react: 19.2.5
       react-is: 16.13.1
 
   ajv@6.14.0:
@@ -7013,30 +7013,30 @@ snapshots:
 
   environment@1.1.0: {}
 
-  enzyme-adapter-react-16@1.15.8(enzyme@3.11.0)(react-dom@19.2.4(react@19.2.4))(react@19.2.4):
+  enzyme-adapter-react-16@1.15.8(enzyme@3.11.0)(react-dom@19.2.5(react@19.2.5))(react@19.2.5):
     dependencies:
       enzyme: 3.11.0
-      enzyme-adapter-utils: 1.14.2(react@19.2.4)
+      enzyme-adapter-utils: 1.14.2(react@19.2.5)
       enzyme-shallow-equal: 1.0.7
       hasown: 2.0.2
       object.assign: 4.1.7
       object.values: 1.2.1
       prop-types: 15.8.1
-      react: 19.2.4
-      react-dom: 19.2.4(react@19.2.4)
+      react: 19.2.5
+      react-dom: 19.2.5(react@19.2.5)
       react-is: 16.13.1
-      react-test-renderer: 16.14.0(react@19.2.4)
+      react-test-renderer: 16.14.0(react@19.2.5)
       semver: 5.7.2
 
-  enzyme-adapter-utils@1.14.2(react@19.2.4):
+  enzyme-adapter-utils@1.14.2(react@19.2.5):
     dependencies:
-      airbnb-prop-types: 2.16.0(react@19.2.4)
+      airbnb-prop-types: 2.16.0(react@19.2.5)
       function.prototype.name: 1.1.8
       hasown: 2.0.2
       object.assign: 4.1.7
       object.fromentries: 2.0.8
       prop-types: 15.8.1
-      react: 19.2.4
+      react: 19.2.5
       semver: 6.3.1
 
   enzyme-shallow-equal@1.0.7:
@@ -9090,9 +9090,9 @@ snapshots:
       minimist: 1.2.8
       strip-json-comments: 2.0.1
 
-  react-dom@19.2.4(react@19.2.4):
+  react-dom@19.2.5(react@19.2.5):
     dependencies:
-      react: 19.2.4
+      react: 19.2.5
       scheduler: 0.27.0
 
   react-is@16.13.1: {}
@@ -9101,29 +9101,29 @@ snapshots:
 
   react-is@18.3.1: {}
 
-  react-shallow-renderer@16.15.0(react@19.2.4):
+  react-shallow-renderer@16.15.0(react@19.2.5):
     dependencies:
       object-assign: 4.1.1
-      react: 19.2.4
+      react: 19.2.5
       react-is: 17.0.2
 
-  react-test-renderer@16.14.0(react@19.2.4):
+  react-test-renderer@16.14.0(react@19.2.5):
     dependencies:
       object-assign: 4.1.1
       prop-types: 15.8.1
-      react: 19.2.4
+      react: 19.2.5
       react-is: 16.13.1
       scheduler: 0.19.1
 
-  react-test-renderer@17.0.2(react@19.2.4):
+  react-test-renderer@17.0.2(react@19.2.5):
     dependencies:
       object-assign: 4.1.1
-      react: 19.2.4
+      react: 19.2.5
       react-is: 17.0.2
-      react-shallow-renderer: 16.15.0(react@19.2.4)
+      react-shallow-renderer: 16.15.0(react@19.2.5)
       scheduler: 0.20.2
 
-  react@19.2.4: {}
+  react@19.2.5: {}
 
   read-package-up@11.0.0:
     dependencies:
