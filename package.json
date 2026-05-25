@@ -160,7 +160,7 @@
         "@types/enzyme-adapter-react-16": "1.0.9",
         "@types/jest": "30.0.0",
         "@types/node": "24.12.4",
-        "@types/react": "19.2.14",
+        "@types/react": "19.2.15",
         "@types/react-dom": "19.2.3",
         "@typescript-eslint/eslint-plugin": "8.59.4",
         "@typescript-eslint/parser": "8.59.4",
