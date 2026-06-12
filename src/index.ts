@@ -14,8 +14,8 @@ export {
     SecuredOptions,
     AllowedToProps,
     AbacProviderProps,
-    default as create,
 } from "./create";
+export { create };
 
 export const {
     AllowedTo,
