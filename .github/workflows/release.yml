@@ -14,7 +14,7 @@ jobs:
               uses: pnpm/action-setup@v6.0.8
               id: pnpm-install
               with:
-                  version: "11.5.2"
+                  version: "11.5.3"
                   run_install: false
             - name: Setup nodejs
               uses: actions/setup-node@v6
