@@ -182,7 +182,7 @@
         "jest-environment-jsdom": "30.4.1",
         "jest-environment-jsdom-global": "4.0.0",
         "lint-staged": "17.0.7",
-        "prettier": "3.8.3",
+        "prettier": "3.8.4",
         "prettier-plugin-import-sort": "0.0.7",
         "prettier-plugin-sh": "0.18.1",
         "react": "19.2.7",
