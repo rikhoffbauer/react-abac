@@ -168,8 +168,8 @@ importers:
         specifier: 10.9.2
         version: 10.9.2(@types/node@24.13.2)(typescript@6.0.3)
       tsc-watch:
-        specifier: 7.2.0
-        version: 7.2.0(typescript@6.0.3)
+        specifier: 7.2.1
+        version: 7.2.1(typescript@6.0.3)
       tslib:
         specifier: 2.8.1
         version: 2.8.1
@@ -2473,6 +2473,7 @@ packages:
   git-raw-commits@5.0.1:
     resolution: {integrity: sha512-Y+csSm2GD/PCSh6Isd/WiMjNAydu0VBiG9J7EdQsNA5P9uXvLayqjmTsNlK5Gs9IhblFZqOU0yid5Il5JPoLiQ==}
     engines: {node: '>=18'}
+    deprecated: Deprecated and no longer maintained. Use @conventional-changelog/git-client instead.
     hasBin: true
 
   glob-parent@5.1.2:
@@ -4152,7 +4153,7 @@ packages:
     resolution: {integrity: sha512-eNv+WrVbKu1f3vbYJT/xtiF5syA5HPIMtf9IgY/nKg0sWqzAUEvqY/xm7OcZc/qafLx/iO9FgOmeSAp4v5ti/Q==}
 
   semantic-release@https://codeload.github.com/rikhoffbauer/semantic-release/tar.gz/9a7bff0cfa08c9e6940b1ad7eb75959b34f051cc:
-    resolution: {gitHosted: true, tarball: https://codeload.github.com/rikhoffbauer/semantic-release/tar.gz/9a7bff0cfa08c9e6940b1ad7eb75959b34f051cc}
+    resolution: {gitHosted: true, integrity: sha512-EE6C6PrbzP8TmJEKruU6OsLx23VWe8n/Si+kFV4v1XForZMWL+B338TrWyKxFpwgxSu9G15dGqTq7NtDYBwEmA==, tarball: https://codeload.github.com/rikhoffbauer/semantic-release/tar.gz/9a7bff0cfa08c9e6940b1ad7eb75959b34f051cc}
     version: 0.0.0-development
     engines: {node: '>=10.18'}
     hasBin: true
@@ -4552,8 +4553,8 @@ packages:
       '@swc/wasm':
         optional: true
 
-  tsc-watch@7.2.0:
-    resolution: {integrity: sha512-4gRFawQD1cVSaILvG7wl2x6NtteKbS2dGBMbL7Q6n1ldLIOKXCJUoEwUXdGuee4dp+zcnA6tukBBLz1lZrNI9w==}
+  tsc-watch@7.2.1:
+    resolution: {integrity: sha512-FcntBnz5bXGQ/q265acfDzU7xi6R/sgwMokI+Iu293n14Wu8ovAtcwqNfU9vv/DM1THlnmmxatSSyGOvWsSblg==}
     engines: {node: '>=12.12.0'}
     hasBin: true
     peerDependencies:
@@ -9922,7 +9923,7 @@ snapshots:
       v8-compile-cache-lib: 3.0.1
       yn: 3.1.1
 
-  tsc-watch@7.2.0(typescript@6.0.3):
+  tsc-watch@7.2.1(typescript@6.0.3):
     dependencies:
       cross-spawn: 7.0.6
       node-cleanup: 2.1.2
