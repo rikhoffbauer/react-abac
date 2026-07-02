@@ -148,8 +148,8 @@
         }
     },
     "devDependencies": {
-        "@commitlint/cli": "21.0.2",
-        "@commitlint/config-conventional": "21.0.2",
+        "@commitlint/cli": "21.1.0",
+        "@commitlint/config-conventional": "21.1.0",
         "@prettier/plugin-xml": "3.4.2",
         "@semantic-release/changelog": "6.0.3",
         "@semantic-release/commit-analyzer": "13.0.1",
