@@ -1,17 +1,17 @@
 {
     "name": "react-abac-example",
-    "version": "0.1.601",
+    "version": "0.1.602",
     "private": true,
     "homepage": ".",
     "dependencies": {
         "@types/jest": "30.0.0",
         "@types/node": "24.13.3",
-        "@types/react": "19.2.18",
-        "@types/react-dom": "19.2.7",
+        "@types/react": "19.3.0",
+        "@types/react-dom": "19.3.0",
         "@types/react-syntax-highlighter": "15.5.13",
-        "react": "19.2.8",
+        "react": "19.3.0",
         "react-abac": "file:..",
-        "react-dom": "19.2.8",
+        "react-dom": "19.3.0",
         "react-scripts": "5.0.1",
         "react-syntax-highlighter": "16.1.1",
         "typescript": "7.0.2"
