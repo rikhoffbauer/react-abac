@@ -13,7 +13,7 @@
     },
     "repository": {
         "type": "git",
-        "url": "git+https://github.com/jewetnitg/react-abac.git"
+        "url": "git+https://github.com/rikhoffbauer/react-abac.git"
     },
     "license": "ISC",
     "author": "Rik Hoffbauer",
