@@ -144,7 +144,7 @@
         "testEnvironment": "<rootDir>/test/testEnvironment.js",
         "testRegex": "(.*\\.(spec))\\.(ts|tsx|js)$",
         "transform": {
-            "^.+\\.(t|j)s$": "ts-jest"
+            "^.+\\.tsx?$": "ts-jest"
         }
     },
     "devDependencies": {
@@ -178,7 +178,6 @@
         "jest": "30.5.1",
         "jest-cli": "30.5.1",
         "jest-environment-jsdom": "30.5.1",
-        "jest-environment-jsdom-global": "4.0.0",
         "lint-staged": "17.5.1",
         "prettier": "3.9.6",
         "prettier-plugin-import-sort": "0.0.7",
@@ -187,12 +186,8 @@
         "react-dom": "19.3.0",
         "rimraf": "6.1.3",
         "rollup": "4.63.2",
-        "rollup-plugin-commonjs": "10.1.0",
         "rollup-plugin-peer-deps-external": "2.2.4",
-        "rollup-plugin-sourcemaps": "0.6.3",
         "rollup-plugin-typescript2": "0.37.0",
-        "rollup-plugin-uglify": "6.0.4",
-        "rollup-plugin-url": "3.0.1",
         "semantic-release": "25.0.9",
         "sort-package-json": "4.0.0",
         "ts-jest": "29.4.12",

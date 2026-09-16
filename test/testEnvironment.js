@@ -1,4 +1,4 @@
-import Environment from "jest-environment-jsdom-global";
+import Environment from "jest-environment-jsdom";
 import { TextEncoder } from "util";
 
 /**
