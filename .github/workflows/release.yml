@@ -1,15 +1,9 @@
 name: Release
 
-on:
-    workflow_run:
-        workflows: [CI]
-        types: [completed]
-        branches: [main]
-    workflow_dispatch:
+on: workflow_dispatch
 
 jobs:
     release:
-        if: github.event_name == 'workflow_dispatch' || github.event.workflow_run.conclusion == 'success'
         permissions:
             contents: write
             issues: write
@@ -22,7 +16,6 @@ jobs:
               uses: actions/checkout@v7.0.1
               with:
                   fetch-depth: 0
-                  ref: ${{ github.event.workflow_run.head_sha || github.sha }}
             - name: Install pnpm
               uses: pnpm/action-setup@v6.1.0
               with:
