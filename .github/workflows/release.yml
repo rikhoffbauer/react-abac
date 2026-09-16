@@ -20,6 +20,7 @@ jobs:
               uses: actions/setup-node@v7
               with:
                   node-version: "24.21.0"
+                  registry-url: "https://registry.npmjs.org"
             #- name: Setup pnpm cache
               #uses: actions/cache@v3
               #with:
@@ -28,14 +29,16 @@ jobs:
                   #restore-keys: |
                       #${{ runner.os }}-pnpm-store-
             - name: Install dependencies
-              run: pnpm install
+              run: pnpm install --frozen-lockfile
             - name: Build
               run: pnpm build
             - name: Test
               run: pnpm test
             - name: Release
+              if: github.event_name == 'push' && github.ref == 'refs/heads/main'
               run: pnpm semantic-release
               env:
                   GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
                   NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
+                  NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
 

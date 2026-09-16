@@ -1,4 +1,5 @@
-import Adapter from "@wojtekmaj/enzyme-adapter-react-17";
-import enzyme from "enzyme";
+const reactTestGlobal = globalThis as typeof globalThis & {
+    IS_REACT_ACT_ENVIRONMENT?: boolean;
+};
 
-enzyme.configure({ adapter: new Adapter() });
+reactTestGlobal.IS_REACT_ACT_ENVIRONMENT = true;

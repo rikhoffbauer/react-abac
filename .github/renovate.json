@@ -23,5 +23,11 @@
             "priority(high)",
             "impact(high)"
         ]
-    }
+    },
+    "packageRules": [
+        {
+            "matchUpdateTypes": ["major"],
+            "automerge": false
+        }
+    ]
 }

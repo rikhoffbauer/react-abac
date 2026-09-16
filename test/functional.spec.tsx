@@ -1,5 +1,32 @@
-import { mount } from "enzyme";
-import React from "react";
+import React, { act } from "react";
+import { createRoot, Root } from "react-dom/client";
+
+interface MountedTree {
+    text(): string;
+    find(selector: string): { length: number };
+}
+
+const mounted: Array<{ container: HTMLDivElement; root: Root }> = [];
+
+function mount(element: React.ReactElement): MountedTree {
+    const container = document.createElement("div");
+    document.body.appendChild(container);
+    const root = createRoot(container);
+    act(() => root.render(element));
+    mounted.push({ container, root });
+    return {
+        text: () => container.textContent ?? "",
+        find: selector => ({ length: container.querySelectorAll(selector).length }),
+    };
+}
+
+afterEach(() => {
+    while (mounted.length) {
+        const { container, root } = mounted.pop()!;
+        act(() => root.unmount());
+        container.remove();
+    }
+});
 
 import {
     AbacProvider,

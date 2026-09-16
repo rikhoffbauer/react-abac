@@ -30,13 +30,13 @@ export const {
     AbacContext: AbacContextProps<any>;
     AllowedTo: <Permission extends string>(
         props: AllowedToProps<Permission>,
-    ) => JSX.Element;
+    ) => React.JSX.Element;
     NotAllowedTo: <Permission extends string>(
         props: AllowedToProps<Permission>,
-    ) => JSX.Element;
+    ) => React.JSX.Element;
     AbacProvider: <Role extends string, Permission extends string, User>(
         props: AbacProviderProps<Role, Permission, User>,
-    ) => JSX.Element;
+    ) => React.JSX.Element;
     useAbac: <Permission extends string>() => AbacContextProps<Permission>;
     secured: <Permission extends string, Props, Data>(
         options: SecuredOptions<Permission, Props, Data>,
