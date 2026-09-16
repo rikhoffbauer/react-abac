@@ -1,15 +1,13 @@
-name: Release
+name: CI
 
-on: workflow_dispatch
+on: [push, pull_request]
+
+permissions:
+    contents: read
 
 jobs:
-    release:
-        permissions:
-            contents: write
-            issues: write
-            pull-requests: write
-            id-token: write
-        name: Release
+    ci:
+        name: CI
         runs-on: ubuntu-latest
         steps:
             - name: Checkout
@@ -23,14 +21,9 @@ jobs:
               uses: actions/setup-node@v7
               with:
                   node-version: "24.21.0"
-                  registry-url: "https://registry.npmjs.org"
             - name: Install dependencies
               run: pnpm install --frozen-lockfile
             - name: Build
               run: pnpm build
             - name: Test
               run: pnpm test
-            - name: Release
-              run: pnpm semantic-release
-              env:
-                  GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
