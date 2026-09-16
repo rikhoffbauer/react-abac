@@ -5,199 +5,248 @@ Status: approved in chat; awaiting written-spec review
 
 ## Goal
 
-Replace the README-only documentation experience with a polished GitHub Pages site that serves as both the public product landing page and the canonical documentation for `react-abac`, while preserving browsable documentation for released versions.
+Replace the README-only project presence with a polished GitHub Pages website for `react-abac`.
+The root URL is a custom product/landing page, current documentation lives under `/docs/`, and
+immutable historical documentation remains available under `/versions/<version>/`.
 
-## User-facing structure
+The site must deploy from the existing Release workflow and must preserve older documentation
+rather than replacing it on each release.
 
-The GitHub Pages project site will use the repository subpath `/react-abac/`:
+## Primary URLs
 
-- `/react-abac/` — custom Astro landing page for the library.
-- `/react-abac/docs/` — current documentation rendered with Starlight.
-- `/react-abac/versions/` — version archive/index.
-- `/react-abac/versions/<version>/` — immutable documentation snapshot for a released version.
-- `/react-abac/versions.json` — machine-readable version manifest used by the version switcher.
+- `/react-abac/` — custom Astro landing page.
+- `/react-abac/docs/` — documentation for the current/latest release.
+- `/react-abac/versions/` — version index and selector target.
+- `/react-abac/versions/0.1.18/` — frozen documentation for `0.1.18`.
+- `/react-abac/versions/0.1.17/` — historical documentation sourced from tag `v0.1.17`.
+- Equivalent `/versions/<semver>/` routes for all published semver tags that can be recovered.
 
-The current docs remain at the stable `/docs/` URL. Historical URLs are immutable once published.
-
+The GitHub Pages base path is `/react-abac` and all generated links must work beneath that base.
 ## Technology
 
-Create an Astro + Starlight site under `website/` in the existing repository. The package/library build remains independent from the documentation application.
+Use Astro with the official Starlight integration. Starlight owns documentation rendering,
+sidebar navigation, search, code highlighting, dark mode, accessibility, metadata, and mobile
+navigation. The landing page remains a normal custom Astro page so its design is not constrained
+by the documentation layout.
 
-Starlight provides the documentation shell, search, navigation, dark mode, responsive layout, accessible defaults, Markdown/MDX support, and code presentation. The homepage is a custom Astro page so it can look like a product site rather than a stock documentation template.
+The website lives in a focused `website/` directory inside the existing repository. The library
+build remains independent of the website build.
 
-The site must build correctly with Astro's GitHub Pages `base` set to `/react-abac` and must not assume root-domain hosting.
+Expected structure:
 
-## Visual direction
+```text
+website/
+  astro.config.mjs
+  package.json
+  src/
+    assets/
+    components/
+    content/docs/docs/
+    pages/index.astro
+    styles/global.css
+  scripts/generate-versioned-docs.ts
+```
 
-The site should feel like a modern, focused React library rather than a generic generated documentation site. Keep Starlight's readable documentation chrome, but use a custom visual identity for the landing page:
+Starlight content is nested under `content/docs/docs/` so current documentation naturally routes
+under `/docs/`. Generated historical content is written under `content/docs/versions/` before the
+Astro build and is never committed.
+## Landing page
 
-- strong typographic hero and concise positioning;
-- immediately visible install command;
-- a compact realistic RBAC/ABAC code example;
-- visual explanation of roles, permissions, and context-aware rules;
-- feature/benefit cards focused on the actual library capabilities;
-- clear routes into Quick Start, Concepts, API Reference, GitHub, and npm;
-- restrained motion and visual effects, with no heavy runtime UI framework required;
-- full light/dark theme support and responsive behavior.
+The homepage should look like a maintained React library, not a generated documentation starter.
+It uses a restrained dark/light visual system with a React-adjacent cyan accent, a secondary
+violet accent, strong typography, subtle grid/lattice details, and compact motion only where it
+improves orientation.
 
-The visual system should be implemented with Astro/Starlight CSS and components unless a component genuinely needs client-side behavior.
+Above the fold:
 
-## Documentation information architecture
+- `react-abac` wordmark and concise RBAC + ABAC positioning.
+- Install command with copy affordance: `npm install react-abac`.
+- Primary CTA to current docs and secondary links to GitHub and npm.
+- A real code example showing `AbacProvider`, `AllowedTo`, and an attribute-based rule.
+- Current release badge populated from generated site metadata rather than hard-coded copy.
 
-The current monolithic README becomes source material for structured docs. The README remains useful as the repository front page, but the website becomes canonical for detailed documentation.
+Below the fold:
 
-Initial Starlight sections:
+- Three conceptual cards: Roles, Permissions, Rules.
+- A compact “why react-abac” section focused on declarative authorization and typed React APIs.
+- Quick-start progression from provider to permission check to ABAC rule.
+- Compatibility/current-version panel and link to version history.
+- Footer with package, repository, license, and documentation links.
 
-1. Getting Started
-   - Introduction
-   - Installation
-   - Quick Start
-2. Concepts
-   - Roles
-   - Permissions
-   - Rules / ABAC predicates
-3. Guides
-   - Basic RBAC
-   - Context-aware ABAC
-   - Conditional rendering
-   - Protecting components with `secured`
-4. API Reference
-   - `create`
-   - `AbacProvider`
-   - `AllowedTo`
-   - `NotAllowedTo`
-   - `useAbac`
-   - `secured`
-5. Compatibility / Releases
-   - React compatibility
-   - version archive / release notes links
+No marketing claims that cannot be supported by the package or repository are added.
+## Current documentation information architecture
 
-The implementation should migrate and improve the existing documentation rather than inventing unsupported behavior.
+The current README is source material, not the final information architecture. Split it into
+focused Starlight pages:
 
-## Versioning model
+- `docs/index` — overview and installation.
+- `docs/getting-started` — minimal provider + permission example.
+- `docs/concepts/roles` — role model and role assignment.
+- `docs/concepts/permissions` — direct permission model.
+- `docs/concepts/rules` — attribute-based rules and predicates.
+- `docs/api/create` — `create()` factory and returned API.
+- `docs/api/abac-provider` — provider props and behavior.
+- `docs/api/allowed-to` — `AllowedTo` and `NotAllowedTo`.
+- `docs/api/use-abac` — hook reference.
+- `docs/api/secured` — HOC/decorator reference.
+- `docs/recipes` — practical combinations taken from existing examples.
+- `docs/versioning` — version selector behavior and historical-doc caveats.
 
-Versioned documentation is stored in the GitHub Pages publication state, not duplicated indefinitely on `main`.
+Examples should be copied from verified package APIs and updated only when required for the
+current source. The root README remains useful for GitHub/npm but becomes concise and links to the
+full website instead of duplicating the entire manual indefinitely.
 
-For each new release:
+## Search and navigation
 
-1. Build the current site once from the exact source revision being released.
-2. Publish that build as the root/current site.
-3. Copy the same build into `versions/<released-version>/`, excluding nested historical version archives.
-4. Preserve every existing `versions/<older-version>/` directory unchanged.
-5. Regenerate the version manifest and version archive page.
+Use Starlight's built-in search and sidebar. The top navigation exposes Docs, Versions, GitHub,
+and npm. Current docs show a version selector with `Latest (<highest published semver>)` plus available historical
+versions. Version data comes from a generated JSON manifest shared by the landing page and docs UI.
+## Historical documentation generation
 
-This guarantees that future releases preserve the exact documentation that accompanied them.
+Git tags are the canonical historical source. `generate-versioned-docs.ts` enumerates published
+`v<semver>` tags and produces temporary Starlight content for each version before a site build.
 
-### Legacy versions
+For tags that contain the structured website documentation, the generator extracts that tag's
+`website/src/content/docs/docs/**` tree and rewrites frontmatter/routes into
+`website/src/content/docs/versions/<version>/**`.
 
-Existing releases predate the Starlight site. During the first Pages publication, a bootstrap script will enumerate historical semver tags and extract each tag's `README.md` with `git show`.
+For older tags that predate Starlight, the generator extracts that tag's `README.md`, converts it
+into a valid Starlight page, and publishes it at `/versions/<version>/`. This fallback is explicitly
+labeled “Archived README documentation” so it is not mistaken for the richer current manual.
 
-Those READMEs will be rendered into a lightweight historical-documentation page using the site's typography and shared legacy styling, placed at `versions/<version>/`. This makes old docs browsable without attempting to run obsolete dependency trees or reconstruct a nonexistent historical Starlight project.
+The generator also writes a deterministic version manifest containing:
 
-Once a version has a full Starlight snapshot, that snapshot takes precedence and is never regenerated from README content.
+```ts
+type DocsVersion = {
+  version: string;
+  tag: string;
+  kind: 'structured' | 'readme-archive';
+  latest: boolean;
+  url: string;
+};
+```
 
-## Version selector
+Generated historical content and the manifest output are build artifacts and are ignored by Git.
+A clean clone with full tags must be able to reproduce the complete Pages site.
+## Release and GitHub Pages flow
 
-Current documentation should expose a compact version selector showing the current release and the available historical releases. It reads a generated manifest containing version, URL, release date when available, and whether the version is the current release.
+The existing manual Release workflow remains responsible for npm/GitHub release publishing and
+adds Pages deployment after semantic-release succeeds or reports that no new package release is
+required.
 
-Selecting an older version navigates to its immutable snapshot. Historical snapshots link back to the latest docs.
+Release workflow sequence:
 
-The version selector does not need to recreate Starlight's internal navigation state across versions; preserving the version landing page and stable archive URL is sufficient.
+1. Checkout full history and tags.
+2. Install root dependencies.
+3. Build and test the library.
+4. Run semantic-release using npm trusted publishing/OIDC.
+5. Install website dependencies.
+6. Generate versioned documentation from all release tags.
+7. Build the Astro/Starlight site with `site=https://rikhoffbauer.github.io` and
+   `base=/react-abac`.
+8. Upload the complete `website/dist` tree as the GitHub Pages artifact.
+9. Deploy using GitHub Pages' Actions deployment API.
 
-## Publication state
+The workflow receives `pages: write` and retains `id-token: write`; Pages uses a `github-pages`
+environment. The repository Pages source is configured to GitHub Actions. Release/Pages runs use a
+single concurrency group so two deployments cannot race.
 
-Use a dedicated `gh-pages` branch as the durable publication store. The release workflow will:
+A Pages failure must fail the workflow visibly but must never attempt to roll back an npm release.
+A rerun after an npm release must be safe: semantic-release can no-op while the site is rebuilt and
+redeployed from tags.
+## Validation
 
-- check out the existing `gh-pages` branch into a temporary publication directory when it exists;
-- overlay the newly built current site at the publication root;
-- preserve existing `versions/` snapshots;
-- add the new release snapshot when a release was produced;
-- bootstrap missing legacy snapshots on the first deployment;
-- update the version manifest;
-- push the publication tree to `gh-pages`;
-- deploy that exact tree through GitHub Pages.
+Local validation must include:
 
-The branch is generated output and is never hand-edited.
+- Root library clean install, build, and tests.
+- Website type/content validation through Astro/Starlight build.
+- Version generator tests against a synthetic structured-tag fixture and one real README-only historical tag.
+- Assertions that generated version routes are unique, semver-sorted, and contain no broken base
+  path assumptions.
+- Static-link checks for the landing page, current docs, version index, newest historical version,
+  and an older README archive.
+- `git diff --check` before every commit.
 
-## Release workflow integration
+Release validation must additionally prove:
 
-The existing `Release` workflow remains responsible for package validation and semantic-release/npm publishing. Documentation publication occurs after the release step.
+- GitHub Pages deployment job completes successfully.
+- Published Pages root returns the landing page.
+- `/react-abac/docs/` returns current docs.
+- `/react-abac/versions/0.1.18/` and at least one older version return documentation.
+- Existing npm/GitHub release behavior remains intact.
 
-Required flow:
+## Failure handling
 
-1. checkout with full history/tags;
-2. install dependencies;
-3. build library;
-4. test library;
-5. run semantic-release using npm OIDC trusted publishing;
-6. record the newest semver tag before and after semantic-release; a changed newest tag is the released version, avoiding reliance on the repository package.json version;
-7. build the website;
-8. update the durable Pages publication tree;
-9. deploy to GitHub Pages.
+A malformed historical README must not abort every future release. The generator records the tag
+as skipped with a clear warning when content cannot be converted safely. Structured current docs,
+site configuration errors, or failure to generate the current version are hard build failures.
 
-If npm/GitHub release publication fails, Pages publication must not run. If the website build or Pages deployment fails after npm publication succeeds, the release remains valid but the workflow is red so the documentation failure is visible and retryable.
+Missing Git tags are a hard CI/release configuration error because historical reproducibility
+requires `fetch-depth: 0` and tags.
+## Metadata and indexing
 
-A manual Release run that produces no new package version may refresh the root/current site but must not fabricate a new version snapshot.
+The landing page and current docs include useful title/description metadata, canonical URLs, and
+Open Graph metadata. Historical pages are indexable but must show their exact package version and
+a prominent link back to the latest documentation.
 
-## GitHub Pages configuration
+`/react-abac/versions/` is a human-readable archive page. A generated `/react-abac/versions.json`
+exposes the same deterministic manifest used by the version selector and landing page.
 
-Use GitHub's Actions-based Pages deployment with `actions/configure-pages`, `actions/upload-pages-artifact`, and `actions/deploy-pages`. The workflow requires the standard Pages permissions (`pages: write` and `id-token: write`) and a `github-pages` environment.
+## Initial migration
 
-The `gh-pages` branch is used for durable historical state even though the final deployment is performed by the Pages Actions API. This separates persistent archive storage from the deployment mechanism.
+The first Pages deployment publishes the new structured current docs and generates README archive
+pages for all existing semver tags with readable source documentation. Because `v0.1.18` predates
+the Starlight site, its `/versions/0.1.18/` entry is a README archive. The first package release
+whose tag contains `website/src/content/docs/docs/**` becomes the first structured historical
+snapshot automatically. No existing npm version, Git tag, or GitHub release is modified.
 
-## Failure and concurrency behavior
+## Accessibility and performance
 
-Release/Pages publication must be serialized with a workflow concurrency group so two releases cannot update `gh-pages` concurrently.
+The custom landing page must preserve Starlight-level keyboard accessibility and contrast. Motion
+must respect `prefers-reduced-motion`. Interactive behavior should remain minimal and progressively
+enhanced; the site must be useful with JavaScript disabled.
 
-The publication script must fail rather than delete an existing version snapshot. Creating a snapshot for a version that already exists is allowed only when the existing snapshot is byte-for-byte equivalent or when explicitly running a documented repair mode.
+Avoid large client-side React bundles for decorative effects. Prefer Astro, CSS, inline SVG, and
+small isolated components. The production homepage and documentation pages should remain static.
 
-All file operations happen in a temporary directory; `main` remains clean after local site builds.
+## Repository and package boundaries
 
-## Testing and verification
+The website must not become a runtime dependency of `react-abac`. Website-only packages stay in
+`website/package.json`, and the library package published to npm must not include website source or
+build output.
 
-Add deterministic scripts that can run locally and in CI:
-
-- `website` type/build validation;
-- link/path sanity checks for the GitHub Pages base path;
-- publication-tree test using a temporary fake prior `gh-pages` tree;
-- legacy README extraction/rendering test using at least one real historical tag;
-- assertion that publishing a second version preserves the first snapshot unchanged;
-- assertion that the generated manifest is semver-sorted and identifies the current release;
-- smoke checks that the built root page, `/docs/`, `/versions/`, and the newest version snapshot exist.
-
-The release workflow is only considered complete when both the package release and Pages deployment have been exercised successfully on GitHub Actions.
-
-## Search, accessibility, and metadata
-
-Use Starlight's built-in search for current documentation. Historical legacy pages do not need cross-version search.
-
-The custom homepage must preserve keyboard navigation, visible focus states, semantic headings, reduced-motion preferences, sufficient contrast, and meaningful labels.
-
-Add useful title/description/Open Graph metadata and canonical URLs. Generated historical pages should be indexable but clearly identify their version and link to the latest documentation.
-
-## Migration and initial publication
-
-The first deployment should publish the current docs as the latest site and bootstrap archive entries for all existing semver releases for which a README exists. Because the Starlight site did not exist in the `v0.1.18` source revision, `v0.1.18` and earlier releases receive legacy README snapshots. The first release made after the site lands receives the first immutable full Starlight snapshot.
-
-No old npm package, Git tag, or GitHub release is modified by this migration.
+The root CI workflow gains a website build check so broken documentation cannot silently reach a
+release. It does not deploy Pages; deployment remains release-only.
 
 ## Non-goals
 
-- Hosting a dynamic documentation backend.
-- Rebuilding every historical release with its historical Node dependency graph.
-- Maintaining a separate documentation repository.
-- Adding a large client-side React application merely for the website.
-- Automatically rewriting historical documentation content to match current APIs.
+- No CMS, server, database, analytics platform, or authentication.
+- No live code playground in the first iteration.
+- No attempt to reconstruct historical structured docs that never existed.
+- No per-patch duplicated HTML committed to `main` or a `gh-pages` branch.
+- No custom search implementation when Starlight's search is sufficient.
+- No large redesign of the library API as part of the documentation work.
+
+## Accepted design decisions
+
+- Astro + Starlight rather than a custom documentation framework.
+- Custom landing page at the Pages root; Starlight current docs under `/docs/`.
+- Historical docs under `/versions/<semver>/` generated reproducibly from Git tags.
+- README fallback for releases predating structured docs.
+- GitHub Actions Pages deployment integrated into the Release workflow.
+- Future releases preserve structured docs automatically because their tags contain the site source.
+
 
 ## Completion criteria
 
-The work is complete when:
+The work is complete only when all of the following are true:
 
-- GitHub Pages is enabled and serves the custom landing page;
-- current structured Starlight docs are reachable at `/docs/`;
-- the version selector and `/versions/` archive work;
-- at least the existing 0.1.x releases have accessible historical docs where source README content exists;
-- a release creates an immutable full-site snapshot for its version;
-- a subsequent deployment demonstrably preserves previous snapshots;
-- CI/build/link/publication tests pass locally and in GitHub Actions;
-- release and Pages workflows finish green.
+- GitHub Pages serves the custom landing page at `/react-abac/`.
+- Current structured Starlight documentation works at `/react-abac/docs/`.
+- `/react-abac/versions/` and the version selector expose historical releases.
+- `0.1.18` and at least one older release have accessible archived documentation.
+- A synthetic structured-version test proves future tagged Starlight docs are preserved correctly.
+- Root CI validates both the library and website without deploying Pages.
+- The Release workflow publishes/deploys Pages and finishes green.
+- The deployed site passes route/link smoke checks against the real GitHub Pages URL.
+- Existing npm trusted publishing and GitHub release behavior remain functional.
