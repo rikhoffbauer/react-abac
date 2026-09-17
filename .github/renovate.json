@@ -28,6 +28,10 @@
         {
             "matchUpdateTypes": ["major"],
             "automerge": false
+        },
+        {
+            "matchPackageNames": ["typescript"],
+            "allowedVersions": "<7"
         }
     ]
 }
