@@ -144,8 +144,8 @@ importers:
         specifier: 7.2.1
         version: 7.2.1(typescript@5.9.3)
       tslib:
-        specifier: 2.8.1
-        version: 2.8.1
+        specifier: 2.9.1
+        version: 2.9.1
       typescript:
         specifier: 5.9.3
         version: 5.9.3
@@ -3702,8 +3702,8 @@ packages:
   tsconfig-resolver@2.2.0:
     resolution: {integrity: sha512-Imw1t5hpIOGeAhtDPuSldXZkoTCc1w4D3ldGVWNecJ62ABDnp6zgqGSzUhPc9o3mO/XHm8DN+eaHBmNmp6gBDQ==}
 
-  tslib@2.8.1:
-    resolution: {integrity: sha512-oJFu94HQb+KVduSUQL7wnpmqnfmLsOA/nAh6b6EH0wCEoK0/mPeXU6c3wKDV83MkOuHPRHtSXKKU99IBazS/2w==}
+  tslib@2.9.1:
+    resolution: {integrity: sha512-a4Ux9VKuIMHsOS7ENbEq6hK2ZGYIT27Rtl0E4eD9KqwxhKiQeMZE/9xb3IdYwWaSOyIBQLExhQgXDTYoiCxnWA==}
 
   tunnel@0.0.6:
     resolution: {integrity: sha512-1h/Lnq9yajKY2PEbBadPXj3VxsDDu844OnaAo52UVmIzIvwwtBPIuNvkjuzBlTWpfJyUbG3ez0KSBibQkj4ojg==}
@@ -7403,7 +7403,7 @@ snapshots:
       fs-extra: 10.1.0
       rollup: 4.67.2
       semver: 7.8.5
-      tslib: 2.8.1
+      tslib: 2.9.1
       typescript: 5.9.3
 
   rollup@4.67.2:
@@ -7445,7 +7445,7 @@ snapshots:
 
   rxjs@7.8.2:
     dependencies:
-      tslib: 2.8.1
+      tslib: 2.9.1
 
   safe-buffer@5.1.2: {}
 
@@ -7811,7 +7811,7 @@ snapshots:
       strip-bom: 4.0.0
       type-fest: 0.12.0
 
-  tslib@2.8.1: {}
+  tslib@2.9.1: {}
 
   tunnel@0.0.6: {}
 
