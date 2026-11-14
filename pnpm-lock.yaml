@@ -16,7 +16,7 @@ importers:
         version: 21.2.4
       '@prettier/plugin-xml':
         specifier: 3.4.2
-        version: 3.4.2(prettier@3.9.10)
+        version: 3.4.2(prettier@3.10.0)
       '@rollup/plugin-node-resolve':
         specifier: 16.0.3
         version: 16.0.3(rollup@4.68.2)
@@ -73,7 +73,7 @@ importers:
         version: 10.1.8(eslint@10.14.0(jiti@2.7.0)(supports-color@8.1.1))
       eslint-plugin-prettier:
         specifier: 5.5.7
-        version: 5.5.7(eslint-config-prettier@10.1.8(eslint@10.14.0(jiti@2.7.0)(supports-color@8.1.1)))(eslint@10.14.0(jiti@2.7.0)(supports-color@8.1.1))(prettier@3.9.10)
+        version: 5.5.7(eslint-config-prettier@10.1.8(eslint@10.14.0(jiti@2.7.0)(supports-color@8.1.1)))(eslint@10.14.0(jiti@2.7.0)(supports-color@8.1.1))(prettier@3.10.0)
       husky:
         specifier: 9.1.7
         version: 9.1.7
@@ -102,14 +102,14 @@ importers:
         specifier: 17.6.0
         version: 17.6.0
       prettier:
-        specifier: 3.9.10
-        version: 3.9.10
+        specifier: 3.10.0
+        version: 3.10.0
       prettier-plugin-import-sort:
         specifier: 0.0.7
-        version: 0.0.7(prettier@3.9.10)(supports-color@8.1.1)
+        version: 0.0.7(prettier@3.10.0)(supports-color@8.1.1)
       prettier-plugin-sh:
         specifier: 0.20.2
-        version: 0.20.2(prettier@3.9.10)
+        version: 0.20.2(prettier@3.10.0)
       react:
         specifier: 19.3.1
         version: 19.3.1
@@ -3200,8 +3200,8 @@ packages:
     peerDependencies:
       prettier: ^3.6.0
 
-  prettier@3.9.10:
-    resolution: {integrity: sha512-skGHTH1Yb9QvaTC4hWnRTzEYtCpApF0UMBPz+t/0ZPzP8ihefo/btKd+QA7pUE0fEwA1SbS/NmhyEcstdXOIdA==}
+  prettier@3.10.0:
+    resolution: {integrity: sha512-mBi4765LgjO1PFjlEs7pUeK0nb1bw71c+N4/ItfeUWNdY5cV2pRKaFpbbFRYmDJMO+5ZwzGxHRqHxFZna7iv5w==}
     engines: {node: '>=14'}
     hasBin: true
 
@@ -4790,10 +4790,10 @@ snapshots:
       '@pnpm/network.ca-file': 1.0.2
       config-chain: 1.1.13
 
-  '@prettier/plugin-xml@3.4.2(prettier@3.9.10)':
+  '@prettier/plugin-xml@3.4.2(prettier@3.10.0)':
     dependencies:
       '@xml-tools/parser': 1.0.12
-      prettier: 3.9.10
+      prettier: 3.10.0
 
   '@reteps/dockerfmt-darwin-arm64@0.5.4':
     optional: true
@@ -5827,10 +5827,10 @@ snapshots:
     dependencies:
       eslint: 10.14.0(jiti@2.7.0)(supports-color@8.1.1)
 
-  eslint-plugin-prettier@5.5.7(eslint-config-prettier@10.1.8(eslint@10.14.0(jiti@2.7.0)(supports-color@8.1.1)))(eslint@10.14.0(jiti@2.7.0)(supports-color@8.1.1))(prettier@3.9.10):
+  eslint-plugin-prettier@5.5.7(eslint-config-prettier@10.1.8(eslint@10.14.0(jiti@2.7.0)(supports-color@8.1.1)))(eslint@10.14.0(jiti@2.7.0)(supports-color@8.1.1))(prettier@3.10.0):
     dependencies:
       eslint: 10.14.0(jiti@2.7.0)(supports-color@8.1.1)
-      prettier: 3.9.10
+      prettier: 3.10.0
       prettier-linter-helpers: 1.0.1
       synckit: 0.12.3
     optionalDependencies:
@@ -7264,23 +7264,23 @@ snapshots:
     dependencies:
       fast-diff: 1.3.0
 
-  prettier-plugin-import-sort@0.0.7(prettier@3.9.10)(supports-color@8.1.1):
+  prettier-plugin-import-sort@0.0.7(prettier@3.10.0)(supports-color@8.1.1):
     dependencies:
       import-sort: 6.0.0
       import-sort-config: 6.0.0
       import-sort-parser-babylon: 6.0.0(supports-color@8.1.1)
       import-sort-parser-typescript: 6.0.0
-      prettier: 3.9.10
+      prettier: 3.10.0
     transitivePeerDependencies:
       - supports-color
 
-  prettier-plugin-sh@0.20.2(prettier@3.9.10):
+  prettier-plugin-sh@0.20.2(prettier@3.10.0):
     dependencies:
       '@reteps/dockerfmt': 0.5.4
-      prettier: 3.9.10
+      prettier: 3.10.0
       sh-syntax: 0.7.0
 
-  prettier@3.9.10: {}
+  prettier@3.10.0: {}
 
   pretty-format@30.5.1:
     dependencies:
